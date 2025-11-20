@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfluidhost=self.webpackChunkfluidhost||[]).push([[42296],{4406:e=>{e.exports=JSON.parse('{"strings":{"genericLinkOpenLinkCommandDisplayName":{"s":"Link \xf6ffnen","f":0},"genericLinkCopyLinkCommandDisplayName":{"s":"Link kopieren","f":0},"genericLinkLoadingText":{"s":"Wird geladen","f":0}}}')}}]);

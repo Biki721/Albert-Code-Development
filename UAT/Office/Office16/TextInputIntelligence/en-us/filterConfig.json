@@ -1,8 +1,0 @@
-{
-    "TrieType" : "PhraseTrie",
-    "FilterType" : "Post",
-    "CaseSensitivity" : {
-        "CaseSensitivityType" : "StrictlyCaseSensitive"
-     },
-    "PhraseFilterFileName" : "filter.bin"
-}
