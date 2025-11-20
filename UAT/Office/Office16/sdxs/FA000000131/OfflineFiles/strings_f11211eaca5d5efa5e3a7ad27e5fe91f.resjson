@@ -1,0 +1,18 @@
+{
+  "removeAdsText": "Iragarkiak ezabatzeko, harpidetu zaitez Microsoft 365-en.",
+  "seeBenefitsLink": "Ikusi abantailak",
+  "youCanReturnAfterAdText": "Zure lanera itzul zaitezke bideoa amaitzen denean.",
+  "returnToDocumentButtonText": "Itzuli lanera",
+  "buyM365ButtonText": "Erosi Microsoft 365",
+  "adSlugText": "Iragarkia",
+  "imageAdText": "Microsoft-en irudiaren iragarkia",
+  "sponsoredByText": "Babeslea: {0}",
+  "ctaButtonText": "Ikusi planak eta prezioak",
+  "offlineAdTitle": "Lortu zure helburu pertsonalak Microsoft 365-ekin",
+  "thisVersionIsAdSupported": "{0} aplikazioaren bertsio honek iragarkiak ditu.",
+  "sponsored": "Babestuta",
+  "microsoft": "Microsoft",
+  "sendASmile": "Bidali irribarrea",
+  "sendAFrown": "Bidali kopeta goibeldua",
+  "learnMore": "Informazio gehiago"
+}

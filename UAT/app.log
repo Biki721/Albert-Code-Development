@@ -1,0 +1,663 @@
+2024-05-16 06:38:09.437960: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-16 06:38:09.442945: wfastcgi.py 3.0.0 initialized
+2024-05-16 06:38:09.480932: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-16 06:38:09.484959: wfastcgi.py 3.0.0 initialized
+2024-05-16 06:48:11.756343: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-16 06:48:11.760350: wfastcgi.py 3.0.0 initialized
+2024-05-16 06:48:13.561357: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-16 06:48:13.565326: wfastcgi.py 3.0.0 initialized
+2024-05-16 06:48:19.164401: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-16 06:48:19.168415: wfastcgi.py 3.0.0 initialized
+2024-05-16 06:48:19.193361: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-16 06:48:19.197360: wfastcgi.py 3.0.0 initialized
+2024-05-16 15:36:08.582166: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-16 15:36:08.588173: wfastcgi.py 3.0.0 initialized
+2024-05-16 15:36:54.762858: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-16 15:36:54.766858: wfastcgi.py 3.0.0 initialized
+2024-05-16 15:36:54.785888: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-16 15:36:54.790875: wfastcgi.py 3.0.0 initialized
+2024-05-16 15:36:54.836870: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-16 15:36:54.840873: wfastcgi.py 3.0.0 initialized
+2024-05-16 15:56:26.307602: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-16 15:56:26.311610: wfastcgi.py 3.0.0 initialized
+2024-05-17 08:05:37.304861: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-17 08:05:37.311852: wfastcgi.py 3.0.0 initialized
+2024-05-18 19:57:03.979046: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-18 19:57:03.982066: wfastcgi.py 3.0.0 initialized
+2024-05-20 14:20:26.080375: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-20 14:20:26.084372: wfastcgi.py 3.0.0 initialized
+2024-05-20 14:20:26.085371: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-20 14:20:26.092373: wfastcgi.py 3.0.0 initialized
+2024-05-20 14:20:27.699399: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-20 14:20:27.703376: wfastcgi.py 3.0.0 initialized
+2024-05-20 14:20:29.731433: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-20 14:20:29.736724: wfastcgi.py 3.0.0 initialized
+2024-05-20 14:28:31.680938: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-20 14:28:31.685945: wfastcgi.py 3.0.0 initialized
+2024-05-20 14:28:43.233054: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-20 14:28:43.237055: wfastcgi.py 3.0.0 initialized
+2024-05-20 14:28:43.329054: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-20 14:28:43.334058: wfastcgi.py 3.0.0 initialized
+2024-05-20 14:28:43.381062: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-20 14:28:43.385060: wfastcgi.py 3.0.0 initialized
+2024-05-20 14:28:43.452060: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-20 14:28:43.457056: wfastcgi.py 3.0.0 initialized
+2024-05-20 15:27:16.119163: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-20 15:27:16.125113: wfastcgi.py 3.0.0 initialized
+2024-05-20 15:27:35.288619: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-20 15:27:35.292615: wfastcgi.py 3.0.0 initialized
+2024-05-20 15:27:35.443648: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-20 15:27:35.448643: wfastcgi.py 3.0.0 initialized
+2024-05-20 15:27:35.470636: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-20 15:27:35.476642: wfastcgi.py 3.0.0 initialized
+2024-05-20 15:34:41.813457: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2024-05-20 15:37:21.888890: wfastcgi.py exiting because Albert_Interface.py has changed, matching .*((\.py)|(\.config))$
+2024-05-20 15:37:21.895873: Running on_exit tasks
+2024-05-20 15:37:21.895873: Running on_exit tasks
+2024-05-20 15:50:48.624612: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-20 15:50:48.631608: wfastcgi.py 3.0.0 initialized
+2024-05-20 15:50:53.175687: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-20 15:50:53.180929: wfastcgi.py 3.0.0 initialized
+2024-05-20 15:50:57.818759: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-20 15:50:57.822737: wfastcgi.py 3.0.0 initialized
+2024-05-20 15:50:57.913712: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-20 15:50:57.918713: wfastcgi.py 3.0.0 initialized
+2024-05-20 18:05:02.292266: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-20 18:05:02.297271: wfastcgi.py 3.0.0 initialized
+2024-05-21 09:51:48.226398: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-21 09:51:48.232371: wfastcgi.py 3.0.0 initialized
+2024-05-21 09:52:33.716829: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-21 09:52:33.723806: wfastcgi.py 3.0.0 initialized
+2024-05-21 09:52:34.096831: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-21 09:52:34.100820: wfastcgi.py 3.0.0 initialized
+2024-05-21 09:52:34.166829: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-21 09:52:34.171818: wfastcgi.py 3.0.0 initialized
+2024-05-22 05:40:59.001038: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-22 05:40:59.005051: wfastcgi.py 3.0.0 initialized
+2024-05-22 09:04:59.979174: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-22 09:04:59.983179: wfastcgi.py 3.0.0 initialized
+2024-05-22 09:07:36.588194: wfastcgi.py exiting because ad_hoc_pgtree.py has changed, matching .*((\.py)|(\.config))$
+2024-05-22 09:07:36.592195: Running on_exit tasks
+2024-05-22 09:37:31.914433: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-22 09:37:31.918421: wfastcgi.py 3.0.0 initialized
+2024-05-22 09:37:37.256479: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-22 09:37:37.260490: wfastcgi.py 3.0.0 initialized
+2024-05-22 09:38:42.843187: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-22 09:38:42.847183: wfastcgi.py 3.0.0 initialized
+2024-05-22 09:38:42.894209: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-22 09:38:42.899216: wfastcgi.py 3.0.0 initialized
+2024-05-22 09:48:38.282725: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2024-05-22 10:15:53.460556: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-22 10:15:53.465528: wfastcgi.py 3.0.0 initialized
+2024-05-22 11:42:21.746775: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-22 11:42:21.751767: wfastcgi.py 3.0.0 initialized
+2024-05-22 20:30:43.883829: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-22 20:30:43.887832: wfastcgi.py 3.0.0 initialized
+2024-05-24 08:05:19.627446: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-24 08:05:19.632450: wfastcgi.py 3.0.0 initialized
+2024-05-24 08:10:53.202047: wfastcgi.py exiting because module_login_lang.py has changed, matching .*((\.py)|(\.config))$
+2024-05-24 08:10:53.206067: Running on_exit tasks
+2024-05-25 10:45:15.294916: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-25 10:45:15.298921: wfastcgi.py 3.0.0 initialized
+2024-05-25 19:28:33.444343: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-25 19:28:33.449351: wfastcgi.py 3.0.0 initialized
+2024-05-27 14:19:50.622938: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-27 14:19:50.627949: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-27 14:19:50.632909: wfastcgi.py 3.0.0 initialized
+2024-05-27 14:19:50.869914: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-27 14:19:50.872913: wfastcgi.py 3.0.0 initialized
+2024-05-27 14:19:51.504922: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-27 14:19:51.509912: wfastcgi.py 3.0.0 initialized
+2024-05-27 14:27:35.053474: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-27 14:27:35.057467: wfastcgi.py 3.0.0 initialized
+2024-05-27 14:27:47.416935: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-27 14:27:47.420914: wfastcgi.py 3.0.0 initialized
+2024-05-27 14:27:47.424933: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-27 14:27:47.428920: wfastcgi.py 3.0.0 initialized
+2024-05-27 14:27:47.429935: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-27 14:27:47.433914: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-27 14:27:47.433914: wfastcgi.py 3.0.0 initialized
+2024-05-27 14:27:47.438942: wfastcgi.py 3.0.0 initialized
+2024-05-27 14:35:13.095941: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2024-05-29 11:06:27.941471: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-29 11:06:27.945385: wfastcgi.py 3.0.0 initialized
+2024-05-29 11:06:31.890377: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-29 11:06:31.894371: wfastcgi.py 3.0.0 initialized
+2024-05-29 11:06:35.913402: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-29 11:06:35.917412: wfastcgi.py 3.0.0 initialized
+2024-05-29 11:06:35.927394: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-29 11:06:35.931403: wfastcgi.py 3.0.0 initialized
+2024-05-29 11:14:01.998535: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2024-05-29 11:25:05.602794: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-29 11:25:05.611771: wfastcgi.py 3.0.0 initialized
+2024-05-29 11:25:27.478401: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-29 11:25:27.482379: wfastcgi.py 3.0.0 initialized
+2024-05-29 11:25:27.483407: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-29 11:25:27.489403: wfastcgi.py 3.0.0 initialized
+2024-05-29 11:25:27.493384: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-29 11:25:27.498383: wfastcgi.py 3.0.0 initialized
+2024-05-29 11:32:53.565214: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2024-05-29 20:48:38.139696: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-29 20:48:38.143711: wfastcgi.py 3.0.0 initialized
+2024-05-31 08:05:19.834070: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-05-31 08:05:19.838109: wfastcgi.py 3.0.0 initialized
+2024-05-31 08:12:44.042011: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2024-06-02 17:18:27.610827: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-02 17:18:27.617304: wfastcgi.py 3.0.0 initialized
+2024-06-02 17:18:32.704387: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-02 17:18:32.713799: wfastcgi.py 3.0.0 initialized
+2024-06-02 17:18:32.791314: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-02 17:18:32.795801: wfastcgi.py 3.0.0 initialized
+2024-06-03 14:18:38.061215: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-03 14:18:38.065735: wfastcgi.py 3.0.0 initialized
+2024-06-03 14:18:38.080746: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-03 14:18:38.081747: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-03 14:18:38.086765: wfastcgi.py 3.0.0 initialized
+2024-06-03 14:18:38.087756: wfastcgi.py 3.0.0 initialized
+2024-06-03 14:18:38.101752: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-03 14:18:38.106749: wfastcgi.py 3.0.0 initialized
+2024-06-03 14:26:10.288013: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-03 14:26:10.297516: wfastcgi.py 3.0.0 initialized
+2024-06-03 14:26:18.277693: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2024-06-03 14:26:22.195751: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-03 14:26:22.200731: wfastcgi.py 3.0.0 initialized
+2024-06-03 14:26:22.260241: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-03 14:26:22.265785: wfastcgi.py 3.0.0 initialized
+2024-06-03 14:26:22.282730: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-03 14:26:22.287724: wfastcgi.py 3.0.0 initialized
+2024-06-03 14:26:22.435451: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-03 14:26:22.440474: wfastcgi.py 3.0.0 initialized
+2024-06-03 14:33:48.299801: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2024-06-05 10:07:37.000113: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-05 10:07:37.007114: wfastcgi.py 3.0.0 initialized
+2024-06-06 06:41:17.783576: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-06 06:41:17.789076: wfastcgi.py 3.0.0 initialized
+2024-06-06 06:41:38.569790: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-06 06:41:38.573789: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-06 06:41:38.578791: wfastcgi.py 3.0.0 initialized
+2024-06-06 06:41:38.578791: wfastcgi.py 3.0.0 initialized
+2024-06-06 06:41:38.653950: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-06 06:41:38.658939: wfastcgi.py 3.0.0 initialized
+2024-06-06 06:52:49.994977: wfastcgi.py exiting because Albert_Interface.py has changed, matching .*((\.py)|(\.config))$
+2024-06-06 06:52:49.995967: wfastcgi.py exiting because Albert_Interface.py has changed, matching .*((\.py)|(\.config))$
+2024-06-06 06:52:50.001988: wfastcgi.py exiting because Albert_Interface.py has changed, matching .*((\.py)|(\.config))$
+2024-06-06 06:52:50.003966: Running on_exit tasks
+2024-06-06 06:52:50.003966: Running on_exit tasks
+2024-06-06 06:52:50.008976: Running on_exit tasks
+2024-06-06 15:02:57.712328: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-06 15:02:57.720328: wfastcgi.py 3.0.0 initialized
+2024-06-06 19:57:37.563069: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-06 19:57:37.569576: wfastcgi.py 3.0.0 initialized
+2024-06-07 01:20:56.325157: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-07 01:20:56.331684: wfastcgi.py 3.0.0 initialized
+2024-06-07 08:05:10.985066: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-07 08:05:10.991581: wfastcgi.py 3.0.0 initialized
+2024-06-10 14:18:21.300640: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-10 14:18:21.306658: wfastcgi.py 3.0.0 initialized
+2024-06-10 14:18:31.308404: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-10 14:18:31.313912: wfastcgi.py 3.0.0 initialized
+2024-06-10 14:26:33.818215: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-10 14:26:33.823717: wfastcgi.py 3.0.0 initialized
+2024-06-10 14:26:44.851156: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-10 14:26:44.857157: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-10 14:26:44.857657: wfastcgi.py 3.0.0 initialized
+2024-06-10 14:26:44.866157: wfastcgi.py 3.0.0 initialized
+2024-06-10 14:26:45.033722: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-10 14:26:45.039736: wfastcgi.py 3.0.0 initialized
+2024-06-10 14:26:45.072858: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-10 14:26:45.078867: wfastcgi.py 3.0.0 initialized
+2024-06-11 04:49:41.471740: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-11 04:49:41.477738: wfastcgi.py 3.0.0 initialized
+2024-06-12 11:26:19.038246: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-12 11:26:19.044273: wfastcgi.py 3.0.0 initialized
+2024-06-12 19:53:24.148313: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-12 19:53:24.154284: wfastcgi.py 3.0.0 initialized
+2024-06-13 17:00:14.437707: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-13 17:00:14.443188: wfastcgi.py 3.0.0 initialized
+2024-06-14 08:05:05.778655: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-14 08:05:05.784633: wfastcgi.py 3.0.0 initialized
+2024-06-17 14:18:44.576784: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-17 14:18:44.582279: wfastcgi.py 3.0.0 initialized
+2024-06-17 14:18:44.588280: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-17 14:18:44.593281: wfastcgi.py 3.0.0 initialized
+2024-06-17 14:18:44.606785: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-17 14:18:44.611782: wfastcgi.py 3.0.0 initialized
+2024-06-17 14:18:44.762284: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-17 14:18:44.768783: wfastcgi.py 3.0.0 initialized
+2024-06-17 14:26:10.203971: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2024-06-17 14:26:43.231323: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-17 14:26:43.236792: wfastcgi.py 3.0.0 initialized
+2024-06-17 14:26:56.793279: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-17 14:26:56.799302: wfastcgi.py 3.0.0 initialized
+2024-06-17 14:26:56.805300: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-17 14:26:56.811303: wfastcgi.py 3.0.0 initialized
+2024-06-17 14:26:56.824270: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-17 14:26:56.829272: wfastcgi.py 3.0.0 initialized
+2024-06-17 14:26:56.844274: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-17 14:26:56.849280: wfastcgi.py 3.0.0 initialized
+2024-06-18 18:16:30.916254: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-18 18:16:30.922272: wfastcgi.py 3.0.0 initialized
+2024-06-18 18:16:30.929229: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-18 18:16:30.942242: wfastcgi.py 3.0.0 initialized
+2024-06-19 11:30:12.478682: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-19 11:30:12.486689: wfastcgi.py 3.0.0 initialized
+2024-06-21 08:05:05.678122: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-21 08:05:05.687072: wfastcgi.py 3.0.0 initialized
+2024-06-24 14:19:15.751021: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-24 14:19:15.757963: wfastcgi.py 3.0.0 initialized
+2024-06-24 14:19:15.769472: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-24 14:19:15.775454: wfastcgi.py 3.0.0 initialized
+2024-06-24 14:19:15.777454: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-24 14:19:15.783455: wfastcgi.py 3.0.0 initialized
+2024-06-24 14:19:15.864096: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-24 14:19:15.871093: wfastcgi.py 3.0.0 initialized
+2024-06-24 21:14:45.109605: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-24 21:14:45.116606: wfastcgi.py 3.0.0 initialized
+2024-06-26 11:29:16.657455: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-26 11:29:16.663461: wfastcgi.py 3.0.0 initialized
+2024-06-28 08:05:03.606737: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-06-28 08:05:03.613241: wfastcgi.py 3.0.0 initialized
+2024-07-01 14:18:42.294811: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-01 14:18:42.300816: wfastcgi.py 3.0.0 initialized
+2024-07-01 14:18:42.351821: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-01 14:18:42.359328: wfastcgi.py 3.0.0 initialized
+2024-07-01 14:18:42.888783: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-01 14:18:42.895772: wfastcgi.py 3.0.0 initialized
+2024-07-01 14:18:44.240261: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-01 14:18:44.247261: wfastcgi.py 3.0.0 initialized
+2024-07-01 14:26:34.886186: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-01 14:26:34.893169: wfastcgi.py 3.0.0 initialized
+2024-07-01 14:26:48.132708: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2024-07-01 14:26:52.696152: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-01 14:26:52.702167: wfastcgi.py 3.0.0 initialized
+2024-07-01 14:26:52.849625: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-01 14:26:52.855625: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-01 14:26:52.856119: wfastcgi.py 3.0.0 initialized
+2024-07-01 14:26:52.863121: wfastcgi.py 3.0.0 initialized
+2024-07-01 14:26:52.988134: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-01 14:26:52.997121: wfastcgi.py 3.0.0 initialized
+2024-07-03 11:44:06.259582: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-03 11:44:06.266083: wfastcgi.py 3.0.0 initialized
+2024-07-05 07:47:07.103693: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-05 07:47:07.110724: wfastcgi.py 3.0.0 initialized
+2024-07-05 08:05:05.736469: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-05 08:05:05.744460: wfastcgi.py 3.0.0 initialized
+2024-07-05 08:12:31.101561: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2024-07-06 03:20:45.355224: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-06 03:20:45.362694: wfastcgi.py 3.0.0 initialized
+2024-07-08 14:18:29.985657: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-08 14:18:29.986156: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-08 14:18:29.995164: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-08 14:18:30.005324: wfastcgi.py 3.0.0 initialized
+2024-07-08 14:18:30.005324: wfastcgi.py 3.0.0 initialized
+2024-07-08 14:18:30.008162: wfastcgi.py 3.0.0 initialized
+2024-07-08 14:26:34.240993: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-08 14:26:34.247494: wfastcgi.py 3.0.0 initialized
+2024-07-08 14:26:44.585672: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2024-07-08 14:26:49.244237: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-08 14:26:49.250196: wfastcgi.py 3.0.0 initialized
+2024-07-08 14:26:49.262200: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-08 14:26:49.268195: wfastcgi.py 3.0.0 initialized
+2024-07-08 14:26:49.330593: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-08 14:26:49.337559: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-08 14:26:49.338556: wfastcgi.py 3.0.0 initialized
+2024-07-08 14:26:49.344571: wfastcgi.py 3.0.0 initialized
+2024-07-10 13:19:41.139091: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-10 13:19:41.150167: wfastcgi.py 3.0.0 initialized
+2024-07-11 01:00:44.144427: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-11 01:00:44.151432: wfastcgi.py 3.0.0 initialized
+2024-07-12 08:05:22.655927: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-12 08:05:22.662926: wfastcgi.py 3.0.0 initialized
+2024-07-12 08:12:48.050306: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2024-07-12 14:57:24.975925: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-12 14:57:24.982424: wfastcgi.py 3.0.0 initialized
+2024-07-12 15:02:26.126474: wfastcgi.py exiting because remove_temp_folders.py has changed, matching .*((\.py)|(\.config))$
+2024-07-12 15:02:26.133501: Running on_exit tasks
+2024-07-14 01:04:45.407513: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-14 01:04:45.415501: wfastcgi.py 3.0.0 initialized
+2024-07-15 14:20:29.764027: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-15 14:20:29.765020: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-15 14:20:29.771050: wfastcgi.py 3.0.0 initialized
+2024-07-15 14:20:29.771535: wfastcgi.py 3.0.0 initialized
+2024-07-15 14:20:29.785066: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-15 14:20:29.792110: wfastcgi.py 3.0.0 initialized
+2024-07-15 14:20:29.837105: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-15 14:20:29.845091: wfastcgi.py 3.0.0 initialized
+2024-07-15 14:32:54.290332: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2024-07-16 13:34:25.627551: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-16 13:34:25.637589: wfastcgi.py 3.0.0 initialized
+2024-07-17 21:45:44.594868: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-17 21:45:44.602371: wfastcgi.py 3.0.0 initialized
+2024-07-19 08:05:30.471214: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-19 08:05:30.471214: wfastcgi.py 3.0.0 initialized
+2024-07-19 14:12:50.784093: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-19 14:12:50.784093: wfastcgi.py 3.0.0 initialized
+2024-07-21 06:18:56.299033: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-21 06:18:56.299033: wfastcgi.py 3.0.0 initialized
+2024-07-21 06:42:21.022218: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-21 06:42:21.022218: wfastcgi.py 3.0.0 initialized
+2024-07-22 05:36:12.860787: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-22 05:36:12.863793: wfastcgi.py 3.0.0 initialized
+2024-07-22 05:43:38.283186: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2024-07-22 14:20:19.612248: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-22 14:20:19.612248: wfastcgi.py 3.0.0 initialized
+2024-07-22 14:20:19.627830: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-22 14:20:19.627830: wfastcgi.py 3.0.0 initialized
+2024-07-22 14:27:53.021418: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2024-07-22 14:27:57.271458: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-22 14:27:57.271458: wfastcgi.py 3.0.0 initialized
+2024-07-22 14:27:57.287080: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-22 14:27:57.287080: wfastcgi.py 3.0.0 initialized
+2024-07-22 14:27:57.396464: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-22 14:27:57.396464: wfastcgi.py 3.0.0 initialized
+2024-07-22 14:27:57.427721: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-22 14:27:57.427721: wfastcgi.py 3.0.0 initialized
+2024-07-23 20:58:24.452090: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-23 20:58:24.454101: wfastcgi.py 3.0.0 initialized
+2024-07-24 00:29:01.738369: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-24 00:29:01.741350: wfastcgi.py 3.0.0 initialized
+2024-07-24 04:33:56.141151: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-24 04:33:56.145158: wfastcgi.py 3.0.0 initialized
+2024-07-25 06:28:54.452449: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-25 06:28:54.455448: wfastcgi.py 3.0.0 initialized
+2024-07-25 19:09:31.978028: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-25 19:09:31.983029: wfastcgi.py 3.0.0 initialized
+2024-07-26 08:05:38.286754: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-26 08:05:38.289744: wfastcgi.py 3.0.0 initialized
+2024-07-26 08:05:42.346824: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-26 08:05:42.351830: wfastcgi.py 3.0.0 initialized
+2024-07-26 08:13:04.015940: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2024-07-26 08:13:08.193555: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2024-07-26 21:53:46.598487: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-26 21:53:46.600493: wfastcgi.py 3.0.0 initialized
+2024-07-26 22:06:30.556626: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-26 22:06:30.558612: wfastcgi.py 3.0.0 initialized
+2024-07-28 06:40:20.014948: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-28 06:40:20.016961: wfastcgi.py 3.0.0 initialized
+2024-07-28 18:30:17.299491: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-28 18:30:17.302483: wfastcgi.py 3.0.0 initialized
+2024-07-29 14:21:07.238566: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-29 14:21:07.240544: wfastcgi.py 3.0.0 initialized
+2024-07-29 14:21:07.445590: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-29 14:21:07.448562: wfastcgi.py 3.0.0 initialized
+2024-07-29 14:21:07.684714: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-29 14:21:07.689551: wfastcgi.py 3.0.0 initialized
+2024-07-29 14:21:07.996577: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-29 14:21:07.999594: wfastcgi.py 3.0.0 initialized
+2024-07-29 14:28:50.322189: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-29 14:28:50.325162: wfastcgi.py 3.0.0 initialized
+2024-07-29 14:29:07.528342: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-29 14:29:07.530359: wfastcgi.py 3.0.0 initialized
+2024-07-29 14:29:07.547337: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-29 14:29:07.549316: wfastcgi.py 3.0.0 initialized
+2024-07-29 14:29:07.574363: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-29 14:29:07.577349: wfastcgi.py 3.0.0 initialized
+2024-07-29 14:29:07.634387: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-29 14:29:07.637322: wfastcgi.py 3.0.0 initialized
+2024-07-31 18:54:59.272987: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-07-31 18:54:59.276015: wfastcgi.py 3.0.0 initialized
+2024-08-01 17:49:51.798163: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-01 17:49:51.800165: wfastcgi.py 3.0.0 initialized
+2024-08-02 08:05:44.369816: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-02 08:05:44.372777: wfastcgi.py 3.0.0 initialized
+2024-08-02 10:13:16.275331: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-02 10:13:16.277321: wfastcgi.py 3.0.0 initialized
+2024-08-02 18:30:26.088238: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-02 18:30:26.091229: wfastcgi.py 3.0.0 initialized
+2024-08-04 07:19:44.706781: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-04 07:19:44.709787: wfastcgi.py 3.0.0 initialized
+2024-08-05 14:20:52.246852: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-05 14:20:52.249876: wfastcgi.py 3.0.0 initialized
+2024-08-05 14:20:52.365114: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-05 14:20:52.368187: wfastcgi.py 3.0.0 initialized
+2024-08-05 14:20:52.382101: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-05 14:20:52.385106: wfastcgi.py 3.0.0 initialized
+2024-08-05 14:20:53.831148: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-05 14:20:53.834175: wfastcgi.py 3.0.0 initialized
+2024-08-05 14:28:34.011261: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-05 14:28:34.014234: wfastcgi.py 3.0.0 initialized
+2024-08-05 14:28:46.206094: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-05 14:28:46.208105: wfastcgi.py 3.0.0 initialized
+2024-08-05 14:28:46.408110: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-05 14:28:46.410105: wfastcgi.py 3.0.0 initialized
+2024-08-05 14:28:46.521107: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-05 14:28:46.523123: wfastcgi.py 3.0.0 initialized
+2024-08-05 14:28:46.602111: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-05 14:28:46.605117: wfastcgi.py 3.0.0 initialized
+2024-08-06 23:20:54.983282: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-06 23:20:54.986289: wfastcgi.py 3.0.0 initialized
+2024-08-07 17:17:34.472565: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-07 17:17:34.475597: wfastcgi.py 3.0.0 initialized
+2024-08-07 18:30:32.100160: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-07 18:30:32.103163: wfastcgi.py 3.0.0 initialized
+2024-08-08 17:18:00.804227: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-08 17:18:00.806236: wfastcgi.py 3.0.0 initialized
+2024-08-08 20:38:34.476172: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-08 20:38:34.482183: wfastcgi.py 3.0.0 initialized
+2024-08-09 08:05:52.031869: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-09 08:05:52.034869: wfastcgi.py 3.0.0 initialized
+2024-08-09 21:08:22.095506: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-09 21:08:22.099508: wfastcgi.py 3.0.0 initialized
+2024-08-10 00:26:12.999156: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-10 00:26:13.001165: wfastcgi.py 3.0.0 initialized
+2024-08-10 06:30:39.782506: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-10 06:30:39.784521: wfastcgi.py 3.0.0 initialized
+2024-08-10 06:38:05.351378: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2024-08-11 07:21:58.330932: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-11 07:21:58.333932: wfastcgi.py 3.0.0 initialized
+2024-08-12 04:31:14.951542: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-12 04:31:14.953538: wfastcgi.py 3.0.0 initialized
+2024-08-12 14:21:49.964337: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-12 14:21:49.967425: wfastcgi.py 3.0.0 initialized
+2024-08-12 14:21:49.993437: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-12 14:21:49.996328: wfastcgi.py 3.0.0 initialized
+2024-08-12 14:21:50.021325: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-12 14:21:50.023323: wfastcgi.py 3.0.0 initialized
+2024-08-12 14:21:50.037315: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-12 14:21:50.040315: wfastcgi.py 3.0.0 initialized
+2024-08-12 14:29:53.101463: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-12 14:29:53.104446: wfastcgi.py 3.0.0 initialized
+2024-08-12 14:30:04.998401: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-12 14:30:04.999400: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-12 14:30:05.000773: wfastcgi.py 3.0.0 initialized
+2024-08-12 14:30:05.002405: wfastcgi.py 3.0.0 initialized
+2024-08-12 14:30:05.095408: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-12 14:30:05.098431: wfastcgi.py 3.0.0 initialized
+2024-08-12 14:30:05.100420: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-12 14:30:05.103413: wfastcgi.py 3.0.0 initialized
+2024-08-12 18:30:11.585632: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-12 18:30:11.587619: wfastcgi.py 3.0.0 initialized
+2024-08-14 18:41:11.584174: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-14 18:41:11.586183: wfastcgi.py 3.0.0 initialized
+2024-08-14 18:48:36.983379: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2024-08-15 04:32:30.267201: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-15 04:32:30.270030: wfastcgi.py 3.0.0 initialized
+2024-08-16 08:05:44.304915: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-16 08:05:44.307917: wfastcgi.py 3.0.0 initialized
+2024-08-16 08:13:09.587289: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2024-08-17 18:30:08.247493: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-17 18:30:08.251578: wfastcgi.py 3.0.0 initialized
+2024-08-18 06:46:50.152124: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-18 06:46:50.154089: wfastcgi.py 3.0.0 initialized
+2024-08-18 06:54:15.333465: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2024-08-19 14:20:55.149778: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-19 14:20:55.151746: wfastcgi.py 3.0.0 initialized
+2024-08-19 14:20:55.167775: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-19 14:20:55.169736: wfastcgi.py 3.0.0 initialized
+2024-08-19 14:20:55.177766: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-19 14:20:55.179734: wfastcgi.py 3.0.0 initialized
+2024-08-19 14:20:59.659223: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-19 14:20:59.661194: wfastcgi.py 3.0.0 initialized
+2024-08-19 14:28:38.629712: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-19 14:28:38.633713: wfastcgi.py 3.0.0 initialized
+2024-08-19 14:28:53.926934: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-19 14:28:53.929909: wfastcgi.py 3.0.0 initialized
+2024-08-19 14:28:54.052889: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-19 14:28:54.057861: wfastcgi.py 3.0.0 initialized
+2024-08-19 14:28:54.110845: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-19 14:28:54.113858: wfastcgi.py 3.0.0 initialized
+2024-08-19 14:28:54.273845: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-19 14:28:54.276841: wfastcgi.py 3.0.0 initialized
+2024-08-22 02:35:38.523568: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-22 02:35:38.556191: wfastcgi.py 3.0.0 initialized
+2024-08-22 18:30:07.801728: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-22 18:30:07.803760: wfastcgi.py 3.0.0 initialized
+2024-08-22 18:46:31.957905: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-22 18:46:31.960897: wfastcgi.py 3.0.0 initialized
+2024-08-23 08:05:47.516584: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-23 08:05:47.518707: wfastcgi.py 3.0.0 initialized
+2024-08-25 07:04:55.732995: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-25 07:04:55.734991: wfastcgi.py 3.0.0 initialized
+2024-08-26 14:20:05.369739: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-26 14:20:05.371736: wfastcgi.py 3.0.0 initialized
+2024-08-26 14:20:05.748747: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-26 14:20:05.750764: wfastcgi.py 3.0.0 initialized
+2024-08-26 14:20:06.443778: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-26 14:20:06.446764: wfastcgi.py 3.0.0 initialized
+2024-08-26 14:20:06.619749: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-26 14:20:06.623762: wfastcgi.py 3.0.0 initialized
+2024-08-26 14:27:41.329773: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-26 14:27:41.332791: wfastcgi.py 3.0.0 initialized
+2024-08-26 14:27:54.494342: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-26 14:27:54.496350: wfastcgi.py 3.0.0 initialized
+2024-08-26 14:27:54.506327: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-26 14:27:54.508317: wfastcgi.py 3.0.0 initialized
+2024-08-26 14:27:54.711313: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-26 14:27:54.715321: wfastcgi.py 3.0.0 initialized
+2024-08-26 14:27:54.716334: wfastcgi.py 3.0.0 initialized
+2024-08-27 18:30:06.462469: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-27 18:30:06.464503: wfastcgi.py 3.0.0 initialized
+2024-08-29 00:31:52.330706: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-29 00:31:52.332686: wfastcgi.py 3.0.0 initialized
+2024-08-30 08:05:38.829517: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-30 08:05:38.831534: wfastcgi.py 3.0.0 initialized
+2024-08-30 22:33:13.192027: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-08-30 22:33:13.194042: wfastcgi.py 3.0.0 initialized
+2024-09-01 07:16:03.405284: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-09-01 07:16:03.407279: wfastcgi.py 3.0.0 initialized
+2024-09-01 18:30:10.630704: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-09-01 18:30:10.632722: wfastcgi.py 3.0.0 initialized
+2024-09-02 14:20:34.963268: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-09-02 14:20:34.966272: wfastcgi.py 3.0.0 initialized
+2024-09-02 14:20:35.958276: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-09-02 14:20:35.961280: wfastcgi.py 3.0.0 initialized
+2024-09-02 14:20:36.437296: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-09-02 14:20:36.439303: wfastcgi.py 3.0.0 initialized
+2024-09-02 14:20:37.266306: wfastcgi.py will restart when files in D:\UAT\ are changed: .*((\.py)|(\.config))$
+2024-09-02 14:20:37.269301: wfastcgi.py 3.0.0 initialized
+2024-09-02 14:27:32.071218: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "D:\UAT\myvenv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument

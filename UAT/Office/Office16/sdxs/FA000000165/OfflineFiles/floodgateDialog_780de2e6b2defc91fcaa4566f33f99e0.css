@@ -1,0 +1,28 @@
+body, #centro-ref {
+    margin: 0px;
+}
+
+
+/*
+* Temporal fix to conflicting background colors due to theme inconsistency
+*/
+#centro-ref > div:first-child {
+    /* inherit background color from office win32 theme */
+    background-color: inherit;
+}
+/*
+* Temporal fix to fixed margin on the privacy statement container
+*/
+#centro-ref  #obf-DxPrivacyStatementContainer {
+    width: 100%!important;
+}
+
+/*
+* Universal padding for all content containers
+*/
+#centro-ref  #DxToastContentContainer {
+    padding: 0px 20px 10px;
+}
+
+
+/*# sourceMappingURL=floodgateDialog.css.map*/

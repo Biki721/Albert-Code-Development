@@ -1,0 +1,1 @@
+{"learningTipBody":"To make IRM protected documents accessible to assistive technology, ensure \"Access Content Programmatically\" option is enabled.","resolutionOptionsEnableProgrammaticAccess":"Change Restrictions","violationExplanation":"Current settings prevent programs such as screen readers to access the content of this document"}

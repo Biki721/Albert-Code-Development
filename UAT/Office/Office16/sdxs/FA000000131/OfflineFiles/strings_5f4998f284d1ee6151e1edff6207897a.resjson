@@ -1,0 +1,18 @@
+{
+  "removeAdsText": "Щоб вилучити рекламу, підпишіться на Microsoft 365.",
+  "seeBenefitsLink": "Ознайомтеся з перевагами",
+  "youCanReturnAfterAdText": "Ви можете повернутися до роботи, коли відео завершиться.",
+  "returnToDocumentButtonText": "Повернутися до роботи",
+  "buyM365ButtonText": "Придбати Microsoft 365",
+  "adSlugText": "Реклама",
+  "imageAdText": "Рекламне зображення Microsoft",
+  "sponsoredByText": "Спонсор: {0}",
+  "ctaButtonText": "Переглянути плани та ціни",
+  "offlineAdTitle": "Досягайте особистих цілей за допомогою Microsoft 365",
+  "thisVersionIsAdSupported": "Ця версія програми {0} підтримується рекламою.",
+  "sponsored": "Від спонсорів",
+  "microsoft": "Microsoft",
+  "sendASmile": "Надіслати посмішку",
+  "sendAFrown": "Надіслати похмуру гримасу",
+  "learnMore": "Докладні відомості"
+}

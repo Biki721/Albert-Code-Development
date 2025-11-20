@@ -1,0 +1,83 @@
+/*
+ * Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license.
+ * See LICENSE in the project root for license information.
+ */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  left: 0;
+  right: 0;
+  font-family: 'Segoe UI Semibold', 'Segoe UI Web Semibold',
+    'Segoe UI Web Regular', 'Segoe UI', 'Segoe UI Symbol',
+    'HelveticaNeue-Medium', 'Helvetica Neue', Arial, sans-serif;
+}
+
+#dialog-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+#dialog-iframe {
+  flex: 1;
+  margin: 0 24px;
+}
+
+.powerBIIframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+#token-submission-form {
+  margin-bottom: 24px;
+}
+
+#dialog-header {
+  margin: 24px 24px 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#dialog-header-text {
+  font-size: 20px;
+  margin: 0;
+}
+
+.dialogCloseButton:hover {
+  cursor: pointer;
+}
+
+.dialogCloseButton {
+  font-size: 12px;
+  color: #424242;
+}
+
+/* Icons */
+@font-face {
+  font-family: 'FabricMDL2Icons';
+  src: url('data:application/octet-stream;base64,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')
+    format('truetype');
+}
+
+.ms-Icon {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-family: 'FabricMDL2Icons';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  text-align: center;
+}
+
+.ms-Icon--ChromeClose:before {
+  content: '\E8BB';
+}

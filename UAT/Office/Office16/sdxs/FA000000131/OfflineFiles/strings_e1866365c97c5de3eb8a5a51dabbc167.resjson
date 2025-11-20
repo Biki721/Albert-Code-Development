@@ -1,0 +1,18 @@
+{
+  "removeAdsText": "広告を削除するには、Microsoft 365 にサブスクライブしてください。",
+  "seeBenefitsLink": "メリットを見る",
+  "youCanReturnAfterAdText": "ビデオの終了後に作業に戻ることができます。",
+  "returnToDocumentButtonText": "作業に戻る",
+  "buyM365ButtonText": "Microsoft 365 を購入",
+  "adSlugText": "広告",
+  "imageAdText": "Microsoft の画像広告",
+  "sponsoredByText": "提供元: {0}",
+  "ctaButtonText": "プランと価格の確認",
+  "offlineAdTitle": "Microsoft 365 で個人の目標を達成する",
+  "thisVersionIsAdSupported": "このバージョンの {0} は広告でサポートされています。",
+  "sponsored": "[PR]",
+  "microsoft": "Microsoft",
+  "sendASmile": "気に入った機能の報告",
+  "sendAFrown": "問題点、改善点の報告",
+  "learnMore": "詳細情報"
+}

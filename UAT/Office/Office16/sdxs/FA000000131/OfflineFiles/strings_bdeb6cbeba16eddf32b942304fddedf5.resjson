@@ -1,0 +1,18 @@
+{
+  "removeAdsText": "За да премахнете рекламите, абонирайте се за Microsoft 365.",
+  "seeBenefitsLink": "Вижте предимствата",
+  "youCanReturnAfterAdText": "Можете да се върнете към работата си, след като видеоклипът приключи.",
+  "returnToDocumentButtonText": "Връщане към работа",
+  "buyM365ButtonText": "Закупуване на Microsoft 365",
+  "adSlugText": "Реклама",
+  "imageAdText": "Реклама за изображения на Microsoft",
+  "sponsoredByText": "Спонсорирано от {0}",
+  "ctaButtonText": "Вижте плановете и цените",
+  "offlineAdTitle": "Постигнете личните си цели с Microsoft 365",
+  "thisVersionIsAdSupported": "Тази версия на {0} се поддържа от реклами.",
+  "sponsored": "Спонсорирани",
+  "microsoft": "Microsoft",
+  "sendASmile": "Изпращане на усмивка",
+  "sendAFrown": "Изпращане на намръщено лице",
+  "learnMore": "Научете повече"
+}

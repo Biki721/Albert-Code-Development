@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>bdb87fae-106b-4eb5-909b-a1075076d14d</Id>
+  <Version>1.0.2409.29006</Version>
+  <ProviderName>Microsoft Office Services</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Copilot (Preview)"/>
+  <Description DefaultValue="Copilot (Preview)"/>
+  <IconUrl DefaultValue="assets/icon-32.png"/>
+  <AppDomains>
+    <AppDomain>https://fa000000129.resources.office.net</AppDomain>
+    <AppDomain>https://res.cdn.office.net</AppDomain>
+    <AppDomain>https://res.sdf.cdn.office.net</AppDomain>
+    <AppDomain>https://res-h3.sdf.cdn.office.net</AppDomain>
+    <AppDomain>https://res-h3.public.cdn.office.net</AppDomain>
+    <AppDomain>https://admin.microsoft.com</AppDomain>
+    <AppDomain>https://admin-ignite.microsoft.com</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Presentation"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="taskpane.html"/>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <Set Name="CdnUrlSupport" MinVersion="1.1" />
+      <Set Name="SharedRuntime" MinVersion="1.1" />
+    </Sets>
+  </Requirements>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Resources>
+      <bt:Urls>
+        <bt:Url id="CopilotChat.URL" DefaultValue="taskpane.html"/>
+      </bt:Urls>
+    </Resources>
+    <WebApplicationInfo>
+      <Id>6d8f24e8-a97e-4bb5-bbee-a1949aba8fb4</Id>
+      <MsaId>6d8f24e8-a97e-4bb5-bbee-a1949aba8fb4</MsaId>
+      <Resource>https://designerappservice.officeapps.live.com</Resource>
+      <Authorizations>
+        <Authorization>
+          <Resource>https://designerappservice.officeapps.live.com</Resource>
+          <Scopes>
+            <Scope>https://designerappservice.officeapps.live.com/designerappservice.all</Scope>
+          </Scopes>
+        </Authorization>
+        <Authorization>
+          <Resource>00000003-0000-0ff1-ce00-000000000000</Resource>
+          <Scopes>
+            <Scope>ResourceConstrainedToken.PAC</Scope>
+          </Scopes>
+        </Authorization>
+      </Authorizations>
+    </WebApplicationInfo>
+  </VersionOverrides>
+</OfficeApp>

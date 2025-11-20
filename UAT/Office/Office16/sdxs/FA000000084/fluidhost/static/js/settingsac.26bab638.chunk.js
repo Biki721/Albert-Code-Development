@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfluidhost=self.webpackChunkfluidhost||[]).push([[9496],{76483:(t,s,e)=>{e.r(s),e.d(s,{SettingsActionCreator:()=>d});var i=e(23835),c=e(51522),h=e(97792),a=e(78332),o=e(64226);class d{toggleFlight(t){this.dispatcher.dispatchAction(new c.D(t))}setUsageMode(t){this.dispatcher.dispatchAction(new h.x(t)),t===a.BH.Readonly&&this.dispatcher.dispatchAction(new i.i(o.fc.SetReadonlyModeInfo))}constructor(t){this.dispatcher=t}}}}]);
+//# sourceMappingURL=settingsac.26bab638.chunk.js.map

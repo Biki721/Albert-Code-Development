@@ -1,0 +1,18 @@
+{
+  "removeAdsText": "หากต้องการลบโฆษณา ให้สมัครใช้งาน Microsoft 365",
+  "seeBenefitsLink": "ดูสิทธิประโยชน์",
+  "youCanReturnAfterAdText": "คุณสามารถกลับไปยังงานของคุณได้หลังจากวิดีโอสิ้นสุดลง",
+  "returnToDocumentButtonText": "กลับไปยังงาน",
+  "buyM365ButtonText": "ซื้อ Microsoft 365",
+  "adSlugText": "โฆษณา",
+  "imageAdText": "การโฆษณารูปภาพของ Microsoft",
+  "sponsoredByText": "สนับสนุนโดย {0}",
+  "ctaButtonText": "ดูแผนและราคา",
+  "offlineAdTitle": "บรรลุเป้าหมายส่วนบุคคลของคุณด้วย Microsoft 365",
+  "thisVersionIsAdSupported": "{0} เวอร์ชันนี้รองรับโฆษณา",
+  "sponsored": "ได้รับการสนับสนุน",
+  "microsoft": "Microsoft",
+  "sendASmile": "ส่งรอยยิ้ม",
+  "sendAFrown": "ส่งหน้าบึ้ง",
+  "learnMore": "เรียนรู้เพิ่มเติม"
+}

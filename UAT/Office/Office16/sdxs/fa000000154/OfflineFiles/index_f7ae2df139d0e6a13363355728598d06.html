@@ -1,0 +1,70 @@
+<!doctype html><html lang="en" data-framework="typescript"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=Edge"/><meta name="viewport" content="width=device-width,initial-scale=1"/><script src="index.js"></script><script src="https://appsforoffice.microsoft.com/lib/beta/hosted/excel.js"></script><style>#spinner {
+             box-sizing: border-box;
+             border-width: 1.5px;
+             border-style: solid;
+             border-color: #0078d4 #a0d8b9 #a0d8b9 #a0d8b9;
+             border-image: initial;
+             width: 28px;
+             height: 28px;
+             border-radius: 50%;
+             animation-name: spin;
+             animation-duration: 1.3s;
+             animation-iteration-count: infinite;
+             animation-timing-function: cubic-bezier(0.53, 0.21, 0.29, 0.67);
+         }
+
+        #spinnerContainer {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        /* Safari */
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+         #loading {
+             font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+             color: #0078d4;
+             font-size: 16px;
+         }
+
+         #error {
+             font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+             font-size: 16px;
+             text-align: left;
+             position: absolute;
+             top: 15%;
+             left: 10%
+         }
+
+         #wv2Indicator {
+             position: absolute;
+             top: 5px;
+             right: 20px;
+             width: 5px;
+             height: 5px;
+             padding: 0px;
+             color: gray;
+             display: none;
+         }</style></head><body id="body" class="ms-font-m ms-Fabric" style="overflow: hidden; margin: 0px; text-align: center"><div id="wv2Indicator"><span title="WebView2 enabled (internal only)">🙂</span></div><div id="spinnerContainer"><div id="spinner" class="loader"></div></div><span id="loading" style="position: absolute; left: 44%; top: 70%;">Loading...</span> <span id="error" style="display: none">Sorry, something is preventing us from sharing at this time. Please try again later.</span><form id="shareForm" style="display: none" target="shareFrame" method="post"><input type="submit"/></form><iframe id="shareFrame" name="shareFrame" style="height: 100%; width: 480px; visibility: visible; border: 0px" scrolling="no"></iframe></body></html>

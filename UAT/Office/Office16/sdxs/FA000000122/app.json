@@ -1,0 +1,21 @@
+{
+  "components": {
+    "a11yassistant": {
+      "displayName": "sdx_a11y_assistant"
+    }
+  },
+  "runtime": {
+    "win32": {
+      "container": {
+        "type": "dialog",
+        "width": 450,
+        "height": 400,
+        "showOkButton": true,
+        "showCancelButton": true
+      }
+    }
+  },
+  "bundle": {
+    "fileName": "index.win32"
+  }
+}

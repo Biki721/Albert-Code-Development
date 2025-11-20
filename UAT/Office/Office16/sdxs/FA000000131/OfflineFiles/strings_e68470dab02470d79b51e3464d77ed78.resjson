@@ -1,0 +1,18 @@
+{
+  "removeAdsText": "ማስታወቂያዎችን ለማስወገድ ለ Microsoft 365 ደንበኝነት ይመዝገቡ።",
+  "seeBenefitsLink": "ጥቅሞችን ይመልከቱ",
+  "youCanReturnAfterAdText": "ቪዲዮው ካለቀ በኋላ ወደ ሥራዎ መመለስ ይችላሉ።",
+  "returnToDocumentButtonText": "ወደ ስራ ይመለሱ",
+  "buyM365ButtonText": "Microsoft 365 ይግዙ",
+  "adSlugText": "ማስታወቂያ",
+  "imageAdText": "የ Microsoft ምስል ማስታወቂያ",
+  "sponsoredByText": "ስፖንሰር የተደረገው በ {0}",
+  "ctaButtonText": "ዕቅዶችን እና ዋጋዎችን ይመልከቱ",
+  "offlineAdTitle": "በ Microsoft 365 የግል ግቦችዎን ያሳኩ",
+  "thisVersionIsAdSupported": "ይህ የ{0} ስሪት በማስታወቂያ የተደገፈ ነው።",
+  "sponsored": "ስፖንሰር የተደረገ",
+  "microsoft": "Microsoft",
+  "sendASmile": "ፈገግታ ይላኩ",
+  "sendAFrown": "ኮስታራ ፊት ይላኩ",
+  "learnMore": "ተጨማሪ ይወቁ"
+}

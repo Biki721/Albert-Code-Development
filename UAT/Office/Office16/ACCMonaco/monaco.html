@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SQL monaco editor</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	</head>
+	<body>
+		<div id="container" style="width: auto; height: 850px; margin-left: -30px; margin-top: -5px"></div>
+		<script src="vs/loader.js"></script>
+		<script>
+			require.config({ paths: { vs: 'vs' } });
+			require(['vs/editor/editor.main', 'vs/basic-languages/access-sql/access-sql'], function () {});
+		</script>
+	</body>
+</html>

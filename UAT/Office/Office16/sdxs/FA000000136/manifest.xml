@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp
+    xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+    xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+    xsi:type="TaskPaneApp">
+  <Id>7e2ca603-00d1-4fcd-8187-926a83703522</Id>
+  <Version>1.0.2409.13004</Version>
+  <ProviderName>Microsoft</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Unified Store"/>
+  <Description DefaultValue="Unified Store"/>
+  <IconUrl DefaultValue="assets/icon-32.png" />
+  <HighResolutionIconUrl DefaultValue="assets/icon-80.png"/>
+  <Hosts>
+    <Host Name="Document"/>
+    <Host Name="Presentation"/>
+    <Host Name="Workbook"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="index.html"/>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Resources>
+      <bt:Urls>
+        <bt:Url id="Word.Url" DefaultValue="word.html"/>
+        <bt:Url id="PowerPoint.Url" DefaultValue="powerpoint.html"/>
+        <bt:Url id="Excel.Url" DefaultValue="excel.html"/>
+      </bt:Urls>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>

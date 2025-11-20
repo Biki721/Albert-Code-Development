@@ -1,0 +1,67 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  overflow-y: auto;
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+.app-container,
+.request-license-dialog,
+.app-main  {
+  min-width: 100%;
+  min-height: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+}
+
+.request-license-dialog {
+  margin-left: 100px;
+}
+
+#svgLogo img {
+  padding-left:20px;
+  width: 32px;
+  height: 32px;
+}
+
+#loading {
+  position: absolute;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  opacity: 0.8;
+  z-index: 99;
+}
+
+#loading-image {
+  z-index: 100;
+}
+
+.declinedLearnmore {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.noDeclinedLearmore {
+  padding-bottom: 50px;
+}
+
+#declinedlink {
+  text-decoration: none;
+  color: var(--theme-primary);
+}
+
+#declinedlink :link :visited {
+  text-decoration: none;
+}
+
+#declinedlink :hover :active {
+  text-decoration: underline;
+}

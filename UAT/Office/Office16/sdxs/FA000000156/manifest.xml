@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+    xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+    xsi:type="TaskPaneApp">
+    <Id>d2f3318f-cdae-42cd-a24f-bd5ea940e721</Id>
+    <Version>1.0.2410.24006</Version>
+    <ProviderName>Microsoft</ProviderName>
+    <DefaultLocale>en-US</DefaultLocale>
+    <DisplayName DefaultValue="Copilot Narrative Builder" />
+    <Description DefaultValue="Copilot Narrative Builder" />
+    <IconUrl DefaultValue="assets/icon-32.png"/>
+    <Hosts>
+        <Host Name="Presentation" />
+    </Hosts>
+    <DefaultSettings>
+        <SourceLocation DefaultValue="index.html" />
+    </DefaultSettings>
+    <Permissions>ReadWriteDocument</Permissions>
+</OfficeApp>

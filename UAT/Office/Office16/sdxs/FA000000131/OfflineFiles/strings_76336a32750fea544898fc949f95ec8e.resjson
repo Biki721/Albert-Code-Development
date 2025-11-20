@@ -1,0 +1,18 @@
+{
+  "removeAdsText": "Գովազդները հեռացնելու համար բաժանորդագրվեք Microsoft 365-ին:",
+  "seeBenefitsLink": "Տե՛ս առավելությունները",
+  "youCanReturnAfterAdText": "Դուք կարող եք վերադառնալ ձեր աշխատանքին տեսանյութի ավարտից հետո:",
+  "returnToDocumentButtonText": "Վերադարձ աշխատանքի",
+  "buyM365ButtonText": "Գնել Microsoft 365",
+  "adSlugText": "Գովազդ",
+  "imageAdText": "Microsoft-ի համբավի գովազդ",
+  "sponsoredByText": "Հովանավորող՝ {0}",
+  "ctaButtonText": "Տեսնել պլաններն ու գները",
+  "offlineAdTitle": "Իրականացրեք Ձեր անձնական նպատակները Microsoft 365-ի հետ",
+  "thisVersionIsAdSupported": "{0}-ի այս տարբերակը աջակցվում է գովազդով:",
+  "sponsored": "Հովանավորվող",
+  "microsoft": "Microsoft",
+  "sendASmile": "Ուղարկել ժպիտ",
+  "sendAFrown": "Ուղարկել խոժոռված դեմք",
+  "learnMore": "Իմանալ ավելին"
+}

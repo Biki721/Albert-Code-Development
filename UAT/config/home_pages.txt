@@ -1,0 +1,10 @@
+# PRP / Partner portal home pages (add locale-specific roots if needed)
+https://partner.hpe.com/
+https://partner.hpe.com/group/prp
+https://partner.hpe.com/group/prp/home
+
+# MarketingPro home
+https://marketingpro.hpe.com
+
+# Competitor area home
+https://partner.hpe.com/group/competitor

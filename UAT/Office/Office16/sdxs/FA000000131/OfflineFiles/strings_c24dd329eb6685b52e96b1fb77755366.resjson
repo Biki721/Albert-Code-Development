@@ -1,0 +1,18 @@
+{
+  "removeAdsText": "Рекламаны бетерү өчен, Microsoft 365’кә язылыгыз.",
+  "seeBenefitsLink": "Өстенлекләрне карау",
+  "youCanReturnAfterAdText": "Видео беткәннән соң эшегезгә кире кайта аласыз.",
+  "returnToDocumentButtonText": "Эшкә кире кайту",
+  "buyM365ButtonText": "Microsoft 365’не сатып алу",
+  "adSlugText": "Реклама",
+  "imageAdText": "Майкрософтның имидж рекламасы",
+  "sponsoredByText": "Иганәче: {0}",
+  "ctaButtonText": "Планнарны һәм бәяләрне карау",
+  "offlineAdTitle": "Microsoft 365 белән шәхси максатларга ирешегез",
+  "thisVersionIsAdSupported": "{0} бу версиясе - реклама белән тәэмин ителә.",
+  "sponsored": "Иганәләнүче",
+  "microsoft": "Майкрософт",
+  "sendASmile": "\"Елмаю\" тойгы билгесен җибәрү",
+  "sendAFrown": "\"Каш җыеру\" тойгы билгесен җибәрү",
+  "learnMore": "Тулырак мәгълүмат"
+}

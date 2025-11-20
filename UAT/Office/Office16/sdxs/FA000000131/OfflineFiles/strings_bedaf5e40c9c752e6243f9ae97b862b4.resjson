@@ -1,0 +1,18 @@
+{
+  "removeAdsText": "Reklaamide eemaldamiseks tellige Microsoft 365.",
+  "seeBenefitsLink": "Vaadake eeliseid",
+  "youCanReturnAfterAdText": "Pärast video lõppemist saate naasta oma töö juurde.",
+  "returnToDocumentButtonText": "Naase töö juurde",
+  "buyM365ButtonText": "Osta Microsoft 365",
+  "adSlugText": "Reklaam",
+  "imageAdText": "Microsofti pildireklaam",
+  "sponsoredByText": "Sponsor: {0}",
+  "ctaButtonText": "Kuva lepingud ja hinnakiri",
+  "offlineAdTitle": "Täitke Microsoft 365 abil oma isiklikud eesmärgid",
+  "thisVersionIsAdSupported": "See rakenduse {0} versioon on reklaamitoega.",
+  "sponsored": "Sponsoreeritud",
+  "microsoft": "Microsoft",
+  "sendASmile": "Saada naeratus",
+  "sendAFrown": "Saada kulmukortsutus",
+  "learnMore": "Lisateave"
+}

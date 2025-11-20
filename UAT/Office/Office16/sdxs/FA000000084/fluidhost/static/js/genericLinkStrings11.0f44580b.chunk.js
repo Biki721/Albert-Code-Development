@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfluidhost=self.webpackChunkfluidhost||[]).push([[19498],{72687:e=>{e.exports=JSON.parse('{"strings":{"genericLinkOpenLinkCommandDisplayName":{"s":"Agor y ddolen","f":0},"genericLinkCopyLinkCommandDisplayName":{"s":"Cop\xefo\'r ddolen","f":0},"genericLinkLoadingText":{"s":"Llwytho","f":0}}}')}}]);

@@ -1,0 +1,222 @@
+/*
+ * Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license.
+ * See LICENSE in the project root for license information.
+ */
+
+.br {
+  border-radius: 8px;
+}
+
+.w76 {
+  width: 76%;
+}
+
+.w83 {
+  width: 83.33%;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.suggestionCard2Container {
+  display: flex;
+  align-items: center;
+  margin: auto 16px 16px 90px;
+}
+
+.chatInputCardButtonsContainer {
+  display: flex;
+  align-items: center;
+  margin: 16px 16px 16px 18px;
+}
+
+.incomingMessageCard {
+  border: 1px solid rgba(230, 230, 230, 1);
+  margin: 4px 16px 16px 48px;
+  height: 68px;
+  background: rgb(250 250 250);
+  opacity: 0.6;
+}
+
+.message {
+  height: 16px;
+  background: linear-gradient(270deg, #e6e6e6 0%, #fafafa 100%);
+  margin: 12px 16px;
+  border-radius: 4px;
+}
+
+.chatInputText {
+  height: 16px;
+  background: linear-gradient(270deg, #e6e6e6 0%, #fafafa 100%);
+  margin: 12px 44px 16px 12px;
+  border-radius: 4px;
+}
+
+.suggestion {
+  height: 8px;
+  background: linear-gradient(270deg, #e6e6e6 0%, #fafafa 100%);
+  margin: 8px 12px;
+  border-radius: 4px;
+}
+
+.refreshButton {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-left: 8px;
+  background: linear-gradient(270deg, #e6e6e6 0%, #fafafa 100%);
+  border: 1px solid rgba(230, 230, 230, 1);
+}
+
+.sparcleIcon {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: rgb(255 255 255);
+  border: 1px solid rgba(230, 230, 230, 1);
+}
+
+.sendButton {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: rgb(255 255 255);
+  border: 1px solid rgba(230, 230, 230, 1);
+}
+
+.outgoingMessageCard {
+  border: 1px solid rgba(230, 230, 230, 1);
+  margin: 0px 16px 16px 16px;
+  height: 124px;
+  background: rgb(255 255 255);
+  opacity: 0.8;
+}
+
+.chatInputCard {
+  border: 1px solid rgba(230, 230, 230, 1);
+  margin: 0px 16px 16px 16px;
+  height: 80px;
+  background: rgb(255 255 255);
+  opacity: 0.6;
+}
+
+.suggestionContainer {
+  border: 1px solid rgba(230, 230, 230, 1);
+  box-shadow: 0px 0px 10px 0 #a9a9a9;
+  margin: 8px 16px 16px 16px;
+  height: 24px;
+  background: rgba(224, 224, 224, 1);
+}
+
+.suggestionCard1 {
+  border: 1px solid rgba(230, 230, 230, 1);
+  margin: auto 16px 16px 80px;
+  height: 24px;
+  background: rgb(255 255 255);
+  opacity: 0.6;
+}
+
+.suggestionCard2 {
+  border: 1px solid rgba(230, 230, 230, 1);
+  height: 24px;
+  background: rgb(255 255 255);
+  flex: 1;
+  opacity: 0.6;
+}
+
+.animate {
+  animation: shimmer 2s infinite linear;
+  animation-fill-mode: forwards;
+  background: linear-gradient(to right, #e6e6e6 0%, #fafafa 50%, #e6e6e6 100%);
+  background-size: 300% 100%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.bottom-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 8px;
+}
+
+.bottom-container > div {
+  margin-bottom: 8px;
+}
+
+.headerButtonsContainer {
+  display: none;
+  align-items: center;
+  height: 32px;
+  padding: 13px 6px 8px 6px;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  opacity: 0.6;
+}
+
+.hamburgerIcon {
+  height: 20px;
+  width: 20px;
+  padding: 6px;
+}
+
+.copilotIcon {
+  height: 20px;
+  width: 20px;
+  padding-inline-start: 4px;
+}
+
+.label {
+  font-size: 14px;
+  align-self: center;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  padding-inline-start: 4px;
+}
+
+.closeButton {
+  height: 32px;
+  width: 32px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 5px;
+  background-color: transparent;
+  color: inherit;
+}
+
+.closeButton:hover {
+  border: 1px solid currentColor;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes shimmerAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+#shimmer {
+  height: 100%;
+}

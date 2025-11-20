@@ -1,0 +1,670 @@
+/*
+ * Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license.
+ * See LICENSE in the project root for license information.
+ */
+
+:root {
+  --backgroundColor: #e6e6e6;
+  --foregroundColor: #444444;
+  --errorLinkColor: #444444;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: block;
+  left: 0;
+  right: 0;
+  height: 100%;
+  min-height: 300px;
+}
+
+.app-main {
+  background-color: var(--backgroundColor);
+  color: var(--foregroundColor);
+  left: 0;
+  right: 0;
+  height: 100%;
+  padding-block-start: 10px;
+}
+
+.app-container {
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+#app-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(240, 240, 240);
+  opacity: 0.8;
+}
+
+.main-dataset-grid {
+  padding: 0;
+  display: block;
+  align-items: center;
+  height: 100%;
+}
+
+.welcome {
+  display: block;
+  white-space: 'nowrap';
+  overflow: 'hidden';
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.selected-dataset {
+  background-color: #b3b3b3;
+}
+
+.hover-dataset {
+  background-color: #ececec;
+}
+
+.content-group {
+  padding: 10px 0 10px 0;
+}
+
+.textOverflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Search, Description, Titles */
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-right: 2px;
+  margin-block-end: 10px;
+}
+
+.search-container-internal {
+  width: calc(100% - 38px) !important;
+}
+
+.searchBox {
+  width: calc(100% - 20px);
+}
+
+.internalMenuItemDisabled {
+  pointer-events: none;
+}
+
+.results-count {
+  font-size: 12px;
+  padding: 0 4px 4px 0;
+}
+
+.envChoice {
+  color: var(--foregroundColor);
+}
+
+.ms-ContextualMenu-header span {
+  color: black !important;
+}
+
+.ms-ContextualMenu-divider:nth-child(odd) {
+  background: black !important;
+}
+
+.ms-ContextualMenu-itemText {
+  color: black !important;
+}
+
+@media (max-width: 150px) {
+  .search-container {
+    display: none;
+  }
+
+  .envChoice {
+    display: none;
+  }
+}
+
+/* All high contrast styling rules */
+@media screen and (-ms-high-contrast: active) {
+  .datasetEntry-card {
+    border-color: red;
+    border-width: 2px;
+    border-style: inset;
+  }
+}
+
+.description {
+  width: 100%;
+  height: 18px;
+  margin-left: 6px;
+  top: 102px;
+  font-size: 14px;
+  margin: 0px;
+}
+
+@media (max-width: 230px) {
+  .description {
+    display: none;
+  }
+}
+
+/* No Search Results Screen */
+
+.noSearchResults {
+  display: flex;
+  flex-direction: column;
+}
+
+.searchTryAgain {
+  margin-block-end: 10px;
+  width: 100%;
+}
+
+/* scroll bars */
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #707070;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+  /*give a min height so scroll bar is always visible */
+  min-height: 40px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #424242;
+}
+
+/* Error Screen */
+
+.error-text {
+  line-height: 20px;
+  font-size: 14px;
+  text-overflow: 'ellipsis';
+  display: 'flex';
+  align-items: center;
+  padding: 4px;
+}
+
+.error-link {
+  color: var(--errorLinkColor);
+  text-decoration: none;
+}
+
+.error-link:hover {
+  text-decoration: underline;
+}
+
+.error-link:focus {
+  text-decoration: underline;
+}
+
+.error-header {
+  padding: 5px 2px 5px 2px;
+  font-size: '14px';
+}
+
+.main-error-grid {
+  padding: 0;
+  display: block;
+  align-items: center;
+}
+
+.error-group-start {
+  padding-block-start: 10px;
+}
+
+.expandable-header::before {
+  content: '▶';
+  padding: 4px;
+}
+
+.expandable-header:hover {
+  text-decoration: underline;
+}
+
+.expandable-header:focus {
+  text-decoration: underline;
+}
+
+.title-row-icon {
+  display: flex;
+  align-items: center;
+  margin-inline-end: 8px;
+}
+
+/* Dataset Entry Card */
+
+.datasetEntry-card {
+  border-radius: 4px;
+  color: #323130;
+  margin-bottom: 8px;
+  margin-inline-end: 10px;
+  padding-bottom: 8px;
+  margin-block-end: 8px;
+  padding: 5px 4px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 20px);
+  inset-inline-start: 16px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.PressEntertoSearch {
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.PressEntertoSearch:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.datasetEntry-label {
+  padding-inline-start: 8px;
+}
+
+/* Hiding card labels */
+@media (max-width: 250px) {
+  .datasetEntry-label {
+    display: none;
+  }
+
+  .datasetEntry-value {
+    width: 100% !important;
+  }
+}
+
+.datasetEntry-card-inner {
+  padding: 0;
+}
+
+.datasetEntry-card-title-row {
+  display: flex;
+  align-items: center;
+  padding: 0 8px 5px 8px;
+}
+
+.datasetEntry-card-title {
+  margin: 5px 8px 7px 8px;
+  font-size: 14px;
+  max-height: 20px;
+  font-weight: 600;
+}
+
+/* this class is needed for styling the "more options" menu in the dataset cards */
+.root-46,
+.root-54 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  height: 100% !important;
+  background: transparent;
+}
+
+.dataset-card-details-row {
+  overflow: hidden;
+  max-height: 18px;
+  padding: 2px 0;
+}
+
+/* dataset table and related reports */
+.datasetTables,
+.relatedReports {
+  display: flex;
+  align-items: flex-start;
+  font-size: 12px;
+  margin-block-start: 12px;
+  padding: 0px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  text-align: left;
+  width: calc(100% - 20px);
+}
+
+.datasetEntryTables {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+Table {
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: block;
+  margin-block-start: 2px;
+}
+
+tbody {
+  display: block;
+}
+
+.tableRow {
+  display: flex;
+  align-items: flex-start;
+  height: 25px;
+}
+
+.rowName {
+  font-size: 12px;
+  max-width: calc(100% - 20px);
+}
+
+.rowIcon {
+  font-size: 16px;
+  margin-left: -3px;
+}
+
+.emptyTable {
+  cursor: auto !important;
+  padding-left: 0px;
+  margin-left: 20px;
+  /* RTL */
+  margin-right: 22px;
+}
+
+.divider {
+  height: 1px;
+  background-color: #f3f2f1;
+  margin: 10px;
+  flex: 0 0 auto;
+}
+
+.insertPivotTable,
+.insertConnectedTable {
+  display: flex;
+  align-items: center;
+  color: #107c41;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0 6px;
+  border: none;
+  background: none;
+  width: calc(100% - 5px);
+}
+
+.insertConnectedTable:disabled,
+.insertPivotTable:disabled {
+  color: #605e5c;
+  cursor: default;
+}
+
+.datasetEntry-card-inner {
+  width: 100%;
+}
+
+.datasetEntry-card-outer {
+  display: flex;
+}
+
+.fontColor-datasetEntry-category {
+  color: #605e5c;
+  font-size: 12px;
+}
+
+.fontColor-datasetEntry-value {
+  color: #000000;
+  font-size: 12px;
+  padding-inline-start: 4px;
+}
+
+.icon {
+  height: 16px;
+  width: 16px;
+}
+
+@media (max-width: 300px) {
+  .datasetEntry-card-outer {
+    flex-direction: column;
+  }
+}
+
+/* Pagination */
+
+.ArrowKeyStepperWrapper {
+  flex: 1 1 auto;
+  height: calc(100% - 70px);
+}
+
+.ArrowKeyStepperWrapperFilter {
+  flex: 1 1 auto;
+  height: calc(100% - 90px);
+}
+
+.ArrowKeyStepperWrapper > div {
+  height: 100%;
+}
+
+.pseudolink {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.FocusedCell {
+  background-color: #d2d0ce;
+  border: 1px solid #969696;
+}
+
+.splashMessage {
+  text-align: center;
+  width: 100%;
+  margin-top: 16px;
+}
+
+/* insert pivot table view */
+
+.buttonGroup {
+  display: flex;
+  justify-content: end;
+  margin-top: 50px;
+}
+
+.insertButton,
+.insertButton:hover {
+  border-color: #107c41;
+  background-color: #107c41;
+}
+
+.cancelButton {
+  margin-left: 8px;
+  margin-right: 8px;
+  /* for RTL */
+}
+
+.pivotTableSheetInput {
+  margin-top: 10px;
+}
+
+/* update colors to use consts */
+.datasetIcon {
+  color: #fff;
+  background-color: #c94f0f;
+  padding: 3px;
+  border-radius: 1.0625px;
+}
+
+.reportIcon {
+  color: #fff;
+  background-color: #12239e;
+  border-radius: 1px;
+  margin-inline-start: 20px;
+  margin-inline-end: 8px;
+  height: 14px;
+  width: 14px;
+}
+
+.insertIcon {
+  color: #107c41;
+  height: 11.25px;
+  width: 11.25px;
+  margin-inline-end: 8px;
+}
+
+.disabledInsertIcon {
+  color: #605e5c;
+  height: 11.25px;
+  width: 11.25px;
+  margin-inline-end: 8px;
+}
+
+.openDatasetHubIcon {
+  inset-block-start: 0;
+  inset-inline-end: 0;
+  cursor: pointer;
+  margin-inline-end: 0px;
+  margin-block-start: 1px;
+  margin-inline-start: auto;
+}
+
+.openDatasetHubIcon:hover {
+  background-color: #d2d0ce;
+  border: 1px solid #969696;
+}
+
+.openDatasetHubIcon:focus {
+  background-color: transparent;
+  border: 1px solid #969696;
+}
+
+.tableIcon {
+  margin-inline-start: 20px;
+  margin-inline-end: 8px;
+}
+
+.chevronLeft {
+  margin-left: 3px;
+  vertical-align: middle;
+}
+
+.chevronRight {
+  margin-right: 3px;
+  margin-left: -3px;
+  vertical-align: middle;
+}
+
+.chevronDown {
+  margin-inline-end: 2px;
+  vertical-align: middle;
+}
+
+/* Icons */
+@font-face {
+  font-family: 'FabricMDL2Icons';
+  src: url('data:application/octet-stream;base64,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')
+    format('truetype');
+}
+
+.ms-Icon {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-family: 'FabricMDL2Icons';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  text-align: center;
+}
+
+.ms-Icon--Add:before {
+  content: '\E710';
+}
+
+.ms-Icon--ChevronDown:before {
+  content: '\E70D';
+}
+
+.ms-Icon--ChevronLeft:before {
+  content: '\E76B';
+}
+
+.ms-Icon--ChoiceColumn:before {
+  content: '\E4AE';
+}
+
+.ms-Icon--Clear:before {
+  content: '\E894';
+}
+
+.ms-Icon--Info:before {
+  content: '\E946';
+}
+
+.ms-Icon--Ribbon:before {
+  content: '\E9D1';
+}
+
+.ms-Icon--Search:before {
+  content: '\E721';
+}
+
+.ms-Icon--Database:before {
+  content: '\EFC7';
+}
+
+.ms-Icon--Table:before {
+  content: '\ED86';
+}
+
+.ms-Icon--MoreVertical:before {
+  content: '\F2BC';
+}
+
+.ms-Icon--MarkAsProtected:before {
+  content: '\F6AE';
+}
+
+.ms-Icon--Lock:before {
+  content: '\E72E';
+}
+
+.ms-Icon--OpenInNewWindow:before {
+  content: '\E8A7';
+}
+
+.dropDownAddIcon {
+  margin-inline-end: 6px;
+  color: black;
+}

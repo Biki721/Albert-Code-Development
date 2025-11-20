@@ -1,0 +1,18 @@
+{
+  "removeAdsText": "Чтобы избавиться от рекламы, оформите подписку на Microsoft 365.",
+  "seeBenefitsLink": "Просмотреть преимущества",
+  "youCanReturnAfterAdText": "Вы можете вернуться к работе после завершения видео.",
+  "returnToDocumentButtonText": "Вернуться к работе",
+  "buyM365ButtonText": "Приобрести Microsoft 365",
+  "adSlugText": "Реклама",
+  "imageAdText": "Рекламное изображение Майкрософт",
+  "sponsoredByText": "Спонсор: {0}",
+  "ctaButtonText": "Просмотреть планы и цены",
+  "offlineAdTitle": "Достигайте личных целей с помощью Microsoft 365",
+  "thisVersionIsAdSupported": "В этой версии {0} поддерживается реклама.",
+  "sponsored": "Реклама",
+  "microsoft": "Майкрософт",
+  "sendASmile": "Отправить смайлик",
+  "sendAFrown": "Отправить хмурый смайлик",
+  "learnMore": "Подробнее"
+}

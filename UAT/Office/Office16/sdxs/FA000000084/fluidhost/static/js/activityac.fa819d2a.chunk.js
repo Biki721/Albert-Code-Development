@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfluidhost=self.webpackChunkfluidhost||[]).push([[5220],{5635:(t,s,i)=>{i.r(s),i.d(s,{ActivityActionCreator:()=>e});var c=i(86023);class e{updateUserActivityTimestamp(t){this.dispatcher.dispatchAction(new c.u(t))}constructor(t){this.dispatcher=t}}}}]);
+//# sourceMappingURL=activityac.fa819d2a.chunk.js.map

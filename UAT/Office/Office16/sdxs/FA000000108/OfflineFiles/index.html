@@ -1,0 +1,110 @@
+<!doctype html><html><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta http-equiv="Content-Security-Policy" content="navigate-to 'self' 'unsafe-inline'"/><title>Task Pane</title></head><body style="margin: 0px"><div id="root"></div><script id="populateWithResources">const parametersString = document.location.search + document.location.hash;
+      const defaultCulture = "en-US";
+      var culture = getParam(
+        parametersString,
+        "culture",
+        defaultCulture
+      );
+      const rtlLanguageList = [
+        "ar","he","ckb","dv","fa","ff-adlm","ks","lrc","mzn","nqo","pa","prs","ps","sd","syr","ug","ur","uz","yi",
+      ];
+      rtlLanguageList.forEach((rtlLanguage) => {
+        if (
+          culture.substring(0, rtlLanguage.length + 1) ===
+          rtlLanguage + "-"
+        ) {
+          document.dir = "rtl";
+        }
+      });
+
+      const isMac = navigator.userAgent.indexOf("Macintosh") >= 0;
+      if (isMac) {
+        const appleCultureListLowerCased = [
+          "ar-sa","bg-bg","ca-es","cs-cz","da-dk","de-de","el-gr","en-gb","en-us","es-es","et-ee","eu-es","fi-fi","fr-fr","gl-es","he-il","hi-in","hr-hr","hu-hu","id-id","it-it","ja-jp","kk-kz","ko-kr","lt-lt","lv-lv","ms-my","nb-no","nl-nl","pl-pl","pt-br","pt-pt","ro-ro","ru-ru","sk-sk","sl-si","sr-cyrl-rs","sr-latn-rs","sv-se","th-th","tr-tr","uk-ua","vi-vn","zh-cn","zh-tw",
+        ];
+        const originalLowerCaseCulture = culture.toLowerCase();
+        if (!appleCultureListLowerCased.includes(originalLowerCaseCulture)) {
+          culture = defaultCulture;
+          const languageEndPosition = originalLowerCaseCulture.lastIndexOf("-");
+          if (languageEndPosition > 0) {
+            const language = originalLowerCaseCulture.substring(
+              0,
+              languageEndPosition
+            );
+            const appleLanguage2DefaultCulture = JSON.parse(
+              '{"ar":"ar-SA","bg":"bg-BG","ca":"ca-ES","cs":"cs-CZ","da":"da-DK","de":"de-DE","el":"el-GR","en":"en-US","es":"es-ES","et":"et-EE","eU":"eU-ES","fi":"fi-FI","fr":"fr-FR","gl":"gl-ES","he":"he-IL","hi":"hi-IN","hr":"hr-HR","hu":"hu-HU","id":"id-ID","it":"it-IT","ja":"ja-JP","kk":"kk-KZ","ko":"ko-KR","lt":"lt-LT","lv":"lv-LV","ms":"ms-MY","nb":"nb-NO","nl":"nl-NL","pl":"pl-PL","pt":"pt-PT","ro":"ro-RO","ru":"ru-RU","sk":"sk-SK","sl":"sl-SI","sr-Cyrl":"sr-Cyrl-RS","sr-Latn":"sr-Latn-RS","sv":"sv-SE","th":"th-TH","tr":"tr-TR","uk":"uk-UA","vi":"vi-VN","zh":"zh-CN"}'
+            );
+            const defaultCultureForLanguage = appleLanguage2DefaultCulture[language];
+            if (defaultCultureForLanguage !== undefined) {
+              culture = defaultCultureForLanguage;
+            }
+          }
+        }
+      }
+
+      const lowerCaseCulture = culture.toLowerCase();
+      const iconResourceList = [
+        "@1js/excel-online-icons/dist/{defaultCultureLowerCase}/excel-initial-app-sprite.js","@1js/excel-online-icons/dist/{defaultCultureLowerCase}/excel-lazy-app-sprite.js","@1js/excel-online-icons/dist/{defaultCultureLowerCase}/excel-ribbon-sprite-lazy.js","@1js/excel-online-icons/dist/{defaultCultureLowerCase}/excel-uiSlice20-sprite.js","@1js/excel-online-icons/dist/{defaultCultureLowerCase}/ribbon-menu-sprite.js",
+      ];
+      const stringResourceFilePathNameList = [
+        "@1js/office-online-strings-proxy/lib/{defaultCulture}/excel-data-cleansing-strings.js","@1js/office-online-strings-proxy/lib/{defaultCulture}/excel-powerquery-taskpane-strings.js","@1js/office-online-strings-proxy/lib/{defaultCulture}/uxpp-strings.js","@1js/office-online-strings-proxy/lib/{defaultCulture}/friendly-dates-strings.js","@1js/office-online-strings-proxy/lib/{defaultCulture}/office-common-strings.js",
+      ];
+      const populateWithResources = document.getElementById(
+        "populateWithResources"
+      );
+      iconResourceList
+        .map((resource) =>
+          resource.replace(
+            new RegExp(
+              "{defaultCultureLowerCase}",
+              "g"
+            ),
+            lowerCaseCulture
+          )
+        )
+        .concat(
+          stringResourceFilePathNameList.map((resource) =>
+            resource.replace(
+              new RegExp(
+                "{defaultCulture}",
+                "g"
+              ),
+              culture
+            )
+          )
+        )
+        .forEach((resource) => {
+          var script = document.createElement("script");
+          populateWithResources.parentNode.insertBefore(
+            script,
+            populateWithResources.nextSibling
+          );
+          script.setAttribute("src", resource);
+        });
+
+      function getParam(parametersString, paramName, defaultValue) {
+        var paramValue = defaultValue;
+        if (!parametersString) {
+          return paramValue;
+        }
+
+        var paramCandidates = parametersString
+          .split(new RegExp("[?#&]"))
+          .filter((nameValue) => !!nameValue && nameValue.length > 0)
+          .filter((nameValue) => nameValue.startsWith(paramName + "="))
+          .filter(
+            (nameValue) =>
+              nameValue.split("=") && nameValue.split("=").length > 0
+          )
+          .map((nameValue) => nameValue.split("=")[1])
+          .filter((value) => value && value.trim().length > 0);
+        if (
+          !!paramCandidates &&
+          paramCandidates.length > 0 &&
+          !!paramCandidates[0]
+        ) {
+          paramValue = paramCandidates[0];
+        }
+
+        return paramValue;
+      }</script><script src="runtime.bundle.js"></script><script src="main.bundle.js"></script></body></html>

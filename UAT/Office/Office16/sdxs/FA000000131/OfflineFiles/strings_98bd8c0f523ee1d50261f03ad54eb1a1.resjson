@@ -1,0 +1,18 @@
+{
+  "removeAdsText": "ຖ້າຕ້ອງການລຶບໂຄສະນາອອກ, ສະໝັກໃຊ້ Microsoft 365.",
+  "seeBenefitsLink": "ເບິ່ງຜົນປະໂຫຍດ",
+  "youCanReturnAfterAdText": "ທ່ານສາມາດກັບຄືນໄປເຮັດວຽກຂອງທ່ານຫຼັງຈາກວິດີໂອສິ້ນສຸດລົງ.",
+  "returnToDocumentButtonText": "ກັບຄືນໄປເຮັດວຽກ",
+  "buyM365ButtonText": "ຊື້ Microsoft 365",
+  "adSlugText": "ໂຄສະນາ",
+  "imageAdText": "ການ​ໂຄ​ສະ​ນາ​ຮູບ​ພາບ Microsoft​",
+  "sponsoredByText": "ສະໜັບສະໜຸນໂດຍ {0}",
+  "ctaButtonText": "ເບິ່ງແຜນ ແລະ ລາຄາ",
+  "offlineAdTitle": "ບັນລຸເປົ້າໝາຍສ່ວນຕົວຂອງທ່ານດ້ວຍ Microsoft 365",
+  "thisVersionIsAdSupported": "{0} ເວີຊັນນີ້ີຮອງຮັບໂຄສະນາ.",
+  "sponsored": "ສະໜັບສະໜຸນ",
+  "microsoft": "Microsoft",
+  "sendASmile": "ສົ່ງຮອຍຍິ້ມ",
+  "sendAFrown": "ສົ່ງໜ້າບຶ້ງ",
+  "learnMore": "ສຶກສາເພີ່ມເຕີມ"
+}

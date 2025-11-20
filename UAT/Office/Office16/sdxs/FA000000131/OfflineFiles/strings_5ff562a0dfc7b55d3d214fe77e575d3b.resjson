@@ -1,0 +1,18 @@
+{
+  "removeAdsText": "რეკლამების მოსაშორებლად გამოიწერეთ Microsoft 365.",
+  "seeBenefitsLink": "უპირატესობების ნახვა",
+  "youCanReturnAfterAdText": "ვიდეოს დასრულების შემდეგ შეგიძლიათ მიუბრუნდეთ სამუშაოს.",
+  "returnToDocumentButtonText": "სამუშაოზე დაბრუნება",
+  "buyM365ButtonText": "Microsoft 365-ის ყიდვა",
+  "adSlugText": "რეკლამა",
+  "imageAdText": "Microsoft-ის გამოსახულებების რეკლამა",
+  "sponsoredByText": "ასპონსორებს {0}",
+  "ctaButtonText": "გეგმებისა და ფასების ნახვა",
+  "offlineAdTitle": "მიაღწიეთ პირად მიზნებს Microsoft 365-ით",
+  "thisVersionIsAdSupported": "{0}-(ი)ს ეს ვერსია მხარდაჭერილია რეკლამებით.",
+  "sponsored": "დასპონსორებული",
+  "microsoft": "Microsoft",
+  "sendASmile": "ღიმილის სიცილაკის გაგზავნა",
+  "sendAFrown": "უკმაყოფილო სიცილაკის გაგზავნა",
+  "learnMore": "შეიტყვეთ მეტი"
+}

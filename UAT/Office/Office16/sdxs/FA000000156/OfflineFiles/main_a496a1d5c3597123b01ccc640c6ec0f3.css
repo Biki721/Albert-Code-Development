@@ -1,0 +1,19 @@
+:root {
+  --fontFamilyBase: 'Segoe UI', 'Segoe UI Web (West European)', -apple-system,
+    BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+}
+
+body {
+  font-family: var(--fontFamilyBase);
+  margin: 0;
+}
+
+#ContentCardTitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/*# sourceMappingURL=main.css.map*/

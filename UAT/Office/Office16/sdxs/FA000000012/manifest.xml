@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>93155735-fd84-4d6f-9433-305bdb6cb523</Id>
+  <Version>1.0.2408.23001</Version>
+  <ProviderName>Microsoft Corporation</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Help" />
+  <Description DefaultValue="In-App Help provided by support.office.com" />
+  <IconUrl DefaultValue="https://support.office.com/images/inapp-help-icon-32.png" />
+  <HighResolutionIconUrl DefaultValue="https://support.office.com/images/inapp-help-icon-80.png" />
+  <SupportUrl DefaultValue="http://support.office.com" />
+  <AppDomains>
+    <AppDomain>https://login.live.com</AppDomain>
+    <AppDomain>https://login.live-int.com</AppDomain>
+    <AppDomain>https://login.windows.net</AppDomain>
+    <AppDomain>https://login.windows-ppe.net</AppDomain>
+    <AppDomain>https://login.microsoftonline.com</AppDomain>
+    <AppDomain>https://login.microsoftonline-int.com</AppDomain>
+    <AppDomain>https://support.microsoft.com</AppDomain>
+    <AppDomain>https://sg1.support.services.microsoft.com</AppDomain>
+    <AppDomain>https://partner.support.services.microsoft.com</AppDomain>
+    <AppDomain>https://c3web.trafficmanager.net</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Document" />
+    <Host Name="Drawing" />
+    <Host Name="Mailbox" />
+    <Host Name="Notebook" />
+    <Host Name="Presentation" />
+    <Host Name="Project" />
+    <Host Name="Workbook" />
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://support.office.com/f1/home?isAgave=true" />
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Resources>
+      <bt:Urls>
+        <bt:Url id="Help.ContactSupport.Url" DefaultValue="https://support.office.com/f1/home?isAgave=true&amp;helpid=160272" />
+        <bt:Url id="Help.GiveFeedback.Url" DefaultValue="https://support.office.com/f1/home?isAgave=true&amp;helpid=161255" />
+        <bt:Url id="Help.ShowTraining.Url" DefaultValue="https://support.office.com/f1/home?isAgave=true&amp;helpid=126385" />
+      </bt:Urls>
+    </Resources>
+    <WebApplicationInfo>
+      <Id>4b233688-031c-404b-9a80-a4f3f2351f90</Id>
+      <Resource>https://Office.net</Resource>
+      <Scopes>
+        <Scope>profile</Scope>
+        <Scope>openid</Scope>
+      </Scopes>
+    </WebApplicationInfo>
+  </VersionOverrides>
+</OfficeApp>
