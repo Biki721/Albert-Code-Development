@@ -6,6 +6,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 import pandas as pd
 import urllib3
+from urllib.parse import urlsplit
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 
 import work_phase_3 as work
@@ -49,7 +50,13 @@ def is_internal_broken(page, link):
 
         final_url = page.url or (resp.url if resp is not None else "")
 
-        if final_url.startswith(allowed_redirects):
+        try:
+            split = urlsplit(final_url)
+            base_url = f"{split.scheme}://{split.netloc}{split.path}"
+        except Exception:
+            base_url = final_url
+
+        if base_url in allowed_redirects:
             return False
 
         # 1) HTTP status check → true broken
@@ -161,16 +168,12 @@ class PRP:
                 # CASE 1: DOCUMENT LINKS
                 # -----------------------------
                 if link in doc_set:
-                    if link.startswith("https://partner.hpe.com"):
-                        if is_internal_broken(page, link):
+                    try:
+                        resp = page.request.get(link, max_redirects=5)
+                        if resp.status >= 400:
                             broken_links.append(link)
-                    else:
-                        try:
-                            resp = page.request.get(link, max_redirects=5)
-                            if resp.status >= 400:
-                                broken_links.append(link)
-                        except:
-                            broken_links.append(link)
+                    except:
+                        broken_links.append(link)
                     continue
 
                 # -----------------------------
