@@ -1,266 +1,222 @@
-from re import S
-import itertools
-from selenium import webdriver
-from date_detector import Parser
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException, \
-    ElementNotVisibleException, ElementNotSelectableException
-from selenium.webdriver.common.by import By
-import SelectCertificate
-import VaultSample
-import datetime
-from langdetect import detect, DetectorFactory
-DetectorFactory.seed = 0
-import pandas as pd
-import work
-from inscriptis import get_text
-import fasttext
-import time
+# translation_validator.py
+
 import re
+import pandas as pd
+import itertools
+from inscriptis import get_text
 from bs4 import BeautifulSoup
-model = fasttext.load_model('lid.176.bin')
-import ast
+from date_detector import Parser
+from lingua import Language, LanguageDetectorBuilder
+
+###############################################
+# 1. Modern Language Detector Initialization
+###############################################
+
+SUPPORTED_LANGS = [
+    Language.ENGLISH, Language.FRENCH, Language.GERMAN, Language.SPANISH,
+    Language.PORTUGUESE, Language.ITALIAN, Language.CHINESE, Language.JAPANESE,
+    Language.KOREAN, Language.RUSSIAN, Language.TURKISH, Language.INDONESIAN
+]
+
+detector = LanguageDetectorBuilder.from_languages(*SUPPORTED_LANGS) \
+                                  .with_preloaded_language_models() \
+                                  .build()
 
 
-def postprocess(error):
-    #ignored = "*+^#%$),(!@_}{[]?><~=\|-:;"
+###############################################
+# 2. Utility: Clean text
+###############################################
 
-    error = ''.join([i for i in error if not i.isdigit()])
-    
-    error = re.sub('\W+',' ',error)
-    
-    error=error.strip()
-    if len(error)<=1:
-        return ''
-    #print(type(error))
-    return error 
+def postprocess(error: str) -> str:
+    error = ''.join([c for c in error if not c.isdigit()])
+    error = re.sub('\W+', ' ', error)
+    error = error.strip()
 
-def translation_errors(extracted_text,tbi,articletitles,language):
-    #print("EXTRACTED TEXT:,",extracted_text)
-    codes= {'French':'fr','German':'de','Italian':"it",'Chinese':'zh-cn','Russian':'ru','Portugese':'pt','Indonesian':'id','Singaporean':'en','Korean':"ko",'Turkish':"tr",'Japanese':"ja",'Taiwan':"zh-tw",'Spanish':'es',"LARSpanish":'es','English':'en'}
-    df = pd.read_excel('glossary.xlsx')
-    tbc = codes[language]
-    col_name = tbc+"-"+tbc.upper()
-    check_list = list(df[col_name])
-    ignored = "*+^#%$),(!@_}{[]?><~=\|-:;"
-    extras = ['ARTIKEL','Tools catalog102030','© Copyright 2023 Hewlett Packard Enterprise Development, L.P.','Competenza','Cancella','decrescente','Presidente','ARTíCULO','Competencia Partner Ready','5000','6000','fors','As a Service','h','© Copyright 2022 Hewlett Packard Enterprise Development, L.P.']
-    check_list = [check_list[i] for i in range(len(check_list)) if type(check_list[i])==str]
-    # print("check list",check_list)
-    tbi.extend(extras)
-    tbi = [tbi[i] for i in range(len(tbi)) if tbi[i].strip()]
-    #print(tbi)
-    translation_checks = []
-    for line in extracted_text:
-        if line!='':
-            translation_checks.append(line)
-    #print(translation_checks)    
-    probable_errors=[]
-    translation_checks_new=[]
-    for i in range(len(translation_checks)):
-        if not translation_checks[i][0]=="/" and not translation_checks[i][0].isalnum():
-            for m in ignored:
-                translation_checks[i]=translation_checks[i].lstrip(m)
-        flag = False
-        for k in range(len(tbi)):
-            if tbi[k].strip() == translation_checks[i].strip():
-                flag = True
-        if flag== False:
-            translation_checks_new.append(translation_checks[i])
-    translation_checks= translation_checks_new
-    # file = open('random.txt', 'w', encoding='utf-8')
-    # file.write(translation_checks)
-    # file.close()
-    #print(translation_checks)
-    translation_checks.extend(articletitles)
-
-    for i in range(len(translation_checks)):
-        translation_checks[i]=translation_checks[i].strip()
-
-        if (translation_checks[i]=="*"   or translation_checks[i]=="" or translation_checks[i].startswith("/") or translation_checks[i].startswith("o ")):
-            continue
-        for k in ignored:
-            if translation_checks[i].startswith(k) and translation_checks:
-                translation_checks[i]=translation_checks[i].lstrip(k)
-                translation_checks[i]=translation_checks[i].strip()
-
-        else:
-            for j in range(len(check_list)):
-                # if check_list[j]=="Copyright Development L P":
-                #     print("MAIN PROBABLE CULPRIT",translation_checks[i],check_list[j])
-                if check_list[j] in translation_checks[i]:
-                    translation_checks[i]=translation_checks[i].replace(check_list[j],'')
-        if (translation_checks[i]):
-            probable_errors.append(translation_checks[i])
-    
-    #probable_errors.extend(articletitles)
-    errors=[]
-    # print("PROBABLE ERRORS",probable_errors)
-
-###############################################################################################################
-    for i in probable_errors:
-        
-        try:
-            # lang = model.predict(i)[0][0][9:]
-            labels, predictions = model.predict(i, k=-1, threshold=0.02)
-            languages = {label.split("__")[-1]: probability for label, probability in zip(labels, predictions)}
-
-            # print('\nCONTENT:',i)
-            # print('PREDICTED LANGUAGE:',languages)
-            if tbc=='zh-cn' or tbc=='zh-tw':
-                tbc = 'zh'
-            # print('PREFERRED LANG:',tbc,'\n')
-
-            if tbc=='pt':
-                if 'pt' not in languages and 'es' not in languages:
-                    i = i.strip()
-                    i = postprocess(i)
-                    if len(i)>1 and i not in check_list:                   
-                        errors.append(i)
-
-            else:
-                if tbc not in languages:
-                    i = i.strip()
-                    i = postprocess(i)
-                    if len(i)>1 and i not in check_list:                   
-                        errors.append(i)
-                        # print(i)
-        
-        except Exception as e:
-            # print("\nERROR IN LANG PRED:",e,'\n')
-            continue
-
-######################## COMMENT THE ABOVE FOR LOOP AND UNCOMMENT THE FOR LOOP BELOW TO CHECK FOR ONLY ENGLISH ##########################
-
-    # for i in probable_errors:
-    #     try:
-    #         lang = model.predict(i)[0][0][9:]
-    #         if lang=='en':
-    #             i=i.strip()
-    #             i = postprocess(i)
-    #             if i!='':
-                
-                   
-    #                 errors.append(i)
-        
-    #     except:
-    #         #print("error in language prediction")
-    #         continue
-###########################################################################################################
+    return error if len(error) > 1 else ""
 
 
-    # print("****************************************************************")
-    # print("ERRORS BEFORE FINALLY RETURNING",errors)
-    return list(set(errors))
+###############################################
+# 3. Extract article name translation errors
+###############################################
 
-def articlenamechecker(soupobject,language_translation):
-    article_info={}
-    possible_errors=[]
+def articlenamechecker(soup: BeautifulSoup, language_translation: str):
+    article_info = {}
+    possible_errors = []
+
     try:
-        results=soupobject.find_all('span',class_='articleDownloadHeader')
-        res=soupobject.find_all('span',class_='articleformatSize')
+        names = soup.find_all('span', class_='articleDownloadHeader')
+        descs = soup.find_all('span', class_='articleformatSize')
     except:
-        #print("Donno")
         return possible_errors
-    else:
-        for (articlename,articledesc) in itertools.zip_longest(results,res):
-            if articledesc.get_text().strip() is not None and len(articledesc.get_text().strip())>0 :
-                article_info[articledesc.get_text().strip()]=articlename.get_text().strip()
-    for ele in article_info:
-        if language_translation in ele:
-            possible_errors.append(article_info[ele])
-    # print(article_info)
+
+    for name, desc in itertools.zip_longest(names, descs):
+        if desc and desc.get_text().strip():
+            article_info[desc.get_text().strip()] = name.get_text().strip()
+
+    for key in article_info:
+        if language_translation in key:
+            possible_errors.append(article_info[key])
+
     return possible_errors
 
 
-def callable_extract(link,html_page,soup,lang):
-    # print('randommmmmmmm')
-    content=''
-    trans_terms={'French':'Français','German':'Deutsch','Italian':"Italiano",'Chinese':'简体中文','Russian':'Русский','Portugese':'Português','Indonesian':'Bahasa indonesia','Korean':"한국어",'Turkish':"Türkçe",'Japanese':"日本語",'Taiwan':"中文（台灣)",'Spanish':'Español',"LARSpanish":'Español'}
-    #trans_errors={}
-    find_all_example=[]
-    tbi=["span","h1","h2","a",'div',"tr"]
-    #tbi = []
-    tb= ['portlet-title-text','hide','hide-accessible','hide User','sr-only','iconText','hide isPureHPE','dateFormat','size','categoryName','categoryDescription','boldContent','detailedContentText','articleSummary','articleDeails row','controlsPagination pull-right','articleDownloadHeader','articleformatSize',"border_bottom",'articleDownloadContent']
-    #tb = []
-    errors = []
-    art_titles_tocheck=[]
-    #html_page = self.driver.page_source
-    #soup=BeautifulSoup(html_page,'html.parser')
-    art_titles_tocheck=articlenamechecker(soup,trans_terms[lang])
-    # print("doctitles",art_titles_tocheck)
-    if link.strip()=='https://partner.hpe.com/group/prp' or link.strip()=="https://partner.hpe.com/group/prp/home":
-        # print("inscriptis called")
-        content = get_text(html_page)
-        # print(content)
-        content=content.splitlines()
-        for element in tbi:
-            if element=='a':
-                for word in soup.find_all(element):
-                    find_all_example.append(word.get_text().strip())
-            for ele in tb:
-                for word in soup.find_all(element,class_= ele):
-                        find_all_example.append(word.get_text())
-        for i in range(len(content)):
-            content[i]=content[i].strip()
-            if content[i].startswith("+"):
-                content[i]=content[i].lstrip("+")
-                content[i]=content[i].strip()
+###############################################
+# 4. Translation Error Detection (Lingua)
+###############################################
 
+def translation_errors(extracted_text, allowed_text, article_titles, language):
+
+    LANG_MAP = {
+        'French': 'fr', 'German': 'de', 'Italian': 'it', 'Chinese': 'zh',
+        'Russian': 'ru', 'Portugese': 'pt', 'Indonesian': 'id', 'Singaporean': 'en',
+        'Korean': 'ko', 'Turkish': 'tr', 'Japanese': 'ja', 'Taiwan': 'zh',
+        'Spanish': 'es', 'LARSpanish': 'es', 'English': 'en'
+    }
+
+    target_code = LANG_MAP[language]
+
+    df = pd.read_excel('glossary.xlsx')
+    col_name = f"{target_code}-{target_code.upper()}"
+    glossary = [x for x in df[col_name] if isinstance(x, str)]
+
+    ignored_chars = "*+^#%$),(!@_}{[]?><~=\|-:;"
+    extra_allowed = [
+        'ARTIKEL', 'Tools catalog102030',
+        '© Copyright 2023 Hewlett Packard Enterprise Development, L.P.',
+        'Competenza', 'Cancella', 'decrescente', 'Presidente',
+        'ARTíCULO', 'Competencia Partner Ready', '5000', '6000',
+        'fors', 'As a Service', 'h',
+        '© Copyright 2022 Hewlett Packard Enterprise Development, L.P.'
+    ]
+
+    allowed_text.extend(extra_allowed)
+    allowed_text = [x.strip() for x in allowed_text if x.strip()]
+
+    text_lines = [line.strip() for line in extracted_text if line.strip()]
+    text_lines.extend(article_titles)
+
+    probable_errors = []
+
+    for line in text_lines:
+        clean = line.strip()
+
+        if clean in allowed_text:
+            continue
+        if clean in glossary:
+            continue
+
+        probable_errors.append(clean)
+
+    final_errors = []
+
+    for line in probable_errors:
+
+        if len(line) < 2:
+            continue
+
+        detected = detector.detect_language_of(line)
+        if detected is None:
+            continue
+
+        lang_code = detected.iso_code_639_1.value   # "en"
+        confidence = detector.compute_language_confidence(line, detected)
+
+        if lang_code != target_code and confidence > 0.40:
+            cleaned = postprocess(line)
+            if cleaned and cleaned not in glossary:
+                final_errors.append(cleaned)
+
+    return list(set(final_errors))
+
+
+###############################################
+# 5. Master Function: Extract + Validate Page
+###############################################
+
+def callable_extract(link: str, html_page: str, soup: BeautifulSoup, lang: str):
+
+    TRANS_TERMS = {
+        'French': 'Français', 'German': 'Deutsch', 'Italian': "Italiano",
+        'Chinese': '简体中文', 'Russian': 'Русский', 'Portugese': 'Português',
+        'Indonesian': 'Bahasa indonesia', 'Korean': "한국어",
+        'Turkish': "Türkçe", 'Japanese': "日本語",
+        'Taiwan': "中文（台灣)", 'Spanish': 'Español',
+        "LARSpanish": 'Español'
+    }
+
+    extract_tags = ["span", "h1", "h2", "a", "div", "tr"]
+    class_filters = [
+        'portlet-title-text','hide','hide-accessible','hide User',
+        'sr-only','iconText','hide isPureHPE','dateFormat','size',
+        'categoryName','categoryDescription','boldContent',
+        'detailedContentText','articleSummary','articleDeails row',
+        'controlsPagination pull-right','articleDownloadHeader',
+        'articleformatSize','border_bottom','articleDownloadContent'
+    ]
+
+    allowed_text = []
+    article_titles = articlenamechecker(soup, TRANS_TERMS[lang])
+
+    #####################
+    # CASE 1: PRP HOME
+    #####################
+    if link.strip() in ['https://partner.hpe.com/group/prp', 
+                        "https://partner.hpe.com/group/prp/home"]:
+
+        content = get_text(html_page).splitlines()
+        content = [c.strip().lstrip("+").strip() for c in content if c.strip()]
+
+        for tag in extract_tags:
+            for element in soup.find_all(tag):
+                allowed_text.append(element.get_text().strip())
+
+            for cls in class_filters:
+                for element in soup.find_all(tag, class_=cls):
+                    allowed_text.append(element.get_text().strip())
+
+    ###########################
+    # CASE 2: DOCUMENT PAGES
+    ###########################
     else:
-        # content=soup.find(id='main-content').get_text()
         try:
-            content=soup.find(id='main-content').get_text()
-        #     # file = open('random.txt', 'w', encoding='utf-8')
-        #     # file.write(content)
-        #     # file.close()
+            content = soup.find(id='main-content').get_text().splitlines()
         except:
+            content = []
 
-            pass
-        content=content.splitlines()
-        # print('\n********',content)
+        content = [" ".join(c.split()) for c in content if c.strip()]
 
-        for i in range(len(content)):
-            content[i]=" ".join(content[i].split())
-        content=[content[i] for i in range(len(content)) if content[i]]
-        # print('^^^^^^', content)
+        for tag in extract_tags:
+            for element in soup.find_all(tag):
+                allowed_text.extend(element.get_text().splitlines())
 
-        for element in tbi:
-            if element=='a':
-                for word in soup.find_all(element):
-                    temp=word.get_text()
-                    temp=temp.splitlines()
-                    find_all_example.extend(temp)
-            for ele in tb:
-                for word in soup.find_all(element,class_= ele):
-                    
-                    temp=word.get_text()
-                    #print(element, ele, temp,'***************')
-                    temp=temp.splitlines()
-                    find_all_example.extend(temp)
-                    
-        for word in soup.find_all("p",id="qsUserData"):
-            temp=word.get_text()
-            temp=temp.splitlines()
-            find_all_example.extend(temp)
-        for i in range(len(find_all_example)):
-            find_all_example[i]=" ".join(find_all_example[i].split())
-        find_all_example=[find_all_example[i] for i in range(len(find_all_example)) if find_all_example[i]]
-        # print(find_all_example)
-    # content.extend(art_titles_tocheck)
-    #print("LINK:",link)
-    errors= translation_errors(content,find_all_example,art_titles_tocheck,lang)
-    
-    parser=Parser()
-    for i in range(len(errors)):
-        for match in parser.parse(errors[i]):
-            errors[i] = errors[i].replace(match.text,"")
-    errors=[errors[i] for i in range(len(errors)) if errors[i]]
+            for cls in class_filters:
+                for element in soup.find_all(tag, class_=cls):
+                    allowed_text.extend(element.get_text().splitlines())
 
-        
-    # print("FINAL",errors)  
-    return errors
-    
-  
-         
-       
+        for p in soup.find_all("p", id="qsUserData"):
+            allowed_text.extend(p.get_text().splitlines())
+
+        allowed_text = [" ".join(t.split()) for t in allowed_text if t.strip()]
+
+    #############################
+    # LANGUAGE ERROR DETECTION
+    #############################
+
+    errors = translation_errors(content, allowed_text, article_titles, lang)
+
+    #############################
+    # REMOVE DATE PATTERNS
+    #############################
+    parser = Parser()
+    cleaned = []
+
+    for e in errors:
+        cleaned_error = e
+        for match in parser.parse(e):
+            cleaned_error = cleaned_error.replace(match.text, "")
+        cleaned_error = cleaned_error.strip()
+        if cleaned_error:
+            cleaned.append(cleaned_error)
+
+    return cleaned
+
