@@ -177,25 +177,6 @@ class PRP:
                         # In Option A, ignore transient errors for documents to reduce false positives
                         pass
 
-                    # Option B (INACTIVE): browser-based check for PRP document links
-                    # Uncomment this block and comment out Option A above if you want to test it.
-                    # if link.startswith("https://partner.hpe.com"):
-                    #     try:
-                    #         resp = page.goto(link, wait_until="networkidle")
-                    #         if resp is not None and hasattr(resp, "status") and resp.status >= 400:
-                    #             broken_links.append(link)
-                    #     except Exception:
-                    #         # Treat navigation failures for PRP docs as broken
-                    #         broken_links.append(link)
-                    # else:
-                    #     try:
-                    #         resp = page.request.get(link, max_redirects=5)
-                    #         if resp is not None and hasattr(resp, "status") and 400 <= resp.status < 500:
-                    #             broken_links.append(link)
-                    #     except Exception:
-                    #         # Ignore transient errors for external docs
-                    #         pass
-
                     continue
 
                 # -----------------------------
