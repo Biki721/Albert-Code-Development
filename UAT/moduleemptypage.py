@@ -1,43 +1,25 @@
-from selenium import webdriver
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException, \
-    ElementNotVisibleException, ElementNotSelectableException
-from selenium.webdriver.common.by import By
-import requests
-import time
-import pandas as pd
-import datetime
-import work
-import SelectCertificate
-import VaultSample
-import ast
 from bs4 import BeautifulSoup
 
+def emptypagecheck(link, phrase, default_phrase, soup):
+    try:
+        phrase_caught = soup.find(id="main-content").get_text()
+    except:
+        phrase_caught = ''
 
+    if phrase_caught != '':
+        content = phrase_caught.splitlines()
 
-   
+        for i in range(len(content)):
+            content[i] = " ".join(content[i].split())
+        content = [line for line in content if line]
 
-def emptypagecheck(link,phrase,default_phrase,soup):
-                try:
-                    phrase_caught=soup.find(id="main-content").get_text()
-        
-                except:
-                    phrase_caught=''
-                if phrase_caught!='':
-                    content=phrase_caught.splitlines()
-                
-                    
-                #print("CONTENT",content)
-                    for i in range(len(content)):
-                        content[i]=" ".join(content[i].split())
-                    content=[content[i] for i in range(len(content)) if content[i]]
-                    if len(content)==3:
-                        if content[0]==phrase or content[0]==default_phrase:
-                            return link
-                    elif len(content)==0:
-                            return link
-                return ''
+        if len(content) == 3:
+            if content[0] == phrase or content[0] == default_phrase:
+                return link
+        elif len(content) == 0:
+            return link
+
+    return ''
   
             
         

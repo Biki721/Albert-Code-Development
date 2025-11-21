@@ -23,6 +23,7 @@ import pyautogui
 import pygetwindow as gw
 from pynput.keyboard import Key, Controller
 from concurrent.futures import ThreadPoolExecutor
+from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 from url_utils import load_home_prefixes, is_home_redirect_selenium
 
 HOME_PREFIXES = load_home_prefixes('config/home_pages.txt')
@@ -45,7 +46,25 @@ class PRP():
 
     links_not_to_be_checked += marketingpro_links_not_to_be_checked + competitor_links_not_to_be_checked
 
-    translated_phrases={"French":"Contenu associé",'German':'Verwandter inhalt','Italian':"Contenuti correlati",'Chinese':'相关内容','Russian':'Сопутствующая информация','Portugese':'Conteúdo relacionado','Indonesian':'Konten terkait','Singaporean':'Related content','Korean':"관련 콘텐츠",'Turkish':"İlgili içerik",'Japanese':"関連コンテンツ",'Taiwan':"相關內容",'Spanish':'Contenido relacionado',"LARSpanish":'Contenido relacionado','English':'Related content'}
+    translated_phrases = {
+        "French": "Contenu associé",
+        'German': 'Verwandter inhalt',
+        'Italian': "Contenuti correlati",
+        'Chinese': '相关内容',
+        'Chinese-Simplified': '相关内容',
+        'Russian': 'Сопутствующая информация',
+        'Portugese': 'Conteúdo relacionado',
+        'Portuguese-Brazil': 'Conteúdo relacionado',
+        'Indonesian': 'Konten terkait',
+        'Singaporean': 'Related content',
+        'Korean': "관련 콘텐츠",
+        'Turkish': "İlgili içerik",
+        'Japanese': "関連コンテンツ",
+        'Taiwan': "相關內容",
+        'Spanish': 'Contenido relacionado',
+        "LARSpanish": 'Contenido relacionado',
+        'English': 'Related content'
+    }
 
     # EXTRACT LIST OF LINKS THAT NEED LONGER DELAYS
     delayed_loading_links = work.doc_reader("delayed_loading.docx")
@@ -84,40 +103,41 @@ class PRP():
         self.defaultphrase="Related content"
         self.reverse_dict_path='Reverse Dicts\\RevDict{r}_{c}_{l}_{a}.txt'.format(r=self.region,c=self.country,l=self.language,a=self.account_type)
         self.aruba_links_path = 'Aruba Urls\\Aruba{r}_{c}_{l}_{a}.txt'.format(r=self.region,c=self.country,l=self.language,a=self.account_type)
-        self.marketingpro_page_tree_path ='MarketingProPageTrees\\PageTree{r}_{c}_{l}_{a}.txt'.format(r=self.region,c=self.country,l=self.language,a=self.account_type)
-        self.competitor_page_tree_path = 'CompetitorPageTrees\\PageTree{r}_{c}_{l}_{a}.txt'.format(r=self.region,c=self.country,l=self.language,a=self.account_type)
-        self.competitor_reverse_dict_path='Competitor Reverse Dicts\\RevDict{r}_{c}_{l}_{a}.txt'.format(r=self.region,c=self.country,l=self.language,a=self.account_type)
-        self.marketingpro_reverse_dict_path = 'MarketingPro Reverse Dicts\\RevDict{r}_{c}_{l}_{a}.txt'.format(r=self.region,c=self.country,l=self.language,a=self.account_type)
+
+        self.playwright = None
+        self.browser = None
+        self.context = None
+        self.page = None
 
         self.competitor_accounts = ['demo_competitor@pproap.com','demo_mapcompetitor_solp@yopmail.com']
-        
-        if self.username in self.competitor_accounts:
-            self.reverse_dict_path = self.competitor_reverse_dict_path
-
 
     def setUp(self):
-        # webdriver_path = "Webdrivers\\chromedriver.exe"
-        # service = Service(webdriver_path)
-        chrome_options = Options()
-        chrome_options.add_experimental_option('excludeSwitches', ['enable-logging']) 
-        self.driver = webdriver.Chrome(options=chrome_options)
-        self.driver.maximize_window()
+        self.playwright = sync_playwright().start()
+        self.browser = self.playwright.chromium.launch(headless=False)
+        self.page = self.browser.new_page()
+        self.page.set_default_timeout(30000)
   
 
     def test_load_home_page(self):
-    
-        driver=self.driver
-        wait = WebDriverWait(driver,30,poll_frequency=1,ignored_exceptions=[ElementNotVisibleException, ElementNotSelectableException, NoSuchElementException, StaleElementReferenceException])
-        driver.get(self.base_url)
-        wait.until(EC.element_to_be_clickable((By.ID, "oktaEmailInput"))).send_keys(self.username)
-        wait.until(EC.element_to_be_clickable((By.ID, "oktaSignInBtn"))).click()
-        wait.until(EC.element_to_be_clickable((By.ID, "password-sign-in"))).send_keys(self.password)
-        wait.until(EC.element_to_be_clickable((By.ID, 'onepass-submit-btn'))).click()
-        time.sleep(20)
-        elem = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="form19"]/div[2]/div[2]/div[2]/a')))
-        elem.click()
-        time.sleep(20) 
-        driver.get(self.base_url)
+        page = self.page
+
+        page.goto(self.base_url)
+
+        page.fill("#oktaEmailInput", self.username)
+        page.click("#oktaSignInBtn")
+        page.fill("#password-sign-in", self.password)
+        page.click("#onepass-submit-btn")
+
+        try:
+            page.wait_for_selector('//*[@id="form19"]/div[2]/div[2]/div[2]/a', timeout=40000)
+            page.click('//*[@id="form19"]/div[2]/div[2]/div[2]/a')
+        except PlaywrightTimeoutError:
+            print("Login redirect click failed")
+        except Exception:
+            pass
+
+        time.sleep(5)
+        page.goto(self.base_url)
         
    
     def parent(self):
@@ -213,20 +233,29 @@ class PRP():
             return
 
         def integrate(site):
-            self.driver.get(site)
-            
+            page = self.page
+            try:
+                resp = page.goto(site, wait_until="networkidle")
+            except PlaywrightTimeoutError:
+                resp = None
+            except Exception:
+                return None, None
+
             if site in self.delayed_loading_links or site.strip() in self.delayed_loading_links:
                 # print('SLEEPING:',site)
                 time.sleep(45)
-            # Skip links that redirect to homepage
-            try:
-                if is_home_redirect_selenium(self.driver, HOME_PREFIXES):
+
+            final_url = (page.url or "").split('#')[0].rstrip('/')
+            for p in HOME_PREFIXES:
+                if final_url == p or final_url.startswith(p):
                     return None, None
+
+            try:
+                src = page.content()
             except Exception:
-                pass
-            src = self.driver.page_source
-            soup=BeautifulSoup(src,'html.parser')
-            return src,soup
+                return None, None
+            soup = BeautifulSoup(src, 'html.parser')
+            return src, soup
 
         def aruba(soup):
             find_aruba = soup.find_all('span', class_='arubaTag')
@@ -256,32 +285,24 @@ class PRP():
         # f=open(self.page_tree_path,'r')
         # list_of_links=f.read().splitlines()
 
-        if self.username not in self.competitor_accounts:
-            f2=open(self.marketingpro_page_tree_path,'r')
-            list_of_links= f2.read().splitlines()
-            f=open(self.page_tree_path,'r')
-            list_of_links+=f.read().splitlines()
-        else:
-            f3=open(self.competitor_page_tree_path)
-            list_of_links = f3.read().splitlines()
+        f=open(self.page_tree_path,'r')
+        list_of_links = f.read().splitlines()
         # print('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^',list_of_links)
         
         all_links_trans = filter(list_of_links,self.links_not_to_be_checked)
         # print("to runtrans",all_links_trans)
         all_links_empty = filter(list_of_links,self.not_to_check_links)
         # print("to runempty",all_links_empty)
-        #print(all_links_empty,all_links_trans)
 
 
         ##################### FUNCTION TO DETECT PAGES THAT HAVE ERROR MESSAGES ##########################
         def no_content_pg(soup):
-            errmsg = ['Oops! We can’t find that page', 'We can’t find the page you’re looking for']
+            errmsg = ['Oops! We cant find that page', 'We cant find the page youre looking for']
             text = soup.get_text()
             for msg in errmsg:
                 if msg in text:
                     return True
-                else:
-                    return False
+            return False
 
         errors = {}
         epterrors=[]
@@ -293,7 +314,7 @@ class PRP():
             if src is None:
                 # Redirected to homepage, skip this link
                 continue
-            # print(soup)
+
             aruba_bool = aruba(soup)
             #print("HEY",aruba_bool)
             #print("LINK",link)
@@ -343,7 +364,7 @@ class PRP():
         write_excel(epterrors)
         # print(errors,type(errors))
         write_excel(errors)
-            
+        
 
         with open(self.aruba_links_path, 'w') as filehandle:
                 for listitem in aruba_links:
@@ -352,13 +373,28 @@ class PRP():
        
         
     def tearDown(self):
-        self.driver.close()
-        df=pd.read_excel(self.translation_report_path)
-        dff=pd.read_excel(self.emptypage_report_path)
-        if len(df)>0:
-            work.work_alloc_execute(self.translation_report_path,'Fixers_list.xlsx',self.aruba_links_path)
-        if len(dff)>0:
-            work.work_alloc_execute(self.emptypage_report_path,'Fixers_list.xlsx',self.aruba_links_path)
+        try:
+            if self.context is not None:
+                self.context.close()
+        except Exception:
+            pass
+        try:
+            if self.browser is not None:
+                self.browser.close()
+        except Exception:
+            pass
+        try:
+            if self.playwright is not None:
+                self.playwright.stop()
+        except Exception:
+            pass
+
+        df = pd.read_excel(self.translation_report_path)
+        dff = pd.read_excel(self.emptypage_report_path)
+        if len(df) > 0:
+            work.work_alloc_execute(self.translation_report_path, 'Fixers_list.xlsx', self.aruba_links_path)
+        if len(dff) > 0:
+            work.work_alloc_execute(self.emptypage_report_path, 'Fixers_list.xlsx', self.aruba_links_path)
 
 def run_account(account):
     try:

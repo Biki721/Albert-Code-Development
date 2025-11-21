@@ -2,9 +2,6 @@
 https://partner.hpe.com/
 https://partner.hpe.com/group/prp
 https://partner.hpe.com/group/prp/home
+https://partner.hpe.com/home
+https://partner.hpe.com/group/prp/home?tutorial=homepage
 
-# MarketingPro home
-https://marketingpro.hpe.com
-
-# Competitor area home
-https://partner.hpe.com/group/competitor

@@ -22,6 +22,60 @@ detector = LanguageDetectorBuilder.from_languages(*SUPPORTED_LANGS) \
                                   .with_preloaded_language_models() \
                                   .build()
 
+LANG_MAP = {
+    'French': 'fr', 'German': 'de', 'Italian': 'it', 'Chinese': 'zh', 'Chinese-Simplified': 'zh',
+    'Russian': 'ru', 'Portugese': 'pt', 'Portuguese-Brazil': 'pt', 'Indonesian': 'id', 'Singaporean': 'en',
+    'Korean': 'ko', 'Turkish': 'tr', 'Japanese': 'ja', 'Taiwan': 'zh',
+    'Spanish': 'es', 'LARSpanish': 'es', 'English': 'en'
+}
+
+TRANS_TERMS = {
+    'French': 'Français', 'German': 'Deutsch', 'Italian': "Italiano",
+    'Chinese': '简体中文', 'Chinese-Simplified': '简体中文', 'Russian': 'Русский',
+    'Portugese': 'Português', 'Portuguese-Brazil': 'Português',
+    'Indonesian': 'Bahasa indonesia', 'Korean': "한국어",
+    'Turkish': "Türkçe", 'Japanese': "日本語",
+    'Taiwan': "中文（台灣)", 'Spanish': 'Español',
+    "LARSpanish": 'Español'
+}
+
+EXTRACT_TAGS = ["span", "h1", "h2", "a", "div", "tr"]
+
+CLASS_FILTERS = [
+    'portlet-title-text', 'hide', 'hide-accessible', 'hide User',
+    'sr-only', 'iconText', 'hide isPureHPE', 'dateFormat', 'size',
+    'categoryName', 'categoryDescription', 'boldContent',
+    'detailedContentText', 'articleSummary', 'articleDeails row',
+    'controlsPagination pull-right', 'articleDownloadHeader',
+    'articleformatSize', 'border_bottom', 'articleDownloadContent'
+]
+
+EXTRA_ALLOWED = [
+    'ARTIKEL', 'Tools catalog102030',
+    '© Copyright 2023 Hewlett Packard Enterprise Development, L.P.',
+    'Competenza', 'Cancella', 'decrescente', 'Presidente',
+    'ARTíCULO', 'Competencia Partner Ready', '5000', '6000',
+    'fors', 'As a Service', 'h',
+    '© Copyright 2022 Hewlett Packard Enterprise Development, L.P.'
+]
+
+_GLOSSARY_CACHE = {}
+
+
+def _load_glossary_for_language(target_code: str):
+    if target_code in _GLOSSARY_CACHE:
+        return _GLOSSARY_CACHE[target_code]
+
+    df = pd.read_excel('glossary.xlsx')
+    col_name = f"{target_code}-{target_code.upper()}"
+    if col_name not in df.columns:
+        glossary = set()
+    else:
+        glossary = {x.strip() for x in df[col_name] if isinstance(x, str) and x.strip()}
+
+    _GLOSSARY_CACHE[target_code] = glossary
+    return glossary
+
 
 ###############################################
 # 2. Utility: Clean text
@@ -66,31 +120,13 @@ def articlenamechecker(soup: BeautifulSoup, language_translation: str):
 
 def translation_errors(extracted_text, allowed_text, article_titles, language):
 
-    LANG_MAP = {
-        'French': 'fr', 'German': 'de', 'Italian': 'it', 'Chinese': 'zh',
-        'Russian': 'ru', 'Portugese': 'pt', 'Indonesian': 'id', 'Singaporean': 'en',
-        'Korean': 'ko', 'Turkish': 'tr', 'Japanese': 'ja', 'Taiwan': 'zh',
-        'Spanish': 'es', 'LARSpanish': 'es', 'English': 'en'
-    }
-
     target_code = LANG_MAP[language]
 
-    df = pd.read_excel('glossary.xlsx')
-    col_name = f"{target_code}-{target_code.upper()}"
-    glossary = [x for x in df[col_name] if isinstance(x, str)]
+    glossary = _load_glossary_for_language(target_code)
 
-    ignored_chars = "*+^#%$),(!@_}{[]?><~=\|-:;"
-    extra_allowed = [
-        'ARTIKEL', 'Tools catalog102030',
-        '© Copyright 2023 Hewlett Packard Enterprise Development, L.P.',
-        'Competenza', 'Cancella', 'decrescente', 'Presidente',
-        'ARTíCULO', 'Competencia Partner Ready', '5000', '6000',
-        'fors', 'As a Service', 'h',
-        '© Copyright 2022 Hewlett Packard Enterprise Development, L.P.'
-    ]
-
-    allowed_text.extend(extra_allowed)
+    allowed_text.extend(EXTRA_ALLOWED)
     allowed_text = [x.strip() for x in allowed_text if x.strip()]
+    allowed_set = set(allowed_text)
 
     text_lines = [line.strip() for line in extracted_text if line.strip()]
     text_lines.extend(article_titles)
@@ -100,7 +136,10 @@ def translation_errors(extracted_text, allowed_text, article_titles, language):
     for line in text_lines:
         clean = line.strip()
 
-        if clean in allowed_text:
+        if not clean:
+            continue
+
+        if clean in allowed_set:
             continue
         if clean in glossary:
             continue
@@ -112,6 +151,9 @@ def translation_errors(extracted_text, allowed_text, article_titles, language):
     for line in probable_errors:
 
         if len(line) < 2:
+            continue
+
+        if not any(ch.isalpha() for ch in line):
             continue
 
         detected = detector.detect_language_of(line)
@@ -135,25 +177,6 @@ def translation_errors(extracted_text, allowed_text, article_titles, language):
 
 def callable_extract(link: str, html_page: str, soup: BeautifulSoup, lang: str):
 
-    TRANS_TERMS = {
-        'French': 'Français', 'German': 'Deutsch', 'Italian': "Italiano",
-        'Chinese': '简体中文', 'Russian': 'Русский', 'Portugese': 'Português',
-        'Indonesian': 'Bahasa indonesia', 'Korean': "한국어",
-        'Turkish': "Türkçe", 'Japanese': "日本語",
-        'Taiwan': "中文（台灣)", 'Spanish': 'Español',
-        "LARSpanish": 'Español'
-    }
-
-    extract_tags = ["span", "h1", "h2", "a", "div", "tr"]
-    class_filters = [
-        'portlet-title-text','hide','hide-accessible','hide User',
-        'sr-only','iconText','hide isPureHPE','dateFormat','size',
-        'categoryName','categoryDescription','boldContent',
-        'detailedContentText','articleSummary','articleDeails row',
-        'controlsPagination pull-right','articleDownloadHeader',
-        'articleformatSize','border_bottom','articleDownloadContent'
-    ]
-
     allowed_text = []
     article_titles = articlenamechecker(soup, TRANS_TERMS[lang])
 
@@ -166,13 +189,17 @@ def callable_extract(link: str, html_page: str, soup: BeautifulSoup, lang: str):
         content = get_text(html_page).splitlines()
         content = [c.strip().lstrip("+").strip() for c in content if c.strip()]
 
-        for tag in extract_tags:
+        for tag in EXTRACT_TAGS:
             for element in soup.find_all(tag):
-                allowed_text.append(element.get_text().strip())
+                text = element.get_text().strip()
+                if text:
+                    allowed_text.append(text)
 
-            for cls in class_filters:
+            for cls in CLASS_FILTERS:
                 for element in soup.find_all(tag, class_=cls):
-                    allowed_text.append(element.get_text().strip())
+                    text = element.get_text().strip()
+                    if text:
+                        allowed_text.append(text)
 
     ###########################
     # CASE 2: DOCUMENT PAGES
@@ -185,11 +212,11 @@ def callable_extract(link: str, html_page: str, soup: BeautifulSoup, lang: str):
 
         content = [" ".join(c.split()) for c in content if c.strip()]
 
-        for tag in extract_tags:
+        for tag in EXTRACT_TAGS:
             for element in soup.find_all(tag):
                 allowed_text.extend(element.get_text().splitlines())
 
-            for cls in class_filters:
+            for cls in CLASS_FILTERS:
                 for element in soup.find_all(tag, class_=cls):
                     allowed_text.extend(element.get_text().splitlines())
 
