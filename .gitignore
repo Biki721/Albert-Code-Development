@@ -2,5 +2,3 @@ venv
 *.exe
 *.dll
 *.bin
-UAT/
-Office/

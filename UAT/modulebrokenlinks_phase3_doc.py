@@ -21,18 +21,6 @@ def is_internal_broken(page, link):
     """
     Check PRP internal link using authenticated, redirect-aware request.
     """
-    try:
-        resp = page.request.get(link, max_redirects=5)
-    except Exception:
-        return True
-
-    status = resp.status
-    final_url = resp.url
-
-    # 1) HTTP status check → true broken
-    if status >= 400:
-        return True
-
     # 2) Allowed redirect targets → NOT broken
     allowed_redirects = (
         "https://partner.hpe.com/",
@@ -41,15 +29,6 @@ def is_internal_broken(page, link):
         "https://partner.hpe.com/group/prp/home",
         "https://partner.hpe.com/group/prp/home?tutorial=homepage",
     )
-
-    if final_url.startswith(allowed_redirects):
-        return False
-
-    # 3) Check content for REAL error templates
-    try:
-        body = resp.text().lower()
-    except Exception:
-        body = ""
 
     strong_markers = [
         "we can't find the page you're looking for",
@@ -60,11 +39,39 @@ def is_internal_broken(page, link):
         "request has invalid parameter",
     ]
 
-    for m in strong_markers:
-        if m in body:
+    try:
+        resp = None
+        try:
+            resp = page.goto(link, wait_until="networkidle")
+        except PlaywrightTimeoutError:
+            # Even on timeout, page.url may still reflect the final location
+            pass
+
+        final_url = page.url or (resp.url if resp is not None else "")
+
+        if final_url.startswith(allowed_redirects):
+            return False
+
+        # 1) HTTP status check → true broken
+        if resp is not None and hasattr(resp, "status") and resp.status >= 400:
             return True
 
-    return False
+        # 3) Check content for REAL error templates
+        try:
+            body = page.content().lower()
+        except Exception:
+            try:
+                body = resp.text().lower() if resp is not None else ""
+            except Exception:
+                body = ""
+
+        for m in strong_markers:
+            if m in body:
+                return True
+
+        return False
+    except Exception:
+        return True
 
 
 # -------------------------------------------------------------------
@@ -154,12 +161,16 @@ class PRP:
                 # CASE 1: DOCUMENT LINKS
                 # -----------------------------
                 if link in doc_set:
-                    try:
-                        resp = page.request.get(link, max_redirects=5)
-                        if resp.status >= 400:
+                    if link.startswith("https://partner.hpe.com"):
+                        if is_internal_broken(page, link):
                             broken_links.append(link)
-                    except:
-                        broken_links.append(link)
+                    else:
+                        try:
+                            resp = page.request.get(link, max_redirects=5)
+                            if resp.status >= 400:
+                                broken_links.append(link)
+                        except:
+                            broken_links.append(link)
                     continue
 
                 # -----------------------------
