@@ -250,15 +250,30 @@ def translation_errors(extracted_text, allowed_text, article_titles, language):
             if target_code == "pt" and spanish_lang is not None:
                 spanish_conf = conf_map.get(spanish_lang, 0.0)
 
-            # Decide if the target language is "present" (like fastText threshold=0.02)
+            # --- Rule 1: fastText-style "target present or not" with 0.02 threshold ---
             if target_code == "pt":
-                is_present = (target_conf >= MIN_TARGET_CONF) or (spanish_conf >= MIN_TARGET_CONF)
+                target_present = (target_conf >= MIN_TARGET_CONF) or (spanish_conf >= MIN_TARGET_CONF)
             else:
-                is_present = (target_conf >= MIN_TARGET_CONF)
+                target_present = (target_conf >= MIN_TARGET_CONF)
 
-            # If target language is not present with at least MIN_TARGET_CONF,
-            # treat this as a translation error
-            if not is_present:
+            # --- Rule 2: is some OTHER language clearly dominating? ---
+            # Find best language and its confidence
+            best_lang, best_conf = max(conf_map.items(), key=lambda kv: kv[1])
+
+            def is_ok_lang(lang):
+                if lang == target_lang:
+                    return True
+                if target_code == "pt" and lang == spanish_lang:
+                    return True
+                return False
+
+            # If a non-target language has high confidence, treat as strong evidence of error
+            STRONG_OTHER_CONF = 0.40
+            strong_other = (not is_ok_lang(best_lang)) and (best_conf >= STRONG_OTHER_CONF)
+
+            # Flag as error if either target language effectively absent or
+            # some other language is clearly dominating
+            if (not target_present) or strong_other:
                 cleaned = postprocess(text)
                 if cleaned and cleaned not in glossary:
                     errors.add(cleaned)
@@ -287,11 +302,14 @@ def callable_extract(link: str, html_page: str, soup: BeautifulSoup, lang: str):
         content = [c.strip().lstrip("+").strip() for c in content if c.strip()]
 
         for tag in EXTRACT_TAGS:
-            for element in soup.find_all(tag):
-                text = element.get_text().strip()
-                if text:
-                    allowed_text.append(text)
+            # Match part2: add all anchor texts regardless of class
+            if tag == "a":
+                for element in soup.find_all("a"):
+                    text = element.get_text().strip()
+                    if text:
+                        allowed_text.append(text)
 
+            # For all tags, only whitelist elements with specific UI classes
             for cls in CLASS_FILTERS:
                 for element in soup.find_all(tag, class_=cls):
                     text = element.get_text().strip()
@@ -303,22 +321,29 @@ def callable_extract(link: str, html_page: str, soup: BeautifulSoup, lang: str):
     ###########################
     else:
         try:
-            content = soup.find(id='main-content').get_text().splitlines()
+            content = soup.find(id='main-content').get_text()
         except:
-            content = []
+            content = ""
 
+        content = content.splitlines()
         content = [" ".join(c.split()) for c in content if c.strip()]
 
         for tag in EXTRACT_TAGS:
-            for element in soup.find_all(tag):
-                allowed_text.extend(element.get_text().splitlines())
+            # Match part2: include all anchor texts
+            if tag == "a":
+                for element in soup.find_all("a"):
+                    temp = element.get_text()
+                    allowed_text.extend(temp.splitlines())
 
+            # And only elements with the specific UI classes
             for cls in CLASS_FILTERS:
                 for element in soup.find_all(tag, class_=cls):
-                    allowed_text.extend(element.get_text().splitlines())
+                    temp = element.get_text()
+                    allowed_text.extend(temp.splitlines())
 
         for p in soup.find_all("p", id="qsUserData"):
-            allowed_text.extend(p.get_text().splitlines())
+            temp = p.get_text()
+            allowed_text.extend(temp.splitlines())
 
         allowed_text = [" ".join(t.split()) for t in allowed_text if t.strip()]
 
