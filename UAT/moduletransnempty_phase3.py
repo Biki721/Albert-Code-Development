@@ -129,16 +129,9 @@ class PRP():
     def parent(self):
         def write_excel(errors):
             # print("writing to excel")
-            fileread1=open(self.reverse_dict_path).read()
-            dictionary=ast.literal_eval(fileread1)
+            with open(self.reverse_dict_path, "r") as f:
+                dictionary = ast.literal_eval(f.read())
 
-            if self.username not in self.competitor_accounts:
-                fileread2=open(self.marketingpro_reverse_dict_path).read()
-                dictionary1=ast.literal_eval(fileread2)
-            else:
-                dictionary1 = {}
-
-            dictionary = {**dictionary,**dictionary1}
 
             if type(errors)==dict:
                 category = 'Translation Error'
@@ -414,7 +407,7 @@ def run_account(account):
 if __name__=='__main__':
 
     credentials = [
-       ["mhmg_albert_dist1@yopmail.com", "Login2Bot!", "EMEA", "Turkey", "Turkish", "T2"],
+       ['mhmg_albert_dist1@yopmail.com', 'Login2Bot!', 'APJ', 'South Korea', 'Korean', 'distri'],
     ]
 
     # Adjust max_workers based on your system capability (e.g., RAM, CPU, browser limits)
