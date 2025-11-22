@@ -1,27 +1,13 @@
-from concurrent.futures import thread
+
 import work_phase_3 as work
-from selenium import webdriver
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.common.exceptions import NoSuchElementException, SessionNotCreatedException, StaleElementReferenceException, \
-    ElementNotVisibleException, ElementNotSelectableException
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
+
 import ast
 import datetime
-from selenium import webdriver
 import moduletranslation as mtrans
 from bs4 import BeautifulSoup
 import pandas as pd
 import moduleemptypage as mep
 import time
-import module_login_lang
-from SelectCertificate import authenticate_with_certificate
-from selenium.webdriver.chrome.service import Service
-import threading
-import pyautogui
-import pygetwindow as gw
-from pynput.keyboard import Key, Controller
 from concurrent.futures import ThreadPoolExecutor
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 from url_utils import load_home_prefixes, is_home_redirect_selenium
@@ -297,7 +283,7 @@ class PRP():
 
         ##################### FUNCTION TO DETECT PAGES THAT HAVE ERROR MESSAGES ##########################
         def no_content_pg(soup):
-            errmsg = ['Oops! We cant find that page', 'We cant find the page youre looking for']
+            errmsg = ["Oops! We can't find that page", "We cant find the page you're looking for"]
             text = soup.get_text()
             for msg in errmsg:
                 if msg in text:
@@ -428,12 +414,7 @@ def run_account(account):
 if __name__=='__main__':
 
     credentials = [
-        ['demo_french_distri@yopmail.com','Want2seePRP!','EMEA','France','French','Distri'],
-        ['demo_emea_platinum@pproap.com', 'Want2seePRP!', 'EMEA', 'Germany', 'German','T2'],
-        ['demo_italian_distri@yopmail.com', 'Want2seePRP!', 'EMEA', 'Italy', 'Italian', 'Distri'],
-        ['demo_turkish_solp@yopmail.com', 'Want2seePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2'],
-        ['demo_ukeng_distri@yopmail.com', 'Want2seePRP!', 'EMEA', 'UK', 'English', 'Distri'],
-        ['demo_la_platinum@pproap.com', 'Want2seePRP!', 'NAR', 'MEXICO', 'Spanish', 'T2'],
+       ["mhmg_albert_dist1@yopmail.com", "Login2Bot!", "EMEA", "Turkey", "Turkish", "T2"],
     ]
 
     # Adjust max_workers based on your system capability (e.g., RAM, CPU, browser limits)

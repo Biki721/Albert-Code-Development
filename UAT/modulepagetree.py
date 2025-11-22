@@ -73,10 +73,158 @@ class PRP():
         try:
             page.wait_for_selector('//*[@id="form19"]/div[2]/div[2]/div[2]/a', timeout=40000)
             page.click('//*[@id="form19"]/div[2]/div[2]/div[2]/a')
-        except TimeoutError:
-            print("Login redirect click failed")
+        except Exception:
+            print("No digital badge found")
 
         time.sleep(5)
+
+    def country_similarity(self, a: str, b: str):
+        """
+        Fully dynamic similarity score between two country names.
+        No static list, no mappings, no assumptions.
+        Uses:
+        - token overlap
+        - partial character similarity
+        """
+
+        if not a or not b:
+            return 0
+
+        a = a.lower()
+        b = b.lower()
+
+        # Token-based similarity
+        a_tokens = set(a.replace("(", " ").replace(")", " ").split())
+        b_tokens = set(b.replace("(", " ").replace(")", " ").split())
+
+        token_overlap = len(a_tokens & b_tokens)
+        token_total = max(len(a_tokens), 1)
+
+        token_score = token_overlap / token_total  # 0.0 → 1.0
+
+        # Character similarity (dynamic)
+        matches = sum(1 for ch in a if ch in b)
+        char_score = matches / max(len(a), 1)
+
+        # Weighted final score
+        return (token_score * 0.6) + (char_score * 0.4)
+
+
+    # -------------------------------------------------------------------------------------
+    # HANDLE OVERLAY, EYEBALL, AND COUNTRY SELECTION
+    # -------------------------------------------------------------------------------------
+    def handle_country_and_overlay(self):
+        page = self.page
+
+        # --- STEP 1: Check and close notification overlay ---
+        try:
+            overlay = page.wait_for_selector("#alertMessager", timeout=5000)
+            if overlay and overlay.is_visible():
+                print("⚠️ Notification overlay detected.")
+                try:
+                    page.click("#closemsg")
+                except Exception:
+                    page.evaluate("document.querySelector('#closemsg')?.click()")
+                print("✅ Closed the notification overlay.")
+                try:
+                    page.wait_for_selector("#alertMessager", state="hidden", timeout=10000)
+                except Exception:
+                    pass
+        except PlaywrightTimeoutError:
+            print("✅ No overlay appeared, continuing.")
+        except Exception as e:
+            print("⚠️ Overlay handling error:", e)
+        time.sleep(10)
+
+        # --- STEP 2: Click Eyeball icon ---
+        try:
+            eyeball = page.wait_for_selector("#MHMG-usereye", timeout=30000)
+            if eyeball:
+                eyeball.click()
+        except Exception:
+            pass
+        time.sleep(10)
+
+        # --- STEP 3: Extract current country ---
+        try:
+            selector = (
+                '#portlet_com_hpe_prp_mhmg_web_PrpMhmgEyeballWebPortlet '
+                '> div > div.portlet-content-container > div > div.MHMGuserdescrp '
+                '> div > div.MHMGcountryname'
+            )
+            country_element = page.wait_for_selector(selector, timeout=20000)
+            current_country = country_element.inner_text().strip() if country_element else ""
+            print("🌍 Current Country:", current_country if current_country else "Unknown")
+        except Exception:
+            current_country = ""
+            print("⚠️ Could not detect current country")
+        time.sleep(10)
+
+        # --- STEP 4: Open country dropdown ---
+        try:
+            loc_btn = page.wait_for_selector("#Otherlocations > span.MHMGparty", timeout=15000)
+            if loc_btn:
+                loc_btn.click()
+        except Exception:
+            pass
+        time.sleep(10)
+
+        # --- STEP 5: Wait for country list ---
+        try:
+            page.wait_for_selector("ul#MHMGBRcountries li.locationsBRlist", timeout=15000)
+        except Exception:
+            pass
+        time.sleep(10)
+
+        # --- STEP 6: Switch country if needed ---
+        try:
+            if current_country.lower() == self.country.lower():
+                print(f"✅ Country already set to '{current_country}'")
+            else:
+        
+                options = page.query_selector_all("ul#MHMGBRcountries li.locationsBRlist")
+
+                best_score = 0
+                best_option = None
+                best_name = ""
+
+                for opt in options:
+                    try:
+                        cname = opt.get_attribute("countryname") or opt.inner_text().strip()
+                    except:
+                        continue
+
+                    score = self.country_similarity(self.country, cname)
+
+                    if score > best_score:
+                        best_score = score
+                        best_option = opt
+                        best_name = cname
+
+                # Threshold ensures we don't pick a completely unrelated country
+                if best_score >= 0.30 and best_option:
+                    try:
+                        best_option.click()
+                    except Exception:
+                        page.evaluate("(el)=>el.click()", best_option)
+
+                    print(f"🌐 Country dynamically matched → '{best_name}' (score={best_score:.2f})")
+
+                    br_container = page.wait_for_selector("#MHMGBRLIst > li > div > div", timeout=15000)
+                    if br_container:
+                        br_container.click()
+                else:
+                    print(f"⚠️ No strong dynamic match for '{self.country}'. Best score={best_score:.2f}")
+                
+
+                
+
+        except Exception:
+                pass
+
+        time.sleep(10)
+        return current_country
+
 
 
     def filter_breadcrumbs(self, link):
@@ -91,6 +239,9 @@ class PRP():
     def scrape(self, queue, internal, external, allurls, doclinks, tree_dict):
         page = self.page
         self.test_load_home_page()
+
+         # Handle overlay + eyeball + country selection
+        current_country = self.handle_country_and_overlay()
 
         visited = set(allurls)
         url_queue = deque(queue)
@@ -279,18 +430,7 @@ def run_account(account):
 
 if __name__ == '__main__':
     credentials = [
-        # ['demo_french_distri@yopmail.com','Want2seePRP!','EMEA','France','French','Distri'],
-        # ['demo_emea_platinum@pproap.com', 'Want2seePRP!', 'EMEA', 'Germany', 'German','T2'],
-        # ['demo_italian_distri@yopmail.com', 'Want2seePRP!', 'EMEA', 'Italy', 'Italian', 'Distri'],
-        ['mhmg_albert_dist1@yopmail.com', 'Login2Bot!', 'EMEA', 'Turkey', 'Turkish', 'T2'],
-        # ['demo_ukeng_distri@yopmail.com', 'Want2seePRP!', 'EMEA', 'UK', 'English', 'Distri'],
-        # ['demo_la_platinum@pproap.com', 'Want2seePRP!', 'NAR', 'MEXICO', 'Spanish', 'T2'],
-        # ['demo_h3c@pproap.com', 'Want2seePRP!', 'APJ', 'China', 'Chinese', 'T2'],
-        # ['demo_na_distributor@pproap.com', 'Want2seePRP!', 'NAR', 'USA', 'English', 'Distri'],
-        # ['demo_traditional_cn_distributor@pproap.com','Want2seePRP!','APJ','Taiwan','Taiwai','Distri'],
-        # ['demo_indonesian_distributor@pproap.com', 'Want2seePRP!', 'APJ', 'Indonesia', 'Indonesian', 'Distri'],
-        # ['demo_japanese_distributor@pproap.com','Want2seePRP!','APJ','Japan','Japanese','Distri'],
-        # ['demo_korean_kr_t2solutionprovider@pproap.com', 'Want2seePRP!', 'APJ', 'Korea', 'Korean', 'T2']
+        ['mhmg_albert_dist1@yopmail.com', 'Login2Bot!', 'APJ', 'South Korea', 'Korean', 'distri'],
     ]
 
     # Adjust max_workers based on your system capability (e.g., RAM, CPU, browser limits)
