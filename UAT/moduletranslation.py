@@ -119,57 +119,153 @@ def articlenamechecker(soup: BeautifulSoup, language_translation: str):
 ###############################################
 
 def translation_errors(extracted_text, allowed_text, article_titles, language):
-
-    target_code = LANG_MAP[language]
-
+    """
+    Lingua-based translation error detection, tuned to behave like the old
+    fastText-based implementation in moduletranslation_part2.
+    Signature is unchanged.
+    """
+    target_code = LANG_MAP[language]          # e.g. 'fr', 'de', 'pt', 'zh', 'ko', ...
     glossary = _load_glossary_for_language(target_code)
 
-    allowed_text.extend(EXTRA_ALLOWED)
-    allowed_text = [x.strip() for x in allowed_text if x.strip()]
-    allowed_set = set(allowed_text)
+    # Characters treated as ignorable at the start of a line (same idea as part2)
+    ignored_chars = "*+^#%$),(!@_}{[]?><~=\\|-:;"
 
-    text_lines = [line.strip() for line in extracted_text if line.strip()]
-    text_lines.extend(article_titles)
+    # ------------------------------------------------------------------
+    # 1) Build allowed / whitelist set  (allowed_text + EXTRA_ALLOWED)
+    # ------------------------------------------------------------------
+    allowed_clean = []
+    for txt in itertools.chain(allowed_text, EXTRA_ALLOWED):
+        if not txt:
+            continue
+        s = txt.strip()
+        if s:
+            allowed_clean.append(s)
+    allowed_set = set(allowed_clean)
 
+    # ------------------------------------------------------------------
+    # 2) Collect candidate lines from page content + article titles
+    # ------------------------------------------------------------------
+    candidates = []
+
+    for line in extracted_text:
+        if not line:
+            continue
+        s = line.strip()
+        if s:
+            candidates.append(s)
+
+    for title in article_titles:
+        if not title:
+            continue
+        s = title.strip()
+        if s:
+            candidates.append(s)
+
+    # ------------------------------------------------------------------
+    # 3) Apply text-level filters similar to part2 and remove glossary
+    #    substrings, producing probable error fragments
+    # ------------------------------------------------------------------
     probable_errors = []
 
-    for line in text_lines:
-        clean = line.strip()
-
-        if not clean:
+    for line in candidates:
+        text = line.strip()
+        if not text:
             continue
 
-        if clean in allowed_set:
-            continue
-        if clean in glossary:
-            continue
-
-        probable_errors.append(clean)
-
-    final_errors = []
-
-    for line in probable_errors:
-
-        if len(line) < 2:
+        # Skip obvious non-content patterns
+        if text == "*" or text.startswith("/") or text.startswith("o "):
             continue
 
-        if not any(ch.isalpha() for ch in line):
+        # Strip leading punctuation (similar to old lstrip over "ignored")
+        if not text[0].isalnum() and text[0] != "/":
+            text = text.lstrip(ignored_chars).strip()
+            if not text:
+                continue
+
+        # Skip exact allowed UI strings etc.
+        if text in allowed_set:
             continue
 
-        detected = detector.detect_language_of(line)
-        if detected is None:
+        # Remove glossary terms as substrings (like part2 did)
+        reduced = text
+        for term in glossary:
+            if term and term in reduced:
+                reduced = reduced.replace(term, "")
+        reduced = reduced.strip()
+        if not reduced:
             continue
 
-        lang_code = detected.iso_code_639_1.value   # "en"
-        confidence = detector.compute_language_confidence(line, detected)
+        probable_errors.append(reduced)
 
-        if lang_code != target_code and confidence > 0.40:
-            cleaned = postprocess(line)
-            if cleaned and cleaned not in glossary:
-                final_errors.append(cleaned)
+    # ------------------------------------------------------------------
+    # 4) Prepare Language enums for confidence computation
+    # ------------------------------------------------------------------
+    target_lang = None
+    spanish_lang = None
+    for lang_enum in SUPPORTED_LANGS:
+        code = lang_enum.iso_code_639_1.value
+        if code == target_code:
+            target_lang = lang_enum
+        if code == "es":
+            spanish_lang = lang_enum
 
-    return list(set(final_errors))
+    # Rough analogue of fastText's 0.02 presence threshold,
+    # but on Lingua's 0–1 confidence scale (tunable if needed)
+    MIN_TARGET_CONF = 0.20
 
+    errors = set()
+
+    # ------------------------------------------------------------------
+    # 5) Use Lingua confidences to decide if target language is "present"
+    #    (or Spanish for Portuguese), otherwise flag as translation error
+    # ------------------------------------------------------------------
+    for text in probable_errors:
+        if len(text) < 2:
+            continue
+        if not any(ch.isalpha() for ch in text):
+            continue
+
+        try:
+            if target_lang is None:
+                # Fallback: use top language only if we somehow
+                # couldn't map to a Language enum (should not happen)
+                detected = detector.detect_language_of(text)
+                if detected is None:
+                    continue
+                lang_code = detected.iso_code_639_1.value
+                conf = detector.compute_language_confidence(text, detected)
+
+                if lang_code != target_code and conf >= MIN_TARGET_CONF:
+                    cleaned = postprocess(text)
+                    if cleaned and cleaned not in glossary:
+                        errors.add(cleaned)
+                continue
+
+            # Primary path: check confidence for the *target* language directly
+            target_conf = detector.compute_language_confidence(text, target_lang)
+
+            # Special-case for Portuguese: accept Spanish as "close enough"
+            if target_code == "pt" and spanish_lang is not None:
+                spanish_conf = detector.compute_language_confidence(text, spanish_lang)
+            else:
+                spanish_conf = 0.0
+
+            # Decide if this text is OK in the page's language
+            if target_code == "pt":
+                is_ok = max(target_conf, spanish_conf) >= MIN_TARGET_CONF
+            else:
+                is_ok = target_conf >= MIN_TARGET_CONF
+
+            if not is_ok:
+                cleaned = postprocess(text)
+                if cleaned and cleaned not in glossary:
+                    errors.add(cleaned)
+
+        except Exception:
+            # Be robust to any detector issues and keep scanning other lines
+            continue
+
+    return list(errors)
 
 ###############################################
 # 5. Master Function: Extract + Validate Page
