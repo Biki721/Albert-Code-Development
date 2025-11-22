@@ -83,7 +83,7 @@ def _load_glossary_for_language(target_code: str):
 
 def postprocess(error: str) -> str:
     error = ''.join([c for c in error if not c.isdigit()])
-    error = re.sub('\W+', ' ', error)
+    error = re.sub(r'\W+', ' ', error)
     error = error.strip()
 
     return error if len(error) > 1 else ""
@@ -203,7 +203,7 @@ def translation_errors(extracted_text, allowed_text, article_titles, language):
     target_lang = None
     spanish_lang = None
     for lang_enum in SUPPORTED_LANGS:
-        code = lang_enum.iso_code_639_1.value
+        code = lang_enum.iso_code_639_1.name.lower()
         if code == target_code:
             target_lang = lang_enum
         if code == "es":
@@ -232,7 +232,7 @@ def translation_errors(extracted_text, allowed_text, article_titles, language):
                 detected = detector.detect_language_of(text)
                 if detected is None:
                     continue
-                lang_code = detected.iso_code_639_1.value
+                lang_code = detected.iso_code_639_1.name.lower()
                 conf = detector.compute_language_confidence(text, detected)
 
                 if lang_code != target_code and conf >= MIN_TARGET_CONF:
