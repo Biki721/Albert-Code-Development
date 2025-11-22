@@ -29,6 +29,21 @@ LANG_MAP = {
     'Spanish': 'es', 'LARSpanish': 'es', 'English': 'en'
 }
 
+CODE_TO_LANG = {
+    'en': Language.ENGLISH,
+    'fr': Language.FRENCH,
+    'de': Language.GERMAN,
+    'es': Language.SPANISH,
+    'pt': Language.PORTUGUESE,
+    'it': Language.ITALIAN,
+    'zh': Language.CHINESE,
+    'ja': Language.JAPANESE,
+    'ko': Language.KOREAN,
+    'ru': Language.RUSSIAN,
+    'tr': Language.TURKISH,
+    'id': Language.INDONESIAN,
+}
+
 TRANS_TERMS = {
     'French': 'Français', 'German': 'Deutsch', 'Italian': "Italiano",
     'Chinese': '简体中文', 'Chinese-Simplified': '简体中文', 'Russian': 'Русский',
@@ -200,14 +215,12 @@ def translation_errors(extracted_text, allowed_text, article_titles, language):
     # ------------------------------------------------------------------
     # 4) Prepare Language enums for confidence computation
     # ------------------------------------------------------------------
-    target_lang = None
-    spanish_lang = None
-    for lang_enum in SUPPORTED_LANGS:
-        code = lang_enum.iso_code_639_1.value
-        if code == target_code:
-            target_lang = lang_enum
-        if code == "es":
-            spanish_lang = lang_enum
+    target_lang = CODE_TO_LANG.get(target_code)
+    spanish_lang = CODE_TO_LANG.get("es")
+
+    # If this language is not supported by our detector, do nothing
+    if target_lang is None:
+        return []
 
     # Rough analogue of fastText's 0.02 presence threshold,
     # but on Lingua's 0–1 confidence scale (tunable if needed)
@@ -226,31 +239,14 @@ def translation_errors(extracted_text, allowed_text, article_titles, language):
             continue
 
         try:
-            if target_lang is None:
-                # Fallback: use top language only if we somehow
-                # couldn't map to a Language enum (should not happen)
-                detected = detector.detect_language_of(text)
-                if detected is None:
-                    continue
-                lang_code = detected.iso_code_639_1.value
-                conf = detector.compute_language_confidence(text, detected)
-
-                if lang_code != target_code and conf >= MIN_TARGET_CONF:
-                    cleaned = postprocess(text)
-                    if cleaned and cleaned not in glossary:
-                        errors.add(cleaned)
-                continue
-
-            # Primary path: check confidence for the *target* language directly
+            # Compute confidence that text is in the target language
             target_conf = detector.compute_language_confidence(text, target_lang)
 
-            # Special-case for Portuguese: accept Spanish as "close enough"
+            # Special-case for Portuguese: also accept Spanish as close
+            spanish_conf = 0.0
             if target_code == "pt" and spanish_lang is not None:
                 spanish_conf = detector.compute_language_confidence(text, spanish_lang)
-            else:
-                spanish_conf = 0.0
 
-            # Decide if this text is OK in the page's language
             if target_code == "pt":
                 is_ok = max(target_conf, spanish_conf) >= MIN_TARGET_CONF
             else:
@@ -262,7 +258,6 @@ def translation_errors(extracted_text, allowed_text, article_titles, language):
                     errors.add(cleaned)
 
         except Exception:
-            # Be robust to any detector issues and keep scanning other lines
             continue
 
     return list(errors)
