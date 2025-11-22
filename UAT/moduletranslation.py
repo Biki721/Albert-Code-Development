@@ -29,6 +29,21 @@ LANG_MAP = {
     'Spanish': 'es', 'LARSpanish': 'es', 'English': 'en'
 }
 
+CODE_TO_LANG = {
+    'en': Language.ENGLISH,
+    'fr': Language.FRENCH,
+    'de': Language.GERMAN,
+    'es': Language.SPANISH,
+    'pt': Language.PORTUGUESE,
+    'it': Language.ITALIAN,
+    'zh': Language.CHINESE,
+    'ja': Language.JAPANESE,
+    'ko': Language.KOREAN,
+    'ru': Language.RUSSIAN,
+    'tr': Language.TURKISH,
+    'id': Language.INDONESIAN,
+}
+
 TRANS_TERMS = {
     'French': 'Français', 'German': 'Deutsch', 'Italian': "Italiano",
     'Chinese': '简体中文', 'Chinese-Simplified': '简体中文', 'Russian': 'Русский',
@@ -203,7 +218,7 @@ def translation_errors(extracted_text, allowed_text, article_titles, language):
     target_lang = None
     spanish_lang = None
     for lang_enum in SUPPORTED_LANGS:
-        code = lang_enum.iso_code_639_1.name.lower()
+        code = lang_enum.iso_code_639_1.value
         if code == target_code:
             target_lang = lang_enum
         if code == "es":
@@ -211,7 +226,7 @@ def translation_errors(extracted_text, allowed_text, article_titles, language):
 
     # Rough analogue of fastText's 0.02 presence threshold,
     # but on Lingua's 0–1 confidence scale (tunable if needed)
-    MIN_TARGET_CONF = 0.20
+    MIN_TARGET_CONF = 0.02
 
     errors = set()
 
@@ -232,7 +247,7 @@ def translation_errors(extracted_text, allowed_text, article_titles, language):
                 detected = detector.detect_language_of(text)
                 if detected is None:
                     continue
-                lang_code = detected.iso_code_639_1.name.lower()
+                lang_code = detected.iso_code_639_1.value
                 conf = detector.compute_language_confidence(text, detected)
 
                 if lang_code != target_code and conf >= MIN_TARGET_CONF:
@@ -244,25 +259,25 @@ def translation_errors(extracted_text, allowed_text, article_titles, language):
             # Primary path: check confidence for the *target* language directly
             target_conf = detector.compute_language_confidence(text, target_lang)
 
-            # Special-case for Portuguese: accept Spanish as "close enough"
+            # For Portuguese, also look at Spanish (as in part2)
+            spanish_conf = 0.0
             if target_code == "pt" and spanish_lang is not None:
-                spanish_conf = detector.compute_language_confidence(text, spanish_lang)
-            else:
-                spanish_conf = 0.0
+                spanish_conf = conf_map.get(spanish_lang, 0.0)
 
-            # Decide if this text is OK in the page's language
+            # Decide if the target language is "present" (like fastText threshold=0.02)
             if target_code == "pt":
-                is_ok = max(target_conf, spanish_conf) >= MIN_TARGET_CONF
+                is_present = (target_conf >= MIN_TARGET_CONF) or (spanish_conf >= MIN_TARGET_CONF)
             else:
-                is_ok = target_conf >= MIN_TARGET_CONF
+                is_present = (target_conf >= MIN_TARGET_CONF)
 
-            if not is_ok:
+            # If target language is not present with at least MIN_TARGET_CONF,
+            # treat this as a translation error
+            if not is_present:
                 cleaned = postprocess(text)
                 if cleaned and cleaned not in glossary:
                     errors.add(cleaned)
 
         except Exception:
-            # Be robust to any detector issues and keep scanning other lines
             continue
 
     return list(errors)
