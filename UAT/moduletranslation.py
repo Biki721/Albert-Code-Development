@@ -224,7 +224,7 @@ def translation_errors(extracted_text, allowed_text, article_titles, language):
 
     # Rough analogue of fastText's 0.02 presence threshold,
     # but on Lingua's 0–1 confidence scale (tunable if needed)
-    MIN_TARGET_CONF = 0.20
+    MIN_TARGET_CONF = 0.02
 
     errors = set()
 
@@ -237,22 +237,28 @@ def translation_errors(extracted_text, allowed_text, article_titles, language):
             continue
         if not any(ch.isalpha() for ch in text):
             continue
-
         try:
-            # Compute confidence that text is in the target language
-            target_conf = detector.compute_language_confidence(text, target_lang)
+            # Get full confidence distribution (like fastText's languages dict)
+            confidence_values = detector.compute_language_confidence_values(text)
+            conf_map = {c.language: c.value for c in confidence_values}
 
-            # Special-case for Portuguese: also accept Spanish as close
+            # Confidence for target language
+            target_conf = conf_map.get(target_lang, 0.0)
+
+            # For Portuguese, also look at Spanish (as in part2)
             spanish_conf = 0.0
             if target_code == "pt" and spanish_lang is not None:
-                spanish_conf = detector.compute_language_confidence(text, spanish_lang)
+                spanish_conf = conf_map.get(spanish_lang, 0.0)
 
+            # Decide if the target language is "present" (like fastText threshold=0.02)
             if target_code == "pt":
-                is_ok = max(target_conf, spanish_conf) >= MIN_TARGET_CONF
+                is_present = (target_conf >= MIN_TARGET_CONF) or (spanish_conf >= MIN_TARGET_CONF)
             else:
-                is_ok = target_conf >= MIN_TARGET_CONF
+                is_present = (target_conf >= MIN_TARGET_CONF)
 
-            if not is_ok:
+            # If target language is not present with at least MIN_TARGET_CONF,
+            # treat this as a translation error
+            if not is_present:
                 cleaned = postprocess(text)
                 if cleaned and cleaned not in glossary:
                     errors.add(cleaned)
