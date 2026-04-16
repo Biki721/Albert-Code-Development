@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+*.log
+
+# Backend specific
+backend/venv/
+backend/.env
+backend/*.db
+backend/*.db-journal
+backend/service.log
+
+# Node / Frontend
+node_modules/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+*.local
+.env.local
+.env.production.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Reports and outputs
+Reports/
+*.xlsx
+*.xls
+Page Trees/
+Tree Dicts/
+DocumentLinks/
+Reverse Dicts/
+External Urls/
+Aruba Urls/
+MarketingProPageTrees/
+MarketingPro DocumentLinks/
+MarketingPro Reverse Dicts/
+MarketingPro External Urls/
+CompetitorPageTrees/
+Competitor DocumentLinks/
+Competitor Reverse Dicts/
+Competitor External Urls/
+
+# Credentials and sensitive data
+config/users.json
+*.pem
+*.key
+*.crt
+
+# Backup files
+*.bak
+backup/

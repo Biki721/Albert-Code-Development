@@ -1,0 +1,5 @@
+http://www.hpe.com
+http://www.hpe.com/it/it/about/legal/terms-of-use.html
+http://www.hpe.com/it/it/privacy.html
+https://auth.hpe.com/hpe/cf/forgot-password
+https://www.hpe.com/psnow/collection-resources/a00042891ese

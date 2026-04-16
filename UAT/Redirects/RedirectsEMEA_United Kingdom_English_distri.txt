@@ -1,0 +1,3 @@
+Intended URL → Actual URL
+================================================================================
+https://partner.hpe.com → https://partner.hpe.com/

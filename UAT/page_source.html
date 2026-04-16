@@ -1,0 +1,200 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- prevent pages from being indexed by search engines-->
+    <meta name="robots" content="noindex, nofollow">
+        <link rel="shortcut icon" href="/favicon.ico">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>Seismic - Login</title>
+    <script type="text/javascript" charset="utf-8">
+        var loginSettings = {};
+        loginSettings.primaryColor = '#000000';
+        loginSettings.customHelpText = '&lt;div id=&quot;rte-initial-content-wrapper&quot; style=&quot;font-size: 10pt; font-family: Calibri, Arial, Verdana, Georgia, &amp;quot;Times New Roman&amp;quot;, Courier;&quot;&gt;&lt;p style=&quot;margin:0in 0in 8pt;line-height:107%;font-size:11pt;font-family:Aptos, sans-serif&quot;&gt;&lt;span style=&quot;font-size:10.5pt;font-family:&amp;quot;Source Sans Pro&amp;quot;,sans-serif&quot;&gt;Top HPE sales collateral and Go-to-Market&#xA;resources to engage buyers and grow the business.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;';
+        loginSettings.logoUrl = 'https://bss-gn107.seismic.com/api/download/v1/blob?t=hpe&amp;c=hpe&amp;id=f7fa0605-221d-4589-8c8b-aff113dccd16&amp;et=20250226123709&amp;fn=logo.png&amp;isfullcontainername=True&amp;sig=nObcc6tmAztQr5Of%2F29dVdWv1vZ19qXwe2uKpNxNI5I%3D';
+        loginSettings.bgUrl = 'https://bss-gn107.seismic.com/api/download/v1/blob?t=hpe&amp;c=hpe&amp;id=45d82c75-52f6-41b7-a09b-0de31cb0b914&amp;et=20250226123709&amp;fn=bg.jpg&amp;isfullcontainername=True&amp;sig=DrTo%2BrCa67VY9h2RZmYpTgkSjjt4LWJaD4J2WA4eIxo%3D';
+        loginSettings.customLoginOptionEnabled = ('True' == 'True');
+        loginSettings.directLogonEnabled = ('False' == 'True');
+        loginSettings.keepForgotPassword = ('False' == 'True');
+        loginSettings.announcements = null;
+        loginSettings.tenantInfo = {"tenantName":"hpe","tenantUniqueId":"3a3748a9-7bde-4776-9817-7aa55ef3df9f","environment":"prod","webCDNServerUrl":"https://cdn-prod.seismic.com"};
+        loginSettings.customLoginWithMantleUiBaseUrl = getCDNPathForCustomLogin();
+        loginSettings.customLoginWithMantleUiBaseUrlChina = getChinaCDNPathForCustomLogin();
+        loginSettings.entrypoints = ["main.9838c3c2.css","static/js/main.4176843e.js"];
+        loginSettings.tenantSystemTypes = ["Seismic"];
+        String.prototype.format = String.prototype.format || function (args) {
+            var result = this;
+            if (arguments.length > 0) {
+                for (var i = 0; i < arguments.length; i++) {
+                    if (arguments[i] != undefined) {
+                        var reg = new RegExp("({)" + i + "(})", "g");
+                        result = result.replace(reg, arguments[i]);
+                    }
+                }
+            }
+            return result;
+        }
+        console.log("loginSettings is", loginSettings);
+        function getCDNPathForCustomLogin() {
+            return "https://cdn-prod.seismic.com/static/new-tenant-authentication-service-ui/new-tenant-authentication-service-ui/";
+        }
+        function getChinaCDNPathForCustomLogin() {
+            return "https://seismiccdn-prod.seismic-cn.com/static/new-tenant-authentication-service-ui/new-tenant-authentication-service-ui/";
+        }
+
+        function isClientUseChinaTimeZone() {
+            var timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+            var isTimeZonePlus8 = new Date().getTimezoneOffset() === -480;
+            return timeZone === undefined ? isTimeZonePlus8 : timeZone === 'Asia/Shanghai';
+        }
+        function getScriptPattern() {
+            return "<script type=\"text/javascript\" src=\"{0}\" charset=\"utf-8\"><\/script>";
+        }
+        function getLinkPattern() {
+            return "<link rel=\"stylesheet\" type=\"text/css\" href=\"{0}\" \/>";
+        }
+        var canUseChinaCDN = isClientUseChinaTimeZone();;
+    </script>
+    <script type="text/javascript" charset="utf-8">
+        !function () {
+            imageBaseUrl = '';
+        }();
+    </script>
+<link rel="stylesheet" type="text/css" href="https://cdn-prod.seismic.com/static/new-tenant-authentication-service-ui/new-tenant-authentication-service-ui/main.9838c3c2.css"><style data-styled="active" data-styled-version="5.2.1"></style></head>
+<body>
+        <main>
+            <div id="container"><div class="ui-theme-root" dir="ltr"><div class="ToastsContainer__ToastsWrapper-sc-h0emp5-0 kYWeMN"><div role="region" aria-live="polite" aria-label="Status toasts live region"></div><div role="region" aria-live="assertive" aria-label="Alert toasts live region"></div><div></div></div><div class="page-wrapper"><div class="page-left"><div class="app-content-layout"><div class="content-main"><div class="main-wrapper"><main><div class="logo "><div><img src="https://bss-gn107.seismic.com/api/download/v1/blob?t=hpe&amp;c=hpe&amp;id=f7fa0605-221d-4589-8c8b-aff113dccd16&amp;et=20250226123709&amp;fn=logo.png&amp;isfullcontainername=True&amp;sig=nObcc6tmAztQr5Of%2F29dVdWv1vZ19qXwe2uKpNxNI5I%3D" alt="welcome"></div></div><div class="page default-login has-sso"><div class="sso-options" style="margin-top: 0rem;"><div class="separator"><span class="separator-text">Select a login option</span></div><ul><li class="sso-options-button"><button class="StyledButton__StyledButtonBase-sc-1fmfard-0 StyledButton-sc-1fmfard-1 IIPQu kwvDv _mntl-tertiary styled-button long-button" type="button" data-testid=""><span class="A11YLabel__LabelWrapper-sc-1lm9tqw-1 hQdLxZ"><span class="A11YLabel__Label-sc-1lm9tqw-0 lbwKjE">Employee</span></span></button></li><li class="sso-options-button"><button class="StyledButton__StyledButtonBase-sc-1fmfard-0 StyledButton-sc-1fmfard-1 IIPQu kwvDv _mntl-tertiary styled-button long-button" type="button" data-testid=""><span class="A11YLabel__LabelWrapper-sc-1lm9tqw-1 hQdLxZ"><span class="A11YLabel__Label-sc-1lm9tqw-0 lbwKjE">Partner</span></span></button></li></ul></div><div class="custom-help-text"><div id="rte-initial-content-wrapper" style="font-size: 10pt; font-family: Calibri, Arial, Verdana, Georgia, &quot;Times New Roman&quot;, Courier;"><p style="margin:0in 0in 8pt;line-height:107%;font-size:11pt;font-family:Aptos, sans-serif"><span style="font-size:10.5pt;font-family:&quot;Source Sans Pro&quot;,sans-serif">Top HPE sales collateral and Go-to-Market
+resources to engage buyers and grow the business.<o:p></o:p></span></p></div></div></div></main></div></div><div class="footer-wrapper"><footer class="poweredby"><div class="disclaimer"><p class="powered-by">Powered by <a target="__blank" href="https://seismic.com/"><img height="14" src="https://cdn-prod.seismic.com/static/new-tenant-authentication-service-ui/new-tenant-authentication-service-ui/static/media/seismic-logo.b84b1dbc.svg" alt="seismic"></a></p><p class="content">One account for Seismic Content, Learning, LiveSocial &amp; Knowledge</p></div></footer></div></div></div><div class="background-wrapper page-right"><div class="overlay"></div><div class="background" style="background-image: url(&quot;https://bss-gn107.seismic.com/api/download/v1/blob?t=hpe&amp;c=hpe&amp;id=45d82c75-52f6-41b7-a09b-0de31cb0b914&amp;et=20250226123709&amp;fn=bg.jpg&amp;isfullcontainername=True&amp;sig=DrTo%2BrCa67VY9h2RZmYpTgkSjjt4LWJaD4J2WA4eIxo%3D&quot;); background-size: cover; background-position: center center;"></div></div></div><span role="presentation" class="VisuallyHidden-sc-1ogxlsz-0 fNHvqH"><div aria-live="assertive"></div><div aria-live="polite"></div></span></div></div>
+            
+<div id="returnUrl" data-untrustedinput="/tenants/hpe/connect/authorize/callback?client_id=0188a34d-cdbd-4208-8ebc-d0567984915e&amp;response_type=id_token%20token&amp;scope=openid%20id%20library%20download%20reporting%20engagement_read%20engagement_write%20upload%20external_authorization%20buyer_experience_service_read%20buyer_experience_service_write%20feature_read%20collection_read%20collection_write%20contentdiscovery%20doccenter_backend_read%20doccenter_backend_write%20contenttemplate%20livedoc%20livedoc_express%20wms_readwrite%20feature_tier_read%20guided_assembly%20ums_bulk_management%20ums_bff_read%20ums_bff_readwrite%20das_schema_ro%20das_data_rw%20email%20profile%20contentmanager_bff%20pnsbff_readwrite%20ext_meetings_read%20ext_meetings_write%20seismic.custom_schema.view%20seismic.custom_schema.manage%20entitlement_read%20entitlement_readwrite%20meeting_analytics_read%20aiml_llm%20learning%20practice&amp;state=8b67bbd4c49b54752426e81aedb21a07&amp;redirect_uri=https%3A%2F%2Fhpe.seismic.com%2Fapp&amp;response_mode=form_post&amp;nonce=fb9d4d0b29f1a61797bddce004ff59a4">
+<div id="clientId" data-untrustedinput="0188a34d-cdbd-4208-8ebc-d0567984915e">
+<div id="clientVersion" data-untrustedinput="">
+<div id="errorMessage" data-untrustedinput="">
+<div id="container"></div>
+<script type="text/javascript">
+    let ssoButtons = [
+                 { "buttonText": "Employee", "ssoId": "d75d2029-e830-4dd8-8e12-0ba55b543823" },
+                 { "buttonText": "Partner", "ssoId": "9bfe84e6-5352-4c65-bab7-904838d10052" },
+    ];
+    var loginOptions = {
+        settings: {
+            ThemeColor: {
+                PrimaryColor: loginSettings.primaryColor
+            },
+            CustomLogoUrl: loginSettings.logoUrl,
+            customHelpText: loginSettings.customHelpText,
+            keepForgotPassword: loginSettings.keepForgotPassword,
+            CustomBackgroundImageUrl: loginSettings.bgUrl,
+            //items: loginSettings.ssoItems
+            customLoginOptionEnabled: loginSettings.customLoginOptionEnabled,
+            directLogonEnabled: 'False' === 'True' ? true : (loginSettings.directLogonEnabled || ssoButtons.length == 0),
+            items:ssoButtons
+        },
+        tenantSystemTypes: loginSettings.tenantSystemTypes,
+        publicPath: loginSettings.customLoginWithMantleUiBaseUrl,
+        publicChinaPath: loginSettings.customLoginWithMantleUiBaseUrlChina,
+        entrypoints: loginSettings.entrypoints,
+        serverBaseUrl: '/tenants/hpe',
+        imageBaseUrl: imageBaseUrl,
+        initMode: loginSettings.customLoginOptionEnabled?"loginSSO":"login", // login | errorMessage | resetPassword
+        languageSetting :'False' === 'True',
+        defaultBrowserLanaguage: 'en-US',
+        login: {
+            clientId: document.getElementById("clientId").getAttribute("data-untrustedinput"),
+            clientVersion: document.getElementById("clientVersion").getAttribute("data-untrustedinput"),
+            disableSingleSignOn: 'False' === 'True',
+            forgotPasswordHyperlinkUrl: 'https://hpe.seismic.com/ForgotPassword.aspx',
+            returnUrl: document.getElementById("returnUrl").getAttribute("data-untrustedinput"),
+            isMultipleIdentityProviderEnabled: 'True' === 'True',
+            showMultipleIdentityProviderList: 'False' === 'True',
+            showMultipleIdentityProviderSupport: 'True' === 'True',
+            isRememberMeEnabled: 'True' === 'True',
+            canChangeTenant: 'False' === 'True',
+            currentTenantFQDN: 'hpe.seismic.com',
+            centralLoginUrl: '/central?continue=%2fconnect%2fauthorize%2fcallback%3fclient_id%3d0188a34d-cdbd-4208-8ebc-d0567984915e%26response_type%3did_token%2520token%26scope%3dopenid%2520id%2520library%2520download%2520reporting%2520engagement_read%2520engagement_write%2520upload%2520external_authorization%2520buyer_experience_service_read%2520buyer_experience_service_write%2520feature_read%2520collection_read%2520collection_write%2520contentdiscovery%2520doccenter_backend_read%2520doccenter_backend_write%2520contenttemplate%2520livedoc%2520livedoc_express%2520wms_readwrite%2520feature_tier_read%2520guided_assembly%2520ums_bulk_management%2520ums_bff_read%2520ums_bff_readwrite%2520das_schema_ro%2520das_data_rw%2520email%2520profile%2520contentmanager_bff%2520pnsbff_readwrite%2520ext_meetings_read%2520ext_meetings_write%2520seismic.custom_schema.view%2520seismic.custom_schema.manage%2520entitlement_read%2520entitlement_readwrite%2520meeting_analytics_read%2520aiml_llm%2520learning%2520practice%26state%3d8b67bbd4c49b54752426e81aedb21a07%26redirect_uri%3dhttps%253A%252F%252Fhpe.seismic.com%252Fapp%26response_mode%3dform_post%26nonce%3dfb9d4d0b29f1a61797bddce004ff59a4',
+            errorCode: '',
+            errorMessage: document.getElementById("errorMessage").getAttribute("data-untrustedinput"),
+            errorData: null,
+            tenant: 'hpe',
+            userName: '',
+            enableCustomizedMutiIDPUI: 'True' === 'True'
+        }
+    };
+    console.log('entrypoints are', loginSettings.entrypoints)
+    if ('True' != 'True') {
+        var realLogin = new Seismic.Components.Authentication(document.getElementById("container"), loginOptions);
+        realLogin.render();
+    }
+</script>
+        </div></div></div></div></main>
+        <!-- Cloudflare Web Analytics -->
+        <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;d59d7e96dc0a496184a00c793474da39&quot;}"></script>
+        <!-- End Cloudflare Web Analytics -->
+    <script>
+        !(function () {
+            function getTenant() {
+                var tenant
+
+                if (loginOptions.login) {
+                    tenant = loginOptions.login.tenant
+                }
+
+                var tenantRawString = window.location.href.split('tenants')
+                if (!tenant && tenantRawString && tenantRawString.length > 1) {
+                    tenant = tenantRawString[1].split('/').filter(Boolean)[0]
+                }
+
+                return tenant
+            }
+
+            function getSeismicCDNAddress(cb) {
+                var tenant = getTenant()
+                if (tenant) {
+                    var url = 'https://service-discovery.seismic.com/api/sds/v1/tenants/' + tenant + '/services?useEdgeComputing=true'
+                    var xmlRequest = new XMLHttpRequest()
+                    xmlRequest.open('GET', url)
+                    xmlRequest.addEventListener('load', function () {
+                        var status = xmlRequest.status
+                        var data = JSON.parse(xmlRequest.response)
+                        if (status >= 200 && status <= 299) {
+                            if (cb) cb(data)
+                        }
+                    })
+                    xmlRequest.timeout = 10 * 60 * 60
+                    xmlRequest.send()
+                }
+                else {
+                    cb(null)
+                }
+            }
+
+            function appendUrls(url, appendUrl) {
+                return url.replace(/\/*$/g, '') + '/' + appendUrl.replace(/^\/*/g, '')
+            }
+
+            function generateEntryScript(cdn) {
+                var scriptTag = document.createElement('script')
+                var entryJsPath = '/app-entry.js' + '?t=' + Math.floor(new Date().getTime() / (10 * 60 * 1000))
+                scriptTag.src = appendUrls(cdn, entryJsPath)
+                document.body.appendChild(scriptTag)
+            }
+
+            function load() {
+
+                getSeismicCDNAddress(function (data) {
+                    var webcdn = "https://cdn-" + "prod" + ".seismic" + "" + ".com";
+                    if (data) {
+                        webcdn = data.serviceAddress.webcdn
+                    }
+                    var cdn = appendUrls(webcdn, '/static/new-tenant-authentication-service-ui/new-tenant-authentication-service-ui')
+                    loginOptions.publicPath = cdn
+                    generateEntryScript(cdn)
+                })
+
+            }
+            load()
+        })()
+    </script>
+
+
+<script src="https://cdn-prod.seismic.com/static/new-tenant-authentication-service-ui/new-tenant-authentication-service-ui/app-entry.js?t=2900949"></script><script src="https://cdn-prod.seismic.com/static/new-tenant-authentication-service-ui/new-tenant-authentication-service-ui/static/js/main.4176843e.js"></script></body></html>

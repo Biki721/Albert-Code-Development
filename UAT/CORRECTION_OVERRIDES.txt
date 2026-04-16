@@ -1,0 +1,11 @@
+personel->personnel
+fourty->forty
+calender->calendar
+adress->address
+commited->committed
+occured->occurred
+loosing->losing
+analize->analyze
+carefull->careful
+stratagey->strategy
+specialty->specialty

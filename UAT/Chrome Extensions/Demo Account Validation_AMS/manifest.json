@@ -1,0 +1,15 @@
+{
+    "name": "Demo Account Validation AMS",
+    "version": "2.4.8",
+    "manifest_version": 3,
+    "description": "Demo Account Validation Tool",
+    "content_scripts": [{
+        "js": [
+            "jquery-3.2.1.js", "demo_validation.js"
+        ],
+        "matches": [
+            "http://*/*", "https://*/*"
+        ],
+        "run_at": "document_idle"
+    }]
+}

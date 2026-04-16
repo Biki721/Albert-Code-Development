@@ -1,0 +1,25 @@
+﻿# Virtual environments
+UAT/env/
+env/
+venv/
+.venv/
+UAT/venv311/
+# Large tools / binaries
+UAT/LanguageTool/
+*.bin
+
+# The specific problem file
+UAT/lid.176.bin
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

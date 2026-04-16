@@ -1,0 +1,34 @@
+Intended URL → Actual URL
+================================================================================
+https://partner.hpe.com → https://partner.hpe.com/
+https://partner.hpe.com/aruba-solutions → https://partner.hpe.com/home
+https://partner.hpe.com/build-track-upp → https://partner.hpe.com/group/prp
+https://partner.hpe.com/certification-enablement → https://partner.hpe.com/certification-and-enablement
+https://partner.hpe.com/competencies-prv → https://partner.hpe.com/competencies
+https://partner.hpe.com/distribution → https://partner.hpe.com/home
+https://partner.hpe.com/get-help → https://partner.hpe.com/home
+https://partner.hpe.com/group/prp/certificate-insignia → https://partner.hpe.com/certificate-and-insignia
+https://partner.hpe.com/group/prp/certificate-insignia-distributor → https://partner.hpe.com/certificate-and-insignia
+https://partner.hpe.com/group/prp/certification-enablement → https://partner.hpe.com/certification-and-enablement
+https://partner.hpe.com/group/prp/competencies-prv → https://partner.hpe.com/competencies
+https://partner.hpe.com/group/prp/edge-services-platform → https://partner.hpe.com/group/prp/security-first-ai-networking
+https://partner.hpe.com/group/prp/partner-programs → https://partner.hpe.com/partner-ready-vantage
+https://partner.hpe.com/group/prp/security-solution → https://partner.hpe.com/networking-security
+https://partner.hpe.com/group/prp/tools → https://partner.hpe.com/tools-catalog
+https://partner.hpe.com/hpe → https://partner.hpe.com/partner-ready-vantage-old
+https://partner.hpe.com/hpe-greenlake → https://partner.hpe.com/home
+https://partner.hpe.com/hpe-partner-ready → https://partner.hpe.com/home
+https://partner.hpe.com/hpe-partner-ready-vantage → https://partner.hpe.com/partner-ready-vantage-old
+https://partner.hpe.com/membership1 → https://partner.hpe.com/home
+https://partner.hpe.com/networking-vantage → https://partner.hpe.com/partner-ready-vantage-old
+https://partner.hpe.com/news-events → https://partner.hpe.com/home
+https://partner.hpe.com/partner-programs → https://partner.hpe.com/partner-ready-vantage
+https://partner.hpe.com/products-services-solutions → https://partner.hpe.com/home
+https://partner.hpe.com/programs-xaas → https://partner.hpe.com/partner-ready-vantage
+https://partner.hpe.com/sales-marketing → https://partner.hpe.com/home
+https://partner.hpe.com/security-solution → https://partner.hpe.com/networking-security
+https://partner.hpe.com/sell-old → https://partner.hpe.com/partner-ready-vantage-old
+https://partner.hpe.com/sell-track-upp → https://partner.hpe.com/group/prp
+https://partner.hpe.com/service-track-upp → https://partner.hpe.com/partner-ready-vantage
+https://partner.hpe.com/service1 → https://partner.hpe.com/partner-ready-vantage-old
+https://partner.hpe.com/tools → https://partner.hpe.com/tools-catalog

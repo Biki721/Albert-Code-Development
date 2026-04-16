@@ -1,0 +1,1669 @@
+2022-11-15
+2022-11-15
+2022-11-15
+2022-11-15
+finished page tree for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 840.2346172332764
+finished translation and empty page for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 845.8057639598846
+finished tvar for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 845.8997700214386
+finished broken link for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 5269.361600637436
+finished newtab for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 5275.796599388123
+Total time taken for all modules for the account:[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] is: 5275.796599388123
+2022-11-15
+finished page tree for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 761.4616701602936
+finished translation and empty page for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 1326.4809827804565
+finished tvar for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 1326.5590794086456
+finished broken link for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 6803.217255592346
+finished newtab for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 7952.803471565247
+Total time taken for all modules for the account:[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] is: 7952.803471565247
+2022-11-15
+finished page tree for[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] and time taken is 1018.211615562439
+finished translation and empty page for[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] and time taken is 1807.5589628219604
+finished tvar for[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] and time taken is 1807.6559092998505
+finished broken link for[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] and time taken is 6692.501624584198
+finished newtab for[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] and time taken is 7685.326660394669
+Total time taken for all modules for the account:[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] is: 7685.326660394669
+2022-11-15
+finished page tree for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 1306.8273763656616
+finished translation and empty page for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 2495.7422580718994
+finished tvar for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 2495.8482587337494
+finished broken link for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 18920.07123708725
+finished newtab for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 20738.023535490036
+Total time taken for all modules for the account:[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] is: 20738.023535490036
+2022-11-16
+finished page tree for[['demo_la_distributor@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'Distri']] and time taken is 1242.4416151046753
+finished translation and empty page for[['demo_la_distributor@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'Distri']] and time taken is 2204.006667613983
+finished tvar for[['demo_la_distributor@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'Distri']] and time taken is 2204.5876734256744
+finished broken link for[['demo_la_distributor@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'Distri']] and time taken is 8263.257722854614
+finished newtab for[['demo_la_distributor@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'Distri']] and time taken is 9831.63055062294
+Total time taken for all modules for the account:[['demo_la_distributor@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'Distri']] is: 9831.63055062294
+2022-11-16
+finished page tree for[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] and time taken is 1146.6746525764465
+finished translation and empty page for[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] and time taken is 2059.8577885627747
+finished tvar for[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] and time taken is 2059.9547884464264
+finished broken link for[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] and time taken is 8642.69067811966
+finished newtab for[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] and time taken is 10049.54610490799
+Total time taken for all modules for the account:[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] is: 10049.54610490799
+2022-11-16
+finished page tree for[['demo_spanisheu_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'T2']] and time taken is 1132.047515153885
+finished translation and empty page for[['demo_spanisheu_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'T2']] and time taken is 2227.3862450122833
+finished tvar for[['demo_spanisheu_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'T2']] and time taken is 2227.4912447929382
+finished broken link for[['demo_spanisheu_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'T2']] and time taken is 8771.183864593506
+finished newtab for[['demo_spanisheu_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'T2']] and time taken is 10293.48028087616
+Total time taken for all modules for the account:[['demo_spanisheu_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'T2']] is: 10293.48028087616
+2022-11-16
+finished page tree for[['demo_la_platinum@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'T2']] and time taken is 1254.9399197101593
+finished translation and empty page for[['demo_la_platinum@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'T2']] and time taken is 2371.594444513321
+finished tvar for[['demo_la_platinum@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'T2']] and time taken is 2371.717488050461
+finished broken link for[['demo_la_platinum@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'T2']] and time taken is 9175.054432630539
+finished newtab for[['demo_la_platinum@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'T2']] and time taken is 10759.534548997879
+Total time taken for all modules for the account:[['demo_la_platinum@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'T2']] is: 10759.534548997879
+2022-11-15
+finished page tree for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 1459.930138349533
+finished translation and empty page for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 2809.5253343582153
+finished tvar for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 2809.744376897812
+finished broken link for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 21667.729937314987
+finished newtab for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 23983.762581825256
+Total time taken for all modules for the account:[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] is: 23983.762581825256
+2022-11-16
+finished page tree for[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] and time taken is 649.7063918113708
+finished translation and empty page for[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] and time taken is 1267.1464307308197
+finished tvar for[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] and time taken is 1267.2224555015564
+finished broken link for[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] and time taken is 4533.713361263275
+finished newtab for[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] and time taken is 5680.138760566711
+Total time taken for all modules for the account:[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] is: 5680.138760566711
+2022-11-16
+finished page tree for[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] and time taken is 1090.0692460536957
+finished translation and empty page for[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] and time taken is 2021.3875975608826
+finished tvar for[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] and time taken is 2021.4665939807892
+finished broken link for[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] and time taken is 5562.989743709564
+finished newtab for[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] and time taken is 7100.765567302704
+Total time taken for all modules for the account:[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] is: 7100.765567302704
+2022-11-16
+finished page tree for[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] and time taken is 1441.6328494548798
+finished translation and empty page for[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] and time taken is 2167.721879005432
+finished tvar for[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] and time taken is 2167.8228843212128
+finished broken link for[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] and time taken is 5648.745734453201
+finished newtab for[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] and time taken is 7119.279915809631
+Total time taken for all modules for the account:[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] is: 7119.279915809631
+2022-11-16
+finished page tree for[['demo_italian_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'T2']] and time taken is 1215.1003160476685
+finished translation and empty page for[['demo_italian_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'T2']] and time taken is 2146.364844560623
+finished tvar for[['demo_italian_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'T2']] and time taken is 2146.461843252182
+finished broken link for[['demo_italian_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'T2']] and time taken is 9149.542568445206
+finished newtab for[['demo_italian_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'T2']] and time taken is 10811.157759189606
+Total time taken for all modules for the account:[['demo_italian_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'T2']] is: 10811.157759189606
+2022-11-16
+finished page tree for[['demo_h3c@pproap.com', 'ExperiencePRP', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 20.27103352546692
+finished translation and empty page for[['demo_h3c@pproap.com', 'ExperiencePRP', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 51.53835988044739
+finished tvar for[['demo_h3c@pproap.com', 'ExperiencePRP', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 51.602357625961304
+finished broken link for[['demo_h3c@pproap.com', 'ExperiencePRP', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 300.68344140052795
+finished newtab for[['demo_h3c@pproap.com', 'ExperiencePRP', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 322.5805125236511
+Total time taken for all modules for the account:[['demo_h3c@pproap.com', 'ExperiencePRP', 'APJ', 'China', 'Chinese', 'Distri']] is: 322.5805125236511
+2022-11-16
+finished page tree for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 1105.0860772132874
+finished translation and empty page for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 1882.06747508049
+finished tvar for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 1882.1604645252228
+finished broken link for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 6664.462056875229
+finished newtab for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 7737.656270742416
+Total time taken for all modules for the account:[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] is: 7737.656270742416
+2022-11-16
+finished page tree for[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] and time taken is 1335.054015636444
+finished translation and empty page for[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] and time taken is 2046.0121784210205
+finished tvar for[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] and time taken is 2046.0941712856293
+finished broken link for[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] and time taken is 6857.197474479675
+finished newtab for[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] and time taken is 7885.581236124039
+Total time taken for all modules for the account:[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] is: 7885.581236124039
+2022-11-16
+finished page tree for[['demo_distributor_lar@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'CTD']] and time taken is 856.1480689048767
+finished translation and empty page for[['demo_distributor_lar@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'CTD']] and time taken is 1515.35782456398
+finished tvar for[['demo_distributor_lar@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'CTD']] and time taken is 1515.4458224773407
+finished broken link for[['demo_distributor_lar@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'CTD']] and time taken is 4027.707261323929
+finished newtab for[['demo_distributor_lar@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'CTD']] and time taken is 4940.752826929092
+Total time taken for all modules for the account:[['demo_distributor_lar@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'CTD']] is: 4940.752826929092
+2022-11-16
+2022-11-16
+2022-11-16
+finished page tree for[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] and time taken is 1805.3479959964752
+finished translation and empty page for[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] and time taken is 2929.4012138843536
+finished tvar for[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] and time taken is 2940.058166027069
+finished broken link for[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] and time taken is 10816.988367557526
+finished newtab for[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] and time taken is 12318.219448566437
+Total time taken for all modules for the account:[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] is: 12318.219448566437
+2022-11-17
+finished page tree for[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] and time taken is 1010.4809753894806
+finished translation and empty page for[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] and time taken is 1704.906975030899
+finished tvar for[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] and time taken is 1704.9990191459656
+2022-11-17
+finished page tree for[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] and time taken is 905.9845538139343
+finished translation and empty page for[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] and time taken is 1580.0717062950134
+finished tvar for[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] and time taken is 1580.1677827835083
+2022-11-17
+finished page tree for[['demo_turkish_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'Distri']] and time taken is 29.33336353302002
+finished translation and empty page for[['demo_turkish_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'Distri']] and time taken is 67.90421772003174
+finished tvar for[['demo_turkish_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'Distri']] and time taken is 67.9662857055664
+finished broken link for[['demo_turkish_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'Distri']] and time taken is 317.27671670913696
+finished newtab for[['demo_turkish_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'Distri']] and time taken is 340.3096716403961
+Total time taken for all modules for the account:[['demo_turkish_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'Distri']] is: 340.3096716403961
+2022-11-17
+finished page tree for[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] and time taken is 704.7322585582733
+2022-11-17
+2022-11-17
+2022-11-17
+2022-11-17
+2022-11-17
+finished page tree for[['demo_turkish_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2']] and time taken is 1533.484627008438
+finished translation and empty page for[['demo_turkish_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2']] and time taken is 2663.3781042099
+finished tvar for[['demo_turkish_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2']] and time taken is 2663.4751143455505
+finished broken link for[['demo_turkish_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2']] and time taken is 9683.177013158798
+2022-11-17
+2022-11-17
+2022-11-17
+2022-11-17
+2022-11-17
+2022-11-17
+2022-11-17
+2022-11-17
+2022-11-17
+2022-11-17
+finished page tree for[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 834.968296289444
+finished translation and empty page for[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 1806.3883085250854
+finished tvar for[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 1806.4673256874084
+finished broken link for[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 3824.4653704166412
+finished newtab for[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 4810.937644481659
+Total time taken for all modules for the account:[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] is: 4810.937644481659
+2022-11-17
+finished page tree for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 809.3137230873108
+finished translation and empty page for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 1812.013750076294
+finished tvar for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 1812.1007406711578
+finished broken link for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 6507.902202129364
+finished newtab for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 7814.449416399002
+Total time taken for all modules for the account:[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] is: 7814.449416399002
+2022-11-17
+finished page tree for[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] and time taken is 826.8820807933807
+finished translation and empty page for[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] and time taken is 2218.5818107128143
+finished tvar for[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] and time taken is 2218.6608278751373
+finished broken link for[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] and time taken is 6882.60163807869
+finished newtab for[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] and time taken is 8257.15066576004
+Total time taken for all modules for the account:[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] is: 8257.15066576004
+2022-11-17
+finished page tree for[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 1238.961900472641
+finished translation and empty page for[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 1955.6405930519104
+finished tvar for[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 1955.7003779411316
+finished broken link for[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 3962.0741486549377
+finished newtab for[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 4971.629130363464
+Total time taken for all modules for the account:[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] is: 4971.629130363464
+2022-11-17
+finished page tree for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 1125.5522456169128
+finished translation and empty page for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 1744.5916967391968
+finished tvar for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 1744.6756942272186
+finished broken link for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 5138.001382350922
+finished newtab for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 6197.733930587769
+Total time taken for all modules for the account:[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] is: 6197.733930587769
+2022-11-17
+finished page tree for[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] and time taken is 850.7063522338867
+finished translation and empty page for[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] and time taken is 1593.0967514514923
+finished tvar for[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] and time taken is 1593.1927554607391
+finished broken link for[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] and time taken is 5932.953817605972
+finished newtab for[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] and time taken is 7029.429992675781
+Total time taken for all modules for the account:[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] is: 7029.429992675781
+2022-11-17
+finished page tree for[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] and time taken is 1222.1494216918945
+finished translation and empty page for[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] and time taken is 2269.8263325691223
+finished tvar for[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] and time taken is 2269.8961791992188
+finished broken link for[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] and time taken is 7854.884125947952
+finished newtab for[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] and time taken is 8374.22294664383
+Total time taken for all modules for the account:[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] is: 8374.22294664383
+2022-11-17
+finished page tree for[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] and time taken is 1256.4743778705597
+finished translation and empty page for[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] and time taken is 1952.5291967391968
+finished tvar for[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] and time taken is 1952.6161847114563
+finished broken link for[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] and time taken is 8116.051995277405
+finished newtab for[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] and time taken is 9481.508179664612
+Total time taken for all modules for the account:[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] is: 9481.509183645248
+2022-11-17
+finished page tree for[['demo_distributor_lar@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'CTD']] and time taken is 982.5301313400269
+finished translation and empty page for[['demo_distributor_lar@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'CTD']] and time taken is 1470.5635771751404
+finished tvar for[['demo_distributor_lar@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'CTD']] and time taken is 1470.6495866775513
+finished broken link for[['demo_distributor_lar@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'CTD']] and time taken is 3819.2483656406403
+finished newtab for[['demo_distributor_lar@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'CTD']] and time taken is 4988.453143119812
+Total time taken for all modules for the account:[['demo_distributor_lar@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'CTD']] is: 4988.453143119812
+2022-11-17
+finished page tree for[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] and time taken is 1118.321350812912
+finished translation and empty page for[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] and time taken is 2003.9780695438385
+finished tvar for[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] and time taken is 2004.060073852539
+finished broken link for[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] and time taken is 8401.589589834213
+finished newtab for[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] and time taken is 10216.675004720688
+Total time taken for all modules for the account:[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] is: 10216.675004720688
+2022-11-17
+finished page tree for[['demo_indonesian_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'Distri']] and time taken is 1062.6035494804382
+finished translation and empty page for[['demo_indonesian_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'Distri']] and time taken is 1869.4519817829132
+finished tvar for[['demo_indonesian_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'Distri']] and time taken is 1869.6069583892822
+finished broken link for[['demo_indonesian_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'Distri']] and time taken is 6949.0081577301025
+finished newtab for[['demo_indonesian_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'Distri']] and time taken is 7953.621084451675
+Total time taken for all modules for the account:[['demo_indonesian_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'Distri']] is: 7953.621084451675
+2022-11-17
+finished page tree for[['demo_indonesian_id_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'T2']] and time taken is 1192.0718939304352
+finished translation and empty page for[['demo_indonesian_id_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'T2']] and time taken is 2096.3203938007355
+finished tvar for[['demo_indonesian_id_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'T2']] and time taken is 2096.4083907604218
+finished broken link for[['demo_indonesian_id_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'T2']] and time taken is 7543.8031442165375
+finished newtab for[['demo_indonesian_id_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'T2']] and time taken is 8508.537991523743
+Total time taken for all modules for the account:[['demo_indonesian_id_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'T2']] is: 8508.537991523743
+2022-11-18
+finished page tree for[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] and time taken is 739.264392375946
+finished translation and empty page for[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] and time taken is 1683.1753413677216
+finished tvar for[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] and time taken is 1683.2863640785217
+finished broken link for[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] and time taken is 4466.759620666504
+finished newtab for[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] and time taken is 5452.693283319473
+Total time taken for all modules for the account:[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] is: 5452.693283319473
+2022-11-18
+finished page tree for[['demo_mapcompetitor_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T2']] and time taken is 1262.7246606349945
+finished translation and empty page for[['demo_mapcompetitor_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T2']] and time taken is 2537.8020117282867
+finished tvar for[['demo_mapcompetitor_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T2']] and time taken is 2538.0290179252625
+finished broken link for[['demo_mapcompetitor_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T2']] and time taken is 9038.866349935532
+finished newtab for[['demo_mapcompetitor_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T2']] and time taken is 10581.802366733551
+Total time taken for all modules for the account:[['demo_mapcompetitor_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T2']] is: 10581.802366733551
+2022-11-18
+finished page tree for[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] and time taken is 1707.6515865325928
+finished translation and empty page for[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] and time taken is 2845.3032417297363
+finished tvar for[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] and time taken is 2845.550314426422
+finished broken link for[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] and time taken is 9231.55917930603
+finished newtab for[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] and time taken is 10841.614593982697
+Total time taken for all modules for the account:[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] is: 10841.614593982697
+2022-11-18
+finished page tree for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 1827.7248072624207
+finished translation and empty page for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 2871.191755771637
+finished tvar for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 2871.299765586853
+finished broken link for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 9646.053057432175
+finished newtab for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 11814.071896791458
+Total time taken for all modules for the account:[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] is: 11814.071896791458
+2022-11-18
+finished page tree for[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] and time taken is 17438.556736946106
+finished translation and empty page for[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] and time taken is 17558.737281560898
+finished tvar for[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] and time taken is 17558.789490699768
+finished broken link for[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] and time taken is 17945.917075634003
+finished newtab for[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] and time taken is 18073.638078451157
+Total time taken for all modules for the account:[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] is: 18073.638078451157
+2022-11-18
+finished page tree for[['demo_unmanaged@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTD']] and time taken is 754.1691167354584
+finished translation and empty page for[['demo_unmanaged@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTD']] and time taken is 1515.3468215465546
+finished tvar for[['demo_unmanaged@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTD']] and time taken is 1515.4488253593445
+finished broken link for[['demo_unmanaged@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTD']] and time taken is 3806.6502509117126
+finished newtab for[['demo_unmanaged@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTD']] and time taken is 4621.484221696854
+Total time taken for all modules for the account:[['demo_unmanaged@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTD']] is: 4621.484221696854
+2022-11-18
+finished page tree for[['test_ntwkg_gold@pproap.com', 'ExperiencePRP!', 'NA', 'Canada', 'English', 'CTD']] and time taken is 941.3304979801178
+finished translation and empty page for[['test_ntwkg_gold@pproap.com', 'ExperiencePRP!', 'NA', 'Canada', 'English', 'CTD']] and time taken is 1529.7595007419586
+finished tvar for[['test_ntwkg_gold@pproap.com', 'ExperiencePRP!', 'NA', 'Canada', 'English', 'CTD']] and time taken is 1530.0365343093872
+finished broken link for[['test_ntwkg_gold@pproap.com', 'ExperiencePRP!', 'NA', 'Canada', 'English', 'CTD']] and time taken is 6476.417985916138
+finished newtab for[['test_ntwkg_gold@pproap.com', 'ExperiencePRP!', 'NA', 'Canada', 'English', 'CTD']] and time taken is 7344.394111156464
+Total time taken for all modules for the account:[['test_ntwkg_gold@pproap.com', 'ExperiencePRP!', 'NA', 'Canada', 'English', 'CTD']] is: 7344.394111156464
+2022-11-18
+finished page tree for[['demo_ukeng_proximity@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] and time taken is 930.1521489620209
+finished translation and empty page for[['demo_ukeng_proximity@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] and time taken is 1687.3488073349
+finished tvar for[['demo_ukeng_proximity@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] and time taken is 1687.6088151931763
+finished broken link for[['demo_ukeng_proximity@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] and time taken is 7763.009940624237
+finished newtab for[['demo_ukeng_proximity@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] and time taken is 8714.044453382492
+Total time taken for all modules for the account:[['demo_ukeng_proximity@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] is: 8714.044453382492
+2022-11-18
+finished page tree for[['demo_na_distributor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'Distri']] and time taken is 1332.5363223552704
+finished translation and empty page for[['demo_na_distributor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'Distri']] and time taken is 2364.098252058029
+finished tvar for[['demo_na_distributor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'Distri']] and time taken is 2364.1902384757996
+finished broken link for[['demo_na_distributor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'Distri']] and time taken is 7923.4933359622955
+finished newtab for[['demo_na_distributor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'Distri']] and time taken is 9181.462633609772
+Total time taken for all modules for the account:[['demo_na_distributor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'Distri']] is: 9181.462633609772
+2022-11-18
+finished page tree for[['demo_ukeng_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2A']] and time taken is 1699.6513788700104
+finished translation and empty page for[['demo_ukeng_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2A']] and time taken is 2709.111760854721
+finished tvar for[['demo_ukeng_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2A']] and time taken is 2713.2465329170227
+finished broken link for[['demo_ukeng_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2A']] and time taken is 12887.866203784943
+finished newtab for[['demo_ukeng_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2A']] and time taken is 14805.106664657593
+Total time taken for all modules for the account:[['demo_ukeng_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2A']] is: 14805.106664657593
+2022-11-18
+finished page tree for[['demo_technology@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'TP']] and time taken is 565.8541386127472
+finished translation and empty page for[['demo_technology@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'TP']] and time taken is 1055.0529408454895
+finished tvar for[['demo_technology@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'TP']] and time taken is 1055.1269536018372
+finished broken link for[['demo_technology@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'TP']] and time taken is 3186.0913393497467
+finished newtab for[['demo_technology@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'TP']] and time taken is 3748.258817434311
+Total time taken for all modules for the account:[['demo_technology@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'TP']] is: 3748.258817434311
+2022-11-18
+finished page tree for[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDB']] and time taken is 601.8985769748688
+finished translation and empty page for[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDB']] and time taken is 1020.3392043113708
+finished tvar for[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDB']] and time taken is 1020.4162268638611
+finished broken link for[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDB']] and time taken is 3292.534119606018
+finished newtab for[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDB']] and time taken is 4086.69162607193
+Total time taken for all modules for the account:[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDB']] is: 4086.69162607193
+2022-11-18
+finished page tree for[['demo_oem@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'ODP']] and time taken is 717.3519871234894
+finished translation and empty page for[['demo_oem@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'ODP']] and time taken is 1211.9410111904144
+finished tvar for[['demo_oem@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'ODP']] and time taken is 1212.0100128650665
+finished broken link for[['demo_oem@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'ODP']] and time taken is 4011.491979598999
+finished newtab for[['demo_oem@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'ODP']] and time taken is 4847.625726222992
+Total time taken for all modules for the account:[['demo_oem@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'ODP']] is: 4847.625726222992
+2022-11-18
+finished page tree for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] and time taken is 7088.20947265625
+finished translation and empty page for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] and time taken is 7455.625142812729
+finished tvar for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] and time taken is 7455.685148715973
+finished broken link for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] and time taken is 8075.350325345993
+finished newtab for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] and time taken is 8457.721485614777
+Total time taken for all modules for the account:[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] is: 8457.721485614777
+2022-11-18
+finished page tree for[['demo_na_platinum@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2']] and time taken is 1178.7169415950775
+finished translation and empty page for[['demo_na_platinum@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2']] and time taken is 2060.1173882484436
+finished tvar for[['demo_na_platinum@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2']] and time taken is 2060.304349422455
+finished broken link for[['demo_na_platinum@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2']] and time taken is 8676.73692393303
+finished newtab for[['demo_na_platinum@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2']] and time taken is 10063.922671556473
+Total time taken for all modules for the account:[['demo_na_platinum@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2']] is: 10063.922671556473
+2022-11-18
+finished page tree for[['demo_msa@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'MDF']] and time taken is 748.2404296398163
+finished translation and empty page for[['demo_msa@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'MDF']] and time taken is 1490.2891931533813
+finished tvar for[['demo_msa@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'MDF']] and time taken is 1490.3931910991669
+finished broken link for[['demo_msa@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'MDF']] and time taken is 3864.5568878650665
+finished newtab for[['demo_msa@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'MDF']] and time taken is 4806.036852121353
+Total time taken for all modules for the account:[['demo_msa@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'MDF']] is: 4806.036852121353
+2022-11-18
+finished page tree for[['demo_english_sg_oem@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'OEM']] and time taken is 830.4431612491608
+finished translation and empty page for[['demo_english_sg_oem@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'OEM']] and time taken is 1489.7625420093536
+finished tvar for[['demo_english_sg_oem@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'OEM']] and time taken is 1489.8565618991852
+finished broken link for[['demo_english_sg_oem@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'OEM']] and time taken is 4772.95916223526
+finished newtab for[['demo_english_sg_oem@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'OEM']] and time taken is 5984.8098821640015
+Total time taken for all modules for the account:[['demo_english_sg_oem@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'OEM']] is: 5984.8098821640015
+2022-11-18
+finished page tree for[['demoapjplat@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'T2']] and time taken is 1222.946973323822
+finished translation and empty page for[['demoapjplat@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'T2']] and time taken is 2310.4450998306274
+finished tvar for[['demoapjplat@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'T2']] and time taken is 2310.6311123371124
+finished broken link for[['demoapjplat@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'T2']] and time taken is 8146.013513803482
+finished newtab for[['demoapjplat@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'T2']] and time taken is 9819.673309803009
+Total time taken for all modules for the account:[['demoapjplat@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'T2']] is: 9819.673309803009
+2022-11-18
+finished page tree for[['demo_apj_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'Distri']] and time taken is 1173.8060715198517
+finished translation and empty page for[['demo_apj_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'Distri']] and time taken is 2060.085412979126
+finished tvar for[['demo_apj_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'Distri']] and time taken is 2060.181469678879
+finished broken link for[['demo_apj_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'Distri']] and time taken is 7844.771208763123
+finished newtab for[['demo_apj_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'Distri']] and time taken is 10318.468923330307
+Total time taken for all modules for the account:[['demo_apj_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'Distri']] is: 10318.468923330307
+2022-11-18
+finished page tree for[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] and time taken is 1372.9025495052338
+finished translation and empty page for[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] and time taken is 2501.120759487152
+finished tvar for[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] and time taken is 2501.3027625083923
+finished broken link for[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] and time taken is 9191.261531352997
+finished newtab for[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] and time taken is 11211.810360908508
+Total time taken for all modules for the account:[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] is: 11211.810360908508
+2022-11-23
+finished page tree for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 886.5240199565887
+finished translation and empty page for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 1599.0883991718292
+finished tvar for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 1599.1775512695312
+finished broken link for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 6388.929197311401
+finished newtab for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 7366.559807062149
+Total time taken for all modules for the account:[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] is: 7366.559807062149
+2022-11-23
+finished page tree for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 1960.4460592269897
+finished translation and empty page for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 3183.4874641895294
+finished tvar for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 3183.6026396751404
+finished broken link for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 19720.651229143143
+finished newtab for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 21914.05318593979
+Total time taken for all modules for the account:[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] is: 21914.05418562889
+2022-11-23
+finished page tree for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 2098.808790922165
+finished translation and empty page for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 3392.9862723350525
+finished tvar for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 3393.1363637447357
+finished broken link for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 22827.536284208298
+finished newtab for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 25069.603704214096
+Total time taken for all modules for the account:[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] is: 25069.603704214096
+2022-11-29
+finished page tree for[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] and time taken is 550.6692581176758
+finished translation and empty page for[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] and time taken is 1067.5913879871368
+finished tvar for[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] and time taken is 1067.6834933757782
+finished broken link for[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] and time taken is 3804.852023601532
+finished newtab for[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] and time taken is 4727.473747253418
+Total time taken for all modules for the account:[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] is: 4727.473747253418
+2022-11-29
+finished page tree for[['demo_mapcompetitor_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T2']] and time taken is 1001.7552583217621
+finished translation and empty page for[['demo_mapcompetitor_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T2']] and time taken is 1762.1887147426605
+finished tvar for[['demo_mapcompetitor_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T2']] and time taken is 1762.2843282222748
+finished broken link for[['demo_mapcompetitor_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T2']] and time taken is 7817.542486906052
+finished newtab for[['demo_mapcompetitor_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T2']] and time taken is 9168.581344366074
+Total time taken for all modules for the account:[['demo_mapcompetitor_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T2']] is: 9168.581344366074
+2022-11-29
+finished page tree for[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] and time taken is 1011.4773964881897
+finished translation and empty page for[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] and time taken is 1994.9634454250336
+finished tvar for[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] and time taken is 1995.143930196762
+finished broken link for[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] and time taken is 8062.197838068008
+finished newtab for[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] and time taken is 9360.525327205658
+Total time taken for all modules for the account:[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] is: 9360.525327205658
+2022-11-29
+finished page tree for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 1609.8961441516876
+finished translation and empty page for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 2500.6350502967834
+finished tvar for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 2500.8453793525696
+finished broken link for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 9533.571260690689
+finished newtab for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 11565.566821575165
+Total time taken for all modules for the account:[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] is: 11565.566821575165
+2022-11-29
+finished page tree for[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] and time taken is 13581.209901332855
+finished translation and empty page for[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] and time taken is 13684.35670375824
+finished tvar for[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] and time taken is 13684.3952729702
+finished broken link for[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] and time taken is 14047.389945268631
+finished newtab for[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] and time taken is 14154.391109466553
+Total time taken for all modules for the account:[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] is: 14154.391109466553
+2022-11-29
+finished page tree for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 853.589766740799
+finished translation and empty page for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 1530.2812840938568
+Total time taken for all modules for the account:[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] is: 1530.2812840938568
+2022-11-29
+finished page tree for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 1950.2651669979095
+finished translation and empty page for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 3307.1725840568542
+Total time taken for all modules for the account:[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] is: 3307.1725840568542
+2022-11-29
+finished page tree for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 2247.9617626667023
+finished translation and empty page for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 3849.2359595298767
+Total time taken for all modules for the account:[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] is: 3849.2359595298767
+2022-12-05
+finished page tree for[['demo_french_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'Distri']] and time taken is 20.85590887069702
+finished translation and empty page for[['demo_french_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'Distri']] and time taken is 38.94869375228882
+Total time taken for all modules for the account:[['demo_french_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'Distri']] is: 38.94869375228882
+2022-12-05
+finished page tree for[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] and time taken is 15.882914781570435
+finished translation and empty page for[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] and time taken is 30.195772886276245
+Total time taken for all modules for the account:[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] is: 30.195772886276245
+2022-12-05
+finished page tree for[['demo_mapcompetitor_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T2']] and time taken is 22.109824180603027
+finished translation and empty page for[['demo_mapcompetitor_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T2']] and time taken is 37.78185772895813
+Total time taken for all modules for the account:[['demo_mapcompetitor_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T2']] is: 37.78185772895813
+2022-12-05
+finished page tree for[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] and time taken is 533.2982316017151
+finished translation and empty page for[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] and time taken is 1081.8780007362366
+Total time taken for all modules for the account:[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] is: 1081.8780007362366
+2022-12-05
+finished page tree for[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] and time taken is 1687.370795249939
+finished translation and empty page for[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] and time taken is 1792.4361371994019
+Total time taken for all modules for the account:[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] is: 1792.4361371994019
+2022-12-05
+finished page tree for[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] and time taken is 1070.3805675506592
+finished translation and empty page for[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] and time taken is 1908.412000656128
+Total time taken for all modules for the account:[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] is: 1908.412000656128
+2022-12-05
+finished page tree for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 1307.793895483017
+finished translation and empty page for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 2335.501490831375
+Total time taken for all modules for the account:[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] is: 2335.501490831375
+2022-12-05
+finished page tree for[['demo_ukeng_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2A']] and time taken is 19.53531265258789
+finished translation and empty page for[['demo_ukeng_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2A']] and time taken is 41.518311977386475
+Total time taken for all modules for the account:[['demo_ukeng_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2A']] is: 41.518311977386475
+2022-12-05
+finished page tree for[['demo_unmanaged@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTD']] and time taken is 21.70717978477478
+finished translation and empty page for[['demo_unmanaged@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTD']] and time taken is 49.04882502555847
+Total time taken for all modules for the account:[['demo_unmanaged@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTD']] is: 49.04882502555847
+2022-12-05
+finished page tree for[['demo_ukeng_proximity@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] and time taken is 860.7923834323883
+finished translation and empty page for[['demo_ukeng_proximity@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] and time taken is 1274.5031397342682
+Total time taken for all modules for the account:[['demo_ukeng_proximity@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] is: 1274.5031397342682
+2022-12-05
+finished page tree for[['test_ntwkg_gold@pproap.com', 'ExperiencePRP!', 'NA', 'Canada', 'English', 'CTD']] and time taken is 1094.3945336341858
+finished translation and empty page for[['test_ntwkg_gold@pproap.com', 'ExperiencePRP!', 'NA', 'Canada', 'English', 'CTD']] and time taken is 1798.8583228588104
+Total time taken for all modules for the account:[['test_ntwkg_gold@pproap.com', 'ExperiencePRP!', 'NA', 'Canada', 'English', 'CTD']] is: 1798.8583228588104
+2022-12-05
+finished page tree for[['demo_na_distributor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'Distri']] and time taken is 1223.646561384201
+finished translation and empty page for[['demo_na_distributor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'Distri']] and time taken is 1859.9532272815704
+Total time taken for all modules for the account:[['demo_na_distributor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'Distri']] is: 1859.9532272815704
+2022-12-05
+finished page tree for[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDB']] and time taken is 16.680696964263916
+finished translation and empty page for[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDB']] and time taken is 33.1115517616272
+Total time taken for all modules for the account:[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDB']] is: 33.1115517616272
+2022-12-05
+finished page tree for[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] and time taken is 22.255053758621216
+finished translation and empty page for[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] and time taken is 37.25594639778137
+Total time taken for all modules for the account:[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] is: 37.25594639778137
+2022-12-05
+finished page tree for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] and time taken is 823.2851731777191
+finished translation and empty page for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] and time taken is 978.5204637050629
+Total time taken for all modules for the account:[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] is: 978.5204637050629
+2022-12-05
+finished page tree for[['demo_technology@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'TP']] and time taken is 626.25683426857
+finished translation and empty page for[['demo_technology@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'TP']] and time taken is 1089.5863089561462
+Total time taken for all modules for the account:[['demo_technology@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'TP']] is: 1089.5863089561462
+2022-12-05
+finished page tree for[['demo_oem@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'ODP']] and time taken is 852.4988269805908
+finished translation and empty page for[['demo_oem@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'ODP']] and time taken is 1610.6975030899048
+Total time taken for all modules for the account:[['demo_oem@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'ODP']] is: 1610.6975030899048
+2022-12-05
+finished page tree for[['demo_na_platinum@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2']] and time taken is 1530.4613733291626
+finished translation and empty page for[['demo_na_platinum@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2']] and time taken is 2325.2249579429626
+Total time taken for all modules for the account:[['demo_na_platinum@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2']] is: 2325.2249579429626
+2022-12-05
+finished page tree for[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] and time taken is 1260.416478395462
+finished translation and empty page for[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] and time taken is 2103.5822610855103
+Total time taken for all modules for the account:[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] is: 2103.5822610855103
+2022-12-05
+finished page tree for[['demo_msa@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'MDF']] and time taken is 986.8583102226257
+finished translation and empty page for[['demo_msa@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'MDF']] and time taken is 1725.4909069538116
+Total time taken for all modules for the account:[['demo_msa@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'MDF']] is: 1725.4909069538116
+2022-12-05
+finished page tree for[['demo_english_sg_oem@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'OEM']] and time taken is 958.7049231529236
+finished translation and empty page for[['demo_english_sg_oem@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'OEM']] and time taken is 1829.1339950561523
+Total time taken for all modules for the account:[['demo_english_sg_oem@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'OEM']] is: 1829.1339950561523
+2022-12-05
+finished page tree for[['demoapjplat@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'T2']] and time taken is 1477.3255016803741
+finished translation and empty page for[['demoapjplat@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'T2']] and time taken is 2616.2985191345215
+Total time taken for all modules for the account:[['demoapjplat@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'T2']] is: 2616.2985191345215
+2022-12-05
+finished page tree for[['demo_apj_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'Distri']] and time taken is 1455.51651263237
+finished translation and empty page for[['demo_apj_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'Distri']] and time taken is 2663.561765432358
+Total time taken for all modules for the account:[['demo_apj_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'Distri']] is: 2663.561765432358
+2022-12-05
+finished page tree for[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] and time taken is 1682.5318746566772
+finished translation and empty page for[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] and time taken is 3096.4822936058044
+Total time taken for all modules for the account:[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] is: 3096.4832441806793
+2022-12-05
+finished page tree for[['demo_english_sg_proximity@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'CTD']] and time taken is 1035.0285081863403
+finished translation and empty page for[['demo_english_sg_proximity@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'CTD']] and time taken is 1640.4387352466583
+Total time taken for all modules for the account:[['demo_english_sg_proximity@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'CTD']] is: 1640.4387352466583
+2022-12-05
+finished page tree for[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] and time taken is 27.162586450576782
+finished translation and empty page for[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] and time taken is 64.66837453842163
+Total time taken for all modules for the account:[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] is: 64.66837453842163
+2022-12-05
+finished page tree for[['demo_italian_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'T2']] and time taken is 33.842546701431274
+finished translation and empty page for[['demo_italian_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'T2']] and time taken is 65.87436938285828
+Total time taken for all modules for the account:[['demo_italian_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'T2']] is: 65.87436938285828
+2022-12-05
+finished page tree for[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 1292.1819458007812
+finished translation and empty page for[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 1988.68825173378
+Total time taken for all modules for the account:[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] is: 1988.6892490386963
+2022-12-05
+finished page tree for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 1197.1856257915497
+finished translation and empty page for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 2074.913321495056
+Total time taken for all modules for the account:[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] is: 2074.913321495056
+2022-12-05
+finished page tree for[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] and time taken is 1140.5870723724365
+finished translation and empty page for[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] and time taken is 2348.9909772872925
+Total time taken for all modules for the account:[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] is: 2348.9909772872925
+2022-12-05
+finished page tree for[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] and time taken is 26.42398977279663
+finished translation and empty page for[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] and time taken is 48.75442981719971
+Total time taken for all modules for the account:[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] is: 48.75442981719971
+2022-12-05
+finished page tree for[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] and time taken is 27.399752855300903
+finished translation and empty page for[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] and time taken is 50.63865637779236
+Total time taken for all modules for the account:[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] is: 50.63865637779236
+2022-12-05
+finished page tree for[['demo_distributor_lar@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'CTD']] and time taken is 18.77913188934326
+finished translation and empty page for[['demo_distributor_lar@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'CTD']] and time taken is 32.23297905921936
+Total time taken for all modules for the account:[['demo_distributor_lar@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'CTD']] is: 32.23297905921936
+2022-12-05
+finished page tree for[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] and time taken is 2103.419725418091
+finished translation and empty page for[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] and time taken is 3353.7616894245148
+Total time taken for all modules for the account:[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] is: 3353.7616894245148
+2022-12-05
+finished page tree for[['demo_indonesian_id_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'T2']] and time taken is 18.755692958831787
+finished translation and empty page for[['demo_indonesian_id_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'T2']] and time taken is 43.26804852485657
+Total time taken for all modules for the account:[['demo_indonesian_id_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'T2']] is: 43.26804852485657
+2022-12-05
+finished page tree for[['demo_indonesian_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'Distri']] and time taken is 1078.2412884235382
+finished translation and empty page for[['demo_indonesian_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'Distri']] and time taken is 1807.7899351119995
+Total time taken for all modules for the account:[['demo_indonesian_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'Distri']] is: 1807.7899351119995
+2022-12-05
+finished page tree for[['demo_turkish_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'Distri']] and time taken is 16.562716484069824
+finished translation and empty page for[['demo_turkish_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'Distri']] and time taken is 39.64013862609863
+Total time taken for all modules for the account:[['demo_turkish_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'Distri']] is: 39.64013862609863
+2022-12-05
+finished page tree for[['demo_turkish_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2']] and time taken is 18.518510341644287
+finished translation and empty page for[['demo_turkish_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2']] and time taken is 41.511061906814575
+Total time taken for all modules for the account:[['demo_turkish_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2']] is: 41.511061906814575
+2022-12-05
+finished page tree for[['demo_traditional_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2']] and time taken is 25.98990249633789
+finished translation and empty page for[['demo_traditional_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2']] and time taken is 47.35734415054321
+Total time taken for all modules for the account:[['demo_traditional_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2']] is: 47.35734415054321
+2022-12-05
+finished page tree for[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] and time taken is 1346.2036664485931
+finished translation and empty page for[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] and time taken is 1987.3361239433289
+Total time taken for all modules for the account:[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] is: 1987.3361239433289
+2022-12-05
+finished page tree for[['demo_traditional_cn_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2A']] and time taken is 10419.071690797806
+finished translation and empty page for[['demo_traditional_cn_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2A']] and time taken is 10822.61028957367
+Total time taken for all modules for the account:[['demo_traditional_cn_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2A']] is: 10822.61079120636
+2022-12-06
+finished page tree for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 798.7876088619232
+finished translation and empty page for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 1396.7099804878235
+Total time taken for all modules for the account:[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] is: 1396.7099804878235
+2022-12-06
+finished page tree for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 3177.341434240341
+finished translation and empty page for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 3523.511140346527
+Total time taken for all modules for the account:[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] is: 3523.511140346527
+2022-12-06
+finished page tree for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 2119.745789051056
+finished translation and empty page for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 3893.3147072792053
+Total time taken for all modules for the account:[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] is: 3893.3147072792053
+2022-12-12
+finished page tree for[['demo_spanisheu_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'T2']] and time taken is 22.063517570495605
+finished translation and empty page for[['demo_spanisheu_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'T2']] and time taken is 43.7523729801178
+Total time taken for all modules for the account:[['demo_spanisheu_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'T2']] is: 43.7523729801178
+2022-12-12
+finished page tree for[['demo_la_platinum@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'T2']] and time taken is 1197.2193813323975
+finished translation and empty page for[['demo_la_platinum@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'T2']] and time taken is 2083.8835713863373
+Total time taken for all modules for the account:[['demo_la_platinum@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'T2']] is: 2083.8835713863373
+2022-12-12
+finished page tree for[['demo_la_distributor@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'Distri']] and time taken is 1268.9788496494293
+finished translation and empty page for[['demo_la_distributor@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'Distri']] and time taken is 2142.913034439087
+Total time taken for all modules for the account:[['demo_la_distributor@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'Distri']] is: 2142.913034439087
+2022-12-12
+finished page tree for[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] and time taken is 1790.1292176246643
+finished translation and empty page for[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] and time taken is 3072.4911963939667
+Total time taken for all modules for the account:[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] is: 3072.4911963939667
+2022-12-12
+finished page tree for[['demo_french_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'Distri']] and time taken is 22.868377208709717
+finished translation and empty page for[['demo_french_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'Distri']] and time taken is 48.98881530761719
+Total time taken for all modules for the account:[['demo_french_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'Distri']] is: 48.98881530761719
+2022-12-12
+finished page tree for[['demo_mapcompetitor_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T2']] and time taken is 23.426615238189697
+finished translation and empty page for[['demo_mapcompetitor_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T2']] and time taken is 41.20109701156616
+Total time taken for all modules for the account:[['demo_mapcompetitor_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T2']] is: 41.20109701156616
+2022-12-12
+finished page tree for[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] and time taken is 438.2290241718292
+finished translation and empty page for[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] and time taken is 614.7212407588959
+Total time taken for all modules for the account:[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] is: 614.7212407588959
+2022-12-12
+finished page tree for[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] and time taken is 623.8004546165466
+finished translation and empty page for[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] and time taken is 1243.455816268921
+Total time taken for all modules for the account:[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] is: 1243.455816268921
+2022-12-12
+finished page tree for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 1165.4613745212555
+finished translation and empty page for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 2065.5809812545776
+Total time taken for all modules for the account:[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] is: 2065.5809812545776
+2022-12-12
+finished page tree for[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] and time taken is 1258.789057970047
+finished translation and empty page for[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] and time taken is 2109.3524117469788
+Total time taken for all modules for the account:[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] is: 2109.3524117469788
+2022-12-12
+finished page tree for[['demo_ukeng_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2A']] and time taken is 24.330867528915405
+finished translation and empty page for[['demo_ukeng_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2A']] and time taken is 46.68961000442505
+Total time taken for all modules for the account:[['demo_ukeng_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2A']] is: 46.68961000442505
+2022-12-12
+finished page tree for[['demo_unmanaged@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTD']] and time taken is 24.861478567123413
+finished translation and empty page for[['demo_unmanaged@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTD']] and time taken is 46.93340444564819
+Total time taken for all modules for the account:[['demo_unmanaged@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTD']] is: 46.93340444564819
+2022-12-12
+finished page tree for[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] and time taken is 1358.5755457878113
+finished translation and empty page for[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] and time taken is 2391.9540848731995
+Total time taken for all modules for the account:[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] is: 2391.9540848731995
+2022-12-12
+finished page tree for[['demo_ukeng_proximity@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] and time taken is 676.6963293552399
+finished translation and empty page for[['demo_ukeng_proximity@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] and time taken is 1193.703423500061
+Total time taken for all modules for the account:[['demo_ukeng_proximity@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] is: 1193.7044050693512
+2022-12-12
+finished page tree for[['test_ntwkg_gold@pproap.com', 'ExperiencePRP!', 'NA', 'Canada', 'English', 'CTD']] and time taken is 928.2442719936371
+finished translation and empty page for[['test_ntwkg_gold@pproap.com', 'ExperiencePRP!', 'NA', 'Canada', 'English', 'CTD']] and time taken is 1519.7726442813873
+Total time taken for all modules for the account:[['test_ntwkg_gold@pproap.com', 'ExperiencePRP!', 'NA', 'Canada', 'English', 'CTD']] is: 1519.7726442813873
+2022-12-12
+finished page tree for[['demo_na_distributor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'Distri']] and time taken is 1032.4770958423615
+finished translation and empty page for[['demo_na_distributor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'Distri']] and time taken is 1725.440512895584
+Total time taken for all modules for the account:[['demo_na_distributor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'Distri']] is: 1725.440512895584
+2022-12-12
+finished page tree for[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDB']] and time taken is 22.501622676849365
+finished translation and empty page for[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDB']] and time taken is 36.77001619338989
+Total time taken for all modules for the account:[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDB']] is: 36.77001619338989
+2022-12-12
+finished page tree for[['demo_technology@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'TP']] and time taken is 460.6761589050293
+finished translation and empty page for[['demo_technology@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'TP']] and time taken is 901.9608030319214
+Total time taken for all modules for the account:[['demo_technology@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'TP']] is: 901.9608030319214
+2022-12-12
+finished page tree for[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] and time taken is 15.306132555007935
+finished translation and empty page for[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] and time taken is 39.97885513305664
+Total time taken for all modules for the account:[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] is: 39.97885513305664
+2022-12-12
+finished page tree for[['demo_oem@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'ODP']] and time taken is 731.2621076107025
+finished translation and empty page for[['demo_oem@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'ODP']] and time taken is 1324.1406893730164
+Total time taken for all modules for the account:[['demo_oem@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'ODP']] is: 1324.1406893730164
+2022-12-12
+finished page tree for[['demo_na_platinum@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2']] and time taken is 1035.8340349197388
+finished translation and empty page for[['demo_na_platinum@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2']] and time taken is 1617.5023713111877
+Total time taken for all modules for the account:[['demo_na_platinum@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2']] is: 1617.5023713111877
+2022-12-12
+finished page tree for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] and time taken is 1425.610763311386
+finished translation and empty page for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] and time taken is 1652.545071363449
+Total time taken for all modules for the account:[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] is: 1652.545071363449
+2022-12-12
+finished page tree for[['demo_msa@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'MDF']] and time taken is 590.8746604919434
+finished translation and empty page for[['demo_msa@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'MDF']] and time taken is 1153.5175137519836
+Total time taken for all modules for the account:[['demo_msa@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'MDF']] is: 1153.5175137519836
+2022-12-12
+finished page tree for[['demo_english_sg_oem@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'OEM']] and time taken is 706.2462368011475
+finished translation and empty page for[['demo_english_sg_oem@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'OEM']] and time taken is 1289.9748983383179
+Total time taken for all modules for the account:[['demo_english_sg_oem@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'OEM']] is: 1289.9748983383179
+2022-12-12
+finished page tree for[['demo_apj_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'Distri']] and time taken is 669.3853390216827
+finished translation and empty page for[['demo_apj_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'Distri']] and time taken is 1304.104112148285
+Total time taken for all modules for the account:[['demo_apj_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'Distri']] is: 1304.104112148285
+2022-12-12
+finished page tree for[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] and time taken is 1235.754618883133
+finished translation and empty page for[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] and time taken is 1946.6822514533997
+Total time taken for all modules for the account:[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] is: 1946.6822514533997
+2022-12-12
+finished page tree for[['demoapjplat@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'T2']] and time taken is 1141.5907850265503
+finished translation and empty page for[['demoapjplat@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'T2']] and time taken is 1978.460675239563
+Total time taken for all modules for the account:[['demoapjplat@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'T2']] is: 1978.460675239563
+2022-12-12
+finished page tree for[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] and time taken is 1312.2551522254944
+finished translation and empty page for[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] and time taken is 2370.8658287525177
+Total time taken for all modules for the account:[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] is: 2370.8658287525177
+2022-12-12
+finished page tree for[['demo_english_sg_proximity@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'CTD']] and time taken is 990.2769017219543
+finished translation and empty page for[['demo_english_sg_proximity@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'CTD']] and time taken is 1681.9546852111816
+Total time taken for all modules for the account:[['demo_english_sg_proximity@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'CTD']] is: 1681.9546852111816
+2022-12-12
+finished page tree for[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] and time taken is 17.684881448745728
+finished translation and empty page for[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] and time taken is 36.977174043655396
+Total time taken for all modules for the account:[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] is: 36.977174043655396
+2022-12-12
+finished page tree for[['demo_italian_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'T2']] and time taken is 16.892931699752808
+finished translation and empty page for[['demo_italian_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'T2']] and time taken is 36.97716951370239
+Total time taken for all modules for the account:[['demo_italian_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'T2']] is: 36.97716951370239
+2022-12-12
+finished page tree for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] and time taken is 372.69324350357056
+finished translation and empty page for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] and time taken is 561.3636555671692
+Total time taken for all modules for the account:[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] is: 1282.5022459030151
+2022-12-12
+finished page tree for[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] and time taken is 1229.4395101070404
+finished translation and empty page for[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] and time taken is 2049.9382605552673
+Total time taken for all modules for the account:[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] is: 10336.143311738968
+2022-12-12
+finished page tree for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 1412.2578256130219
+finished translation and empty page for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 2254.037793636322
+Total time taken for all modules for the account:[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] is: 10592.721351623535
+2022-12-12
+finished page tree for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] and time taken is 1600.7454311847687
+finished translation and empty page for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] and time taken is 1742.9912898540497
+Total time taken for all modules for the account:[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] is: 2584.034385204315
+2022-12-12
+finished page tree for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 1133.9209396839142
+finished translation and empty page for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 1750.9891619682312
+Total time taken for all modules for the account:[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] is: 9658.283148050308
+2022-12-12
+finished page tree for[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] and time taken is 1121.0777225494385
+finished translation and empty page for[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] and time taken is 1915.8998210430145
+Total time taken for all modules for the account:[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] is: 10123.492458820343
+2022-12-18
+finished page tree for[['demo_la_distributor@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'Distri']] and time taken is 20.833657264709473
+finished translation and empty page for[['demo_la_distributor@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'Distri']] and time taken is 38.39462685585022
+Total time taken for all modules for the account:[['demo_la_distributor@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'Distri']] is: 91.91397070884705
+2022-12-18
+finished page tree for[['demo_spanisheu_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'T2']] and time taken is 20.22844099998474
+finished translation and empty page for[['demo_spanisheu_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'T2']] and time taken is 39.31333613395691
+Total time taken for all modules for the account:[['demo_spanisheu_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'T2']] is: 95.37203097343445
+2022-12-18
+finished page tree for[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] and time taken is 1165.686534166336
+finished translation and empty page for[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] and time taken is 1878.246262550354
+Total time taken for all modules for the account:[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] is: 5528.5049085617065
+2022-12-18
+finished page tree for[['demo_la_platinum@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'T2']] and time taken is 1062.2762653827667
+finished translation and empty page for[['demo_la_platinum@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'T2']] and time taken is 1807.5297751426697
+Total time taken for all modules for the account:[['demo_la_platinum@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'T2']] is: 5649.7990555763245
+2022-12-18
+finished page tree for[['demo_french_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'Distri']] and time taken is 18.068861961364746
+finished translation and empty page for[['demo_french_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'Distri']] and time taken is 35.01082181930542
+Total time taken for all modules for the account:[['demo_french_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'Distri']] is: 95.29101324081421
+2022-12-18
+finished page tree for[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] and time taken is 14.33950424194336
+finished translation and empty page for[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] and time taken is 30.119832038879395
+Total time taken for all modules for the account:[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] is: 81.98664736747742
+2022-12-18
+finished page tree for[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] and time taken is 1066.62535405159
+finished translation and empty page for[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] and time taken is 1791.241506099701
+Total time taken for all modules for the account:[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] is: 5848.609304189682
+2022-12-18
+finished page tree for[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] and time taken is 856.8462898731232
+finished translation and empty page for[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] and time taken is 1467.2261717319489
+Total time taken for all modules for the account:[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] is: 3358.3164052963257
+2022-12-18
+finished page tree for[['demo_italian_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'T2']] and time taken is 18.318354606628418
+finished translation and empty page for[['demo_italian_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'T2']] and time taken is 35.23774743080139
+Total time taken for all modules for the account:[['demo_italian_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'T2']] is: 87.71354722976685
+2022-12-18
+finished page tree for[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] and time taken is 378.5497319698334
+finished translation and empty page for[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] and time taken is 723.8497107028961
+Total time taken for all modules for the account:[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] is: 1833.5296874046326
+2022-12-18
+finished page tree for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 642.0209410190582
+finished translation and empty page for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 1180.2440721988678
+Total time taken for all modules for the account:[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] is: 4018.9471428394318
+2022-12-18
+finished page tree for[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 720.3995308876038
+finished translation and empty page for[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 1260.5750424861908
+Total time taken for all modules for the account:[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] is: 2646.555433034897
+2022-12-18
+finished page tree for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 1084.7883076667786
+finished translation and empty page for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 2049.082638025284
+Total time taken for all modules for the account:[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] is: 6565.752922534943
+2022-12-18
+finished page tree for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 740.3102595806122
+finished translation and empty page for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 1460.221131324768
+Total time taken for all modules for the account:[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] is: 4634.339684009552
+2022-12-18
+finished page tree for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 1498.5663101673126
+finished translation and empty page for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 2574.742838859558
+Total time taken for all modules for the account:[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] is: 7728.305603265762
+2022-12-18
+finished page tree for[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] and time taken is 17.04755139350891
+finished translation and empty page for[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] and time taken is 34.95714807510376
+Total time taken for all modules for the account:[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] is: 86.4345498085022
+2022-12-18
+finished page tree for[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] and time taken is 16.94845414161682
+finished translation and empty page for[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] and time taken is 38.288902282714844
+Total time taken for all modules for the account:[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] is: 94.34122610092163
+2022-12-18
+finished page tree for[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] and time taken is 6202.172843694687
+2022-12-18
+2022-12-18
+2022-12-18
+2022-12-18
+2022-12-18
+finished page tree for[['demo_turkish_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'Distri']] and time taken is 14.592995166778564
+finished translation and empty page for[['demo_turkish_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'Distri']] and time taken is 30.93148374557495
+Total time taken for all modules for the account:[['demo_turkish_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'Distri']] is: 83.19563150405884
+2022-12-18
+finished page tree for[['demo_turkish_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2']] and time taken is 464.93276166915894
+finished translation and empty page for[['demo_turkish_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2']] and time taken is 889.7376878261566
+Total time taken for all modules for the account:[['demo_turkish_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2']] is: 2211.0268337726593
+2022-12-18
+finished page tree for[['demo_traditional_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2']] and time taken is 19.066770553588867
+finished translation and empty page for[['demo_traditional_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2']] and time taken is 35.01158905029297
+Total time taken for all modules for the account:[['demo_traditional_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2']] is: 86.82758355140686
+2022-12-18
+finished page tree for[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] and time taken is 754.4895627498627
+finished translation and empty page for[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] and time taken is 1374.9578039646149
+Total time taken for all modules for the account:[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] is: 4238.154008388519
+2022-12-18
+finished page tree for[['demo_traditional_cn_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2A']] and time taken is 11519.388355731964
+finished translation and empty page for[['demo_traditional_cn_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2A']] and time taken is 11622.93379330635
+Total time taken for all modules for the account:[['demo_traditional_cn_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2A']] is: 11915.313641548157
+2022-12-19
+finished page tree for[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] and time taken is 21.36283230781555
+finished translation and empty page for[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] and time taken is 38.4246723651886
+Total time taken for all modules for the account:[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] is: 102.13248491287231
+2022-12-19
+finished page tree for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 1388.9582579135895
+finished translation and empty page for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 2248.746159553528
+Total time taken for all modules for the account:[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] is: 6907.354872703552
+2022-12-19
+finished page tree for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] and time taken is 62822.6462996006
+2022-12-25
+finished page tree for[['demo_spanisheu_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'T2']] and time taken is 21.115485906600952
+finished translation and empty page for[['demo_spanisheu_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'T2']] and time taken is 37.80463886260986
+Total time taken for all modules for the account:[['demo_spanisheu_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'T2']] is: 90.00056505203247
+2022-12-25
+finished page tree for[['demo_la_distributor@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'Distri']] and time taken is 1234.5842328071594
+finished translation and empty page for[['demo_la_distributor@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'Distri']] and time taken is 2052.4448771476746
+Total time taken for all modules for the account:[['demo_la_distributor@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'Distri']] is: 6043.658066987991
+2022-12-25
+finished page tree for[['demo_la_platinum@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'T2']] and time taken is 1176.672375202179
+finished translation and empty page for[['demo_la_platinum@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'T2']] and time taken is 2010.3211481571198
+Total time taken for all modules for the account:[['demo_la_platinum@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'T2']] is: 6364.271057367325
+2022-12-25
+finished page tree for[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] and time taken is 1660.92235994339
+finished translation and empty page for[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] and time taken is 2787.02898645401
+Total time taken for all modules for the account:[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] is: 7525.860259771347
+2022-12-25
+finished page tree for[['demo_french_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'Distri']] and time taken is 24.251402616500854
+finished translation and empty page for[['demo_french_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'Distri']] and time taken is 42.26314091682434
+Total time taken for all modules for the account:[['demo_french_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'Distri']] is: 101.37279796600342
+2022-12-25
+finished page tree for[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] and time taken is 15.569417476654053
+finished translation and empty page for[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] and time taken is 30.97189164161682
+Total time taken for all modules for the account:[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] is: 80.50846004486084
+2022-12-25
+finished page tree for[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] and time taken is 1168.412262916565
+finished translation and empty page for[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] and time taken is 1944.320754289627
+Total time taken for all modules for the account:[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] is: 5975.880789756775
+2022-12-25
+finished page tree for[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] and time taken is 1170.5511717796326
+finished translation and empty page for[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] and time taken is 1793.7045440673828
+Total time taken for all modules for the account:[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] is: 3983.6606607437134
+2022-12-25
+finished page tree for[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] and time taken is 18.57354998588562
+finished translation and empty page for[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] and time taken is 35.57120394706726
+Total time taken for all modules for the account:[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] is: 81.2670385837555
+2022-12-25
+finished page tree for[['demo_italian_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'T2']] and time taken is 21.34742546081543
+finished translation and empty page for[['demo_italian_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'T2']] and time taken is 40.07071352005005
+Total time taken for all modules for the account:[['demo_italian_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'T2']] is: 86.19713854789734
+2022-12-25
+finished page tree for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 669.3818185329437
+finished translation and empty page for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 1185.127198457718
+Total time taken for all modules for the account:[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] is: 4082.1010048389435
+2022-12-25
+finished page tree for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 1166.6303541660309
+finished translation and empty page for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 1635.5340526103973
+Total time taken for all modules for the account:[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] is: 6000.572899580002
+2022-12-25
+finished page tree for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 742.1406888961792
+finished translation and empty page for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 1336.497142314911
+Total time taken for all modules for the account:[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] is: 3806.394295692444
+2022-12-25
+finished page tree for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 1449.536523103714
+finished translation and empty page for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 2592.8340775966644
+Total time taken for all modules for the account:[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] is: 6902.268655061722
+2022-12-25
+finished page tree for[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] and time taken is 955.1734747886658
+finished translation and empty page for[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] and time taken is 1802.171667098999
+Total time taken for all modules for the account:[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] is: 4446.876512527466
+2022-12-25
+finished page tree for[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] and time taken is 21.911067008972168
+finished translation and empty page for[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] and time taken is 41.51328802108765
+Total time taken for all modules for the account:[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] is: 102.32410311698914
+2022-12-25
+finished page tree for[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] and time taken is 21.69847321510315
+finished translation and empty page for[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] and time taken is 41.531837701797485
+Total time taken for all modules for the account:[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] is: 102.82603406906128
+2022-12-25
+finished page tree for[['demo_distributor_lar@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'CTD']] and time taken is 572.6162853240967
+finished translation and empty page for[['demo_distributor_lar@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'CTD']] and time taken is 976.9504768848419
+Total time taken for all modules for the account:[['demo_distributor_lar@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'CTD']] is: 2370.7539954185486
+2022-12-25
+finished page tree for[['demo_indonesian_id_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'T2']] and time taken is 22.105682373046875
+finished translation and empty page for[['demo_indonesian_id_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'T2']] and time taken is 43.83709383010864
+Total time taken for all modules for the account:[['demo_indonesian_id_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'T2']] is: 95.74800109863281
+2022-12-25
+finished page tree for[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] and time taken is 1423.928493976593
+finished translation and empty page for[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] and time taken is 2444.6603515148163
+Total time taken for all modules for the account:[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] is: 7229.229176282883
+2022-12-25
+finished page tree for[['demo_indonesian_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'Distri']] and time taken is 1037.6792016029358
+finished translation and empty page for[['demo_indonesian_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'Distri']] and time taken is 1711.4959213733673
+Total time taken for all modules for the account:[['demo_indonesian_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'Distri']] is: 4464.362014055252
+2022-12-25
+finished page tree for[['demo_turkish_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'Distri']] and time taken is 16.252866744995117
+finished translation and empty page for[['demo_turkish_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'Distri']] and time taken is 33.40522050857544
+Total time taken for all modules for the account:[['demo_turkish_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'Distri']] is: 86.48708152770996
+2022-12-25
+finished page tree for[['demo_turkish_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2']] and time taken is 626.6073477268219
+finished translation and empty page for[['demo_turkish_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2']] and time taken is 1148.485223531723
+Total time taken for all modules for the account:[['demo_turkish_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2']] is: 2751.7936198711395
+2022-12-25
+finished page tree for[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 28831.85145998001
+finished translation and empty page for[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 29128.583027124405
+2022-12-25
+finished page tree for[['demo_traditional_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2']] and time taken is 26.745180130004883
+finished translation and empty page for[['demo_traditional_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2']] and time taken is 44.130274295806885
+Total time taken for all modules for the account:[['demo_traditional_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2']] is: 98.72965264320374
+2022-12-25
+finished page tree for[['demo_traditional_cn_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2A']] and time taken is 478.61398363113403
+finished translation and empty page for[['demo_traditional_cn_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2A']] and time taken is 1028.7761344909668
+Total time taken for all modules for the account:[['demo_traditional_cn_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2A']] is: 2409.94908952713
+2022-12-25
+finished page tree for[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] and time taken is 638.672770023346
+finished translation and empty page for[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] and time taken is 1233.885790348053
+Total time taken for all modules for the account:[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] is: 3843.1540246009827
+2022-12-26
+finished page tree for[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] and time taken is 17.77415370941162
+finished translation and empty page for[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] and time taken is 32.83306646347046
+Total time taken for all modules for the account:[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] is: 97.15157270431519
+2022-12-26
+finished page tree for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] and time taken is 879.0849106311798
+finished translation and empty page for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] and time taken is 1266.3445966243744
+Total time taken for all modules for the account:[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] is: 2814.5218620300293
+2022-12-26
+finished page tree for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 1252.2220494747162
+finished translation and empty page for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 1888.4912707805634
+Total time taken for all modules for the account:[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] is: 6096.179836988449
+2023-01-01
+finished page tree for[['demo_spanisheu_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'T2']] and time taken is 20.63780403137207
+finished translation and empty page for[['demo_spanisheu_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'T2']] and time taken is 44.28408646583557
+Total time taken for all modules for the account:[['demo_spanisheu_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'T2']] is: 107.23407411575317
+2023-01-01
+finished page tree for[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] and time taken is 1192.527408838272
+finished translation and empty page for[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] and time taken is 2124.8937606811523
+Total time taken for all modules for the account:[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] is: 6292.0440237522125
+2023-01-01
+finished page tree for[['demo_la_distributor@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'Distri']] and time taken is 1206.0092747211456
+finished translation and empty page for[['demo_la_distributor@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'Distri']] and time taken is 2097.1748785972595
+Total time taken for all modules for the account:[['demo_la_distributor@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'Distri']] is: 6656.6366901397705
+2023-01-01
+finished page tree for[['demo_la_platinum@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'T2']] and time taken is 1160.9250254631042
+finished translation and empty page for[['demo_la_platinum@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'T2']] and time taken is 2046.4553322792053
+Total time taken for all modules for the account:[['demo_la_platinum@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'T2']] is: 6752.644292831421
+2023-01-01
+finished page tree for[['demo_french_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'Distri']] and time taken is 19.323403358459473
+finished translation and empty page for[['demo_french_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'Distri']] and time taken is 37.424596071243286
+Total time taken for all modules for the account:[['demo_french_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'Distri']] is: 86.42352056503296
+2023-01-01
+finished page tree for[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] and time taken is 19.938708305358887
+finished translation and empty page for[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] and time taken is 35.30446434020996
+Total time taken for all modules for the account:[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] is: 85.00710821151733
+2023-01-01
+finished page tree for[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] and time taken is 1108.5075540542603
+finished translation and empty page for[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] and time taken is 1820.7830460071564
+Total time taken for all modules for the account:[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] is: 6897.363741874695
+2023-01-01
+finished page tree for[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] and time taken is 1040.767480134964
+finished translation and empty page for[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] and time taken is 1697.8194420337677
+Total time taken for all modules for the account:[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] is: 3805.8110539913177
+2023-01-01
+finished page tree for[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] and time taken is 14.917522430419922
+finished translation and empty page for[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] and time taken is 32.22977590560913
+Total time taken for all modules for the account:[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] is: 85.79578113555908
+2023-01-01
+finished page tree for[['demo_italian_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'T2']] and time taken is 16.68421173095703
+finished translation and empty page for[['demo_italian_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'T2']] and time taken is 37.69994401931763
+Total time taken for all modules for the account:[['demo_italian_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'T2']] is: 88.08976721763611
+2023-01-01
+finished page tree for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 714.0287261009216
+finished translation and empty page for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 1257.1890842914581
+Total time taken for all modules for the account:[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] is: 3625.0091185569763
+2023-01-01
+finished page tree for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 1044.5035724639893
+finished translation and empty page for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 1900.2564878463745
+Total time taken for all modules for the account:[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] is: 5926.862513303757
+2023-01-01
+finished page tree for[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] and time taken is 806.1609740257263
+finished translation and empty page for[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] and time taken is 1456.3091430664062
+Total time taken for all modules for the account:[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] is: 3860.2447249889374
+2023-01-01
+finished page tree for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 801.6010572910309
+finished translation and empty page for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 1403.5133783817291
+Total time taken for all modules for the account:[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] is: 3916.587601184845
+2023-01-01
+finished page tree for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 1352.7067210674286
+finished translation and empty page for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 2335.5640251636505
+Total time taken for all modules for the account:[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] is: 7136.799261331558
+2023-01-01
+finished page tree for[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] and time taken is 20.8950617313385
+finished translation and empty page for[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] and time taken is 38.251978397369385
+Total time taken for all modules for the account:[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] is: 91.94829607009888
+2023-01-01
+finished page tree for[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] and time taken is 21.422862768173218
+finished translation and empty page for[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] and time taken is 39.83041334152222
+Total time taken for all modules for the account:[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] is: 91.96728587150574
+2023-01-01
+finished page tree for[['demo_distributor_lar@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'CTD']] and time taken is 533.1692233085632
+finished translation and empty page for[['demo_distributor_lar@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'CTD']] and time taken is 936.4219484329224
+Total time taken for all modules for the account:[['demo_distributor_lar@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'CTD']] is: 2218.3165538311005
+2023-01-01
+finished page tree for[['demo_indonesian_id_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'T2']] and time taken is 19.815921783447266
+finished translation and empty page for[['demo_indonesian_id_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'T2']] and time taken is 39.0802161693573
+Total time taken for all modules for the account:[['demo_indonesian_id_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'T2']] is: 97.79653859138489
+2023-01-01
+finished page tree for[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] and time taken is 1189.4896113872528
+finished translation and empty page for[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] and time taken is 1922.6961653232574
+Total time taken for all modules for the account:[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] is: 5971.462604999542
+2023-01-01
+finished page tree for[['demo_indonesian_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'Distri']] and time taken is 1250.8058619499207
+finished translation and empty page for[['demo_indonesian_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'Distri']] and time taken is 1957.3738090991974
+Total time taken for all modules for the account:[['demo_indonesian_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'Distri']] is: 4964.224575281143
+2023-01-01
+finished page tree for[['demo_turkish_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'Distri']] and time taken is 19.25907611846924
+finished translation and empty page for[['demo_turkish_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'Distri']] and time taken is 34.475722551345825
+Total time taken for all modules for the account:[['demo_turkish_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'Distri']] is: 86.61324977874756
+2023-01-01
+finished page tree for[['demo_turkish_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2']] and time taken is 686.3318176269531
+finished translation and empty page for[['demo_turkish_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2']] and time taken is 1201.078007698059
+Total time taken for all modules for the account:[['demo_turkish_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2']] is: 2951.097571372986
+2023-01-01
+finished page tree for[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 28824.671138048172
+finished translation and empty page for[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 29179.959325313568
+2023-01-01
+finished page tree for[['demo_traditional_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2']] and time taken is 21.759160041809082
+finished translation and empty page for[['demo_traditional_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2']] and time taken is 39.488889932632446
+Total time taken for all modules for the account:[['demo_traditional_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2']] is: 92.04859566688538
+2023-01-01
+finished page tree for[['demo_traditional_cn_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2A']] and time taken is 531.956729888916
+finished translation and empty page for[['demo_traditional_cn_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2A']] and time taken is 942.7079186439514
+Total time taken for all modules for the account:[['demo_traditional_cn_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2A']] is: 2214.791879415512
+2023-01-01
+finished page tree for[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] and time taken is 713.7642984390259
+finished translation and empty page for[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] and time taken is 1360.0891315937042
+Total time taken for all modules for the account:[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] is: 3972.1249532699585
+2023-01-02
+finished page tree for[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] and time taken is 15.908713340759277
+finished translation and empty page for[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] and time taken is 27.85137438774109
+Total time taken for all modules for the account:[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] is: 74.57637190818787
+2023-01-02
+finished page tree for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] and time taken is 753.5977766513824
+finished translation and empty page for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] and time taken is 1170.7115054130554
+Total time taken for all modules for the account:[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] is: 2659.644206762314
+2023-01-02
+finished page tree for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 1054.0785953998566
+finished translation and empty page for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 1778.9550960063934
+Total time taken for all modules for the account:[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] is: 5902.684150218964
+2023-01-08
+finished page tree for[['demo_spanisheu_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'T2']] and time taken is 23.622524976730347
+finished translation and empty page for[['demo_spanisheu_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'T2']] and time taken is 47.29655599594116
+Total time taken for all modules for the account:[['demo_spanisheu_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'T2']] is: 117.84629440307617
+2023-01-08
+finished page tree for[['demo_la_distributor@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'Distri']] and time taken is 1331.3582203388214
+finished translation and empty page for[['demo_la_distributor@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'Distri']] and time taken is 2445.6970348358154
+Total time taken for all modules for the account:[['demo_la_distributor@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'Distri']] is: 6748.609562397003
+2023-01-08
+finished page tree for[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] and time taken is 1446.1316759586334
+finished translation and empty page for[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] and time taken is 2659.969940662384
+Total time taken for all modules for the account:[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] is: 6809.118758201599
+2023-01-08
+finished page tree for[['demo_la_platinum@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'T2']] and time taken is 1328.427681684494
+finished translation and empty page for[['demo_la_platinum@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'T2']] and time taken is 2560.288908958435
+Total time taken for all modules for the account:[['demo_la_platinum@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'T2']] is: 7333.2179708480835
+2023-01-08
+finished page tree for[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] and time taken is 28.35207509994507
+finished translation and empty page for[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] and time taken is 47.311803340911865
+Total time taken for all modules for the account:[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] is: 102.54151201248169
+2023-01-08
+finished page tree for[['demo_french_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'Distri']] and time taken is 22.550460815429688
+finished translation and empty page for[['demo_french_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'Distri']] and time taken is 54.66217494010925
+Total time taken for all modules for the account:[['demo_french_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'Distri']] is: 103.23918581008911
+2023-01-08
+finished page tree for[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] and time taken is 18.333975315093994
+finished translation and empty page for[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] and time taken is 36.32369017601013
+Total time taken for all modules for the account:[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] is: 81.73586940765381
+2023-01-08
+finished page tree for[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] and time taken is 1145.657709121704
+finished translation and empty page for[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] and time taken is 1929.50919175148
+Total time taken for all modules for the account:[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] is: 4413.4030973911285
+2023-01-08
+finished page tree for[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] and time taken is 17.442525386810303
+finished translation and empty page for[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] and time taken is 36.410218477249146
+Total time taken for all modules for the account:[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] is: 87.64735651016235
+2023-01-08
+finished page tree for[['demo_italian_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'T2']] and time taken is 18.141295671463013
+finished translation and empty page for[['demo_italian_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'T2']] and time taken is 36.40723729133606
+Total time taken for all modules for the account:[['demo_italian_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'T2']] is: 89.34052896499634
+2023-01-08
+finished page tree for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 829.9715118408203
+finished translation and empty page for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 1430.8695063591003
+Total time taken for all modules for the account:[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] is: 3816.369911670685
+2023-01-08
+finished page tree for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 5378.711300373077
+finished translation and empty page for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 5596.729268074036
+2023-01-08
+finished page tree for[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 1045.5085327625275
+finished translation and empty page for[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 1660.08855342865
+Total time taken for all modules for the account:[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] is: 2654.996114253998
+2023-01-08
+finished page tree for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 1607.0102968215942
+finished translation and empty page for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 2761.1460354328156
+Total time taken for all modules for the account:[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] is: 5999.105356693268
+2023-01-08
+finished page tree for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 956.2146787643433
+finished translation and empty page for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 1696.8220777511597
+Total time taken for all modules for the account:[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] is: 4814.197312831879
+2023-01-08
+finished page tree for[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] and time taken is 949.3223278522491
+finished translation and empty page for[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] and time taken is 1742.7646038532257
+Total time taken for all modules for the account:[['demo_simplified_cn_aruba@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2A']] is: 4825.197606086731
+2023-01-08
+finished page tree for[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] and time taken is 27.516305208206177
+finished translation and empty page for[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] and time taken is 50.31994915008545
+Total time taken for all modules for the account:[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] is: 122.71509337425232
+2023-01-08
+finished page tree for[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] and time taken is 25.739593982696533
+finished translation and empty page for[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] and time taken is 50.31495261192322
+Total time taken for all modules for the account:[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] is: 123.91908264160156
+2023-01-08
+finished page tree for[['demo_distributor_lar@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'CTD']] and time taken is 720.8335721492767
+finished translation and empty page for[['demo_distributor_lar@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'CTD']] and time taken is 1235.9369626045227
+Total time taken for all modules for the account:[['demo_distributor_lar@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'CTD']] is: 2899.629692554474
+2023-01-08
+finished page tree for[['demo_indonesian_id_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'T2']] and time taken is 22.429517030715942
+finished translation and empty page for[['demo_indonesian_id_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'T2']] and time taken is 40.178738832473755
+Total time taken for all modules for the account:[['demo_indonesian_id_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'T2']] is: 100.13510131835938
+2023-01-08
+finished page tree for[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] and time taken is 1974.2283263206482
+finished translation and empty page for[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] and time taken is 3438.0055935382843
+Total time taken for all modules for the account:[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] is: 8851.817092895508
+2023-01-08
+finished page tree for[['demo_indonesian_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'Distri']] and time taken is 1274.8242945671082
+finished translation and empty page for[['demo_indonesian_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'Distri']] and time taken is 2044.3423352241516
+Total time taken for all modules for the account:[['demo_indonesian_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Indonesia', 'Indonesian', 'Distri']] is: 5062.136095523834
+2023-01-08
+finished page tree for[['demo_turkish_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'Distri']] and time taken is 17.86217498779297
+finished translation and empty page for[['demo_turkish_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'Distri']] and time taken is 34.2476863861084
+Total time taken for all modules for the account:[['demo_turkish_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'Distri']] is: 83.01972556114197
+2023-01-08
+finished page tree for[['demo_turkish_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2']] and time taken is 648.736409664154
+finished translation and empty page for[['demo_turkish_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2']] and time taken is 1341.269390821457
+Total time taken for all modules for the account:[['demo_turkish_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2']] is: 3081.9325873851776
+2023-01-08
+finished page tree for[['demo_traditional_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2']] and time taken is 20.2399480342865
+finished translation and empty page for[['demo_traditional_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2']] and time taken is 38.48934555053711
+Total time taken for all modules for the account:[['demo_traditional_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2']] is: 95.3395447731018
+2023-01-08
+finished page tree for[['demo_traditional_cn_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2A']] and time taken is 591.3119931221008
+finished translation and empty page for[['demo_traditional_cn_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2A']] and time taken is 1028.0602366924286
+Total time taken for all modules for the account:[['demo_traditional_cn_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2A']] is: 2623.88188290596
+2023-01-08
+finished page tree for[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] and time taken is 787.1553182601929
+finished translation and empty page for[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] and time taken is 1402.2679595947266
+Total time taken for all modules for the account:[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] is: 4398.243936538696
+2023-01-14
+finished page tree for[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] and time taken is 2930.7005939483643
+finished translation and empty page for[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] and time taken is 3014.3278319835663
+Total time taken for all modules for the account:[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] is: 3690.5826749801636
+2023-01-14
+finished page tree for[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] and time taken is 788.0239720344543
+finished translation and empty page for[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] and time taken is 1554.7369928359985
+Total time taken for all modules for the account:[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] is: 3770.6750705242157
+2023-01-14
+finished page tree for[['demo_ukeng_proximity@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] and time taken is 771.3581547737122
+finished translation and empty page for[['demo_ukeng_proximity@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] and time taken is 1549.0560553073883
+Total time taken for all modules for the account:[['demo_ukeng_proximity@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] is: 3826.021110534668
+2023-01-14
+finished page tree for[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] and time taken is 1589.8680214881897
+finished translation and empty page for[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] and time taken is 2773.5598978996277
+Total time taken for all modules for the account:[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] is: 7341.50790810585
+2023-01-14
+finished page tree for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 1601.9558103084564
+finished translation and empty page for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 2775.096997976303
+Total time taken for all modules for the account:[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] is: 7622.609678268433
+2023-01-14
+finished page tree for[['demo_english_sg_oem@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'OEM']] and time taken is 23.973287105560303
+finished translation and empty page for[['demo_english_sg_oem@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'OEM']] and time taken is 56.14013981819153
+Total time taken for all modules for the account:[['demo_english_sg_oem@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'OEM']] is: 134.63638591766357
+2023-01-14
+finished page tree for[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDB']] and time taken is 765.5890390872955
+finished translation and empty page for[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDB']] and time taken is 1346.3187654018402
+Total time taken for all modules for the account:[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDB']] is: 3046.089966773987
+2023-01-14
+finished page tree for[['demoapjplat@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'T2']] and time taken is 1497.0959119796753
+finished translation and empty page for[['demoapjplat@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'T2']] and time taken is 2454.428964138031
+Total time taken for all modules for the account:[['demoapjplat@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'T2']] is: 6856.186201334
+2023-01-16
+finished page tree for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 1474.900062084198
+finished translation and empty page for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 2646.9509999752045
+Total time taken for all modules for the account:[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] is: 6716.946571588516
+2023-01-16
+finished page tree for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 13191.146752119064
+finished translation and empty page for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 13799.241686820984
+2023-01-16
+finished page tree for[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] and time taken is 1856.5280542373657
+finished translation and empty page for[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] and time taken is 3113.4914705753326
+Total time taken for all modules for the account:[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] is: 7136.376454114914
+2023-01-16
+finished page tree for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 3130.944968700409
+finished translation and empty page for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 5773.033086538315
+Total time taken for all modules for the account:[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] is: 16423.344968795776
+2023-01-16
+finished page tree for[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] and time taken is 2890.7895300388336
+finished translation and empty page for[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] and time taken is 4488.228071928024
+Total time taken for all modules for the account:[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] is: 10342.550052404404
+2023-01-16
+finished page tree for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 1156.6090211868286
+2023-01-16
+finished page tree for[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 1653.0152883529663
+2023-01-17
+finished page tree for[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] and time taken is 2221.332295894623
+finished translation and empty page for[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] and time taken is 3775.288822889328
+Total time taken for all modules for the account:[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] is: 10860.840029716492
+2023-01-17
+finished page tree for[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] and time taken is 1956.759197473526
+finished translation and empty page for[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] and time taken is 4058.0791652202606
+Total time taken for all modules for the account:[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] is: 8100.714642286301
+2023-01-17
+finished page tree for[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] and time taken is 2224.0766751766205
+finished translation and empty page for[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] and time taken is 5476.491677045822
+Total time taken for all modules for the account:[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] is: 11612.494923114777
+2023-01-19
+finished page tree for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 869.4874942302704
+finished translation and empty page for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 1814.9540169239044
+Total time taken for all modules for the account:[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] is: 4201.970666408539
+2023-01-19
+finished page tree for[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 1205.7572512626648
+finished translation and empty page for[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 2218.32621216774
+Total time taken for all modules for the account:[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] is: 4544.80771613121
+2023-01-19
+finished page tree for[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] and time taken is 1399.3597388267517
+finished translation and empty page for[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] and time taken is 2461.2660007476807
+Total time taken for all modules for the account:[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] is: 5512.268866062164
+2023-01-19
+finished page tree for[['demo_turkish_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'Distri']] and time taken is 29.907461404800415
+finished translation and empty page for[['demo_turkish_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'Distri']] and time taken is 50.352752923965454
+Total time taken for all modules for the account:[['demo_turkish_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'Distri']] is: 125.8351137638092
+2023-01-19
+finished page tree for[['demo_turkish_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2']] and time taken is 1133.3966476917267
+finished translation and empty page for[['demo_turkish_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2']] and time taken is 2093.845192193985
+Total time taken for all modules for the account:[['demo_turkish_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2']] is: 4744.618491411209
+2023-02-17
+finished page tree for[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] and time taken is 971.8802292346954
+finished translation and empty page for[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] and time taken is 1484.807933330536
+Total time taken for all modules for the account:[['demo_italian_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Italy', 'Italian', 'Distri']] is: 2920.5412333011627
+2023-02-18
+finished page tree for[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] and time taken is 25.08532214164734
+finished translation and empty page for[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] and time taken is 39.93569612503052
+Total time taken for all modules for the account:[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] is: 79.98014640808105
+2023-02-18
+finished page tree for[['demo_ukeng_proximity@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] and time taken is 520.1445524692535
+finished translation and empty page for[['demo_ukeng_proximity@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] and time taken is 933.8162205219269
+Total time taken for all modules for the account:[['demo_ukeng_proximity@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] is: 2309.6845891475677
+2023-02-18
+finished page tree for[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] and time taken is 891.3692276477814
+finished translation and empty page for[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] and time taken is 1580.0034108161926
+Total time taken for all modules for the account:[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] is: 4976.864861726761
+2023-02-18
+finished page tree for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 928.4148066043854
+finished translation and empty page for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 1587.081931591034
+Total time taken for all modules for the account:[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] is: 5007.83926320076
+2023-02-18
+finished page tree for[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] and time taken is 1079.1180787086487
+finished translation and empty page for[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] and time taken is 1780.1467814445496
+Total time taken for all modules for the account:[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] is: 5295.945386171341
+2023-02-18
+finished page tree for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] and time taken is 154.42375802993774
+finished translation and empty page for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] and time taken is 257.18275594711304
+Total time taken for all modules for the account:[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] is: 481.1036558151245
+2023-02-18
+finished page tree for[['demo_unmanaged@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTD']] and time taken is 598.5700607299805
+finished translation and empty page for[['demo_unmanaged@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTD']] and time taken is 1041.3948295116425
+Total time taken for all modules for the account:[['demo_unmanaged@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTD']] is: 2226.0443897247314
+2023-02-18
+finished page tree for[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDB']] and time taken is 588.9121813774109
+finished translation and empty page for[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDB']] and time taken is 1041.9675126075745
+Total time taken for all modules for the account:[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDB']] is: 2306.522755384445
+2023-02-18
+finished page tree for[['test_ntwkg_gold@pproap.com', 'ExperiencePRP!', 'NA', 'Canada', 'English', 'CTD']] and time taken is 730.7886643409729
+finished translation and empty page for[['test_ntwkg_gold@pproap.com', 'ExperiencePRP!', 'NA', 'Canada', 'English', 'CTD']] and time taken is 1345.0928230285645
+Total time taken for all modules for the account:[['test_ntwkg_gold@pproap.com', 'ExperiencePRP!', 'NA', 'Canada', 'English', 'CTD']] is: 3959.0016117095947
+2023-02-18
+finished page tree for[['demo_na_distributor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'Distri']] and time taken is 991.8432023525238
+finished translation and empty page for[['demo_na_distributor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'Distri']] and time taken is 1639.1365156173706
+Total time taken for all modules for the account:[['demo_na_distributor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'Distri']] is: 4256.382648229599
+2023-02-18
+2023-02-18
+2023-02-18
+2023-02-18
+2023-02-18
+2023-02-18
+2023-02-18
+2023-02-18
+2023-02-20
+finished page tree for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 615.6687836647034
+finished translation and empty page for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 1136.0652828216553
+Total time taken for all modules for the account:[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] is: 3630.5963633060455
+2023-02-20
+finished page tree for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 851.094486951828
+finished translation and empty page for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 1540.9509987831116
+Total time taken for all modules for the account:[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] is: 4853.936775922775
+2023-02-20
+finished page tree for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 1225.8874537944794
+finished translation and empty page for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 2025.4507071971893
+Total time taken for all modules for the account:[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] is: 5553.723199367523
+2023-02-20
+finished page tree for[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] and time taken is 21.628231048583984
+finished translation and empty page for[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] and time taken is 36.19771361351013
+Total time taken for all modules for the account:[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] is: 67.66544365882874
+2023-02-20
+finished page tree for[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] and time taken is 1704.4125785827637
+finished translation and empty page for[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] and time taken is 2918.9447560310364
+Total time taken for all modules for the account:[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] is: 7760.732481479645
+2023-02-21
+finished page tree for[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] and time taken is 478.02518367767334
+finished translation and empty page for[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] and time taken is 906.7361991405487
+Total time taken for all modules for the account:[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] is: 1960.022258758545
+2023-02-21
+finished page tree for[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] and time taken is 819.7413911819458
+finished translation and empty page for[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] and time taken is 1464.4733850955963
+Total time taken for all modules for the account:[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] is: 4470.605200052261
+2023-02-21
+finished page tree for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 606.2058365345001
+finished translation and empty page for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 1166.4217791557312
+Total time taken for all modules for the account:[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] is: 4011.911165714264
+2023-02-21
+finished page tree for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 872.6303446292877
+finished translation and empty page for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 1645.838097333908
+Total time taken for all modules for the account:[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] is: 4948.481716871262
+2023-02-21
+finished page tree for[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] and time taken is 16.390020847320557
+finished translation and empty page for[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] and time taken is 33.22377848625183
+Total time taken for all modules for the account:[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] is: 63.97157144546509
+2023-02-21
+finished page tree for[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] and time taken is 701.5820083618164
+finished translation and empty page for[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] and time taken is 1283.388820886612
+Total time taken for all modules for the account:[['demo_korean_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'Distri']] is: 2427.67631649971
+2023-02-21
+finished page tree for[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] and time taken is 1464.0550961494446
+finished translation and empty page for[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] and time taken is 2335.911122560501
+Total time taken for all modules for the account:[['demo_hpelarptbr_01@pproap.com', 'ExperiencePRP!', 'LAR', 'Brazil', 'Portugese', 'T2']] is: 6359.927207708359
+2023-02-21
+finished page tree for[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] and time taken is 1102.4167487621307
+finished translation and empty page for[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] and time taken is 1777.5641853809357
+Total time taken for all modules for the account:[['demo_korean_kr_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Korea', 'Korean', 'T2']] is: 5176.489772796631
+2023-02-21
+finished page tree for[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] and time taken is 802.5060458183289
+finished translation and empty page for[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] and time taken is 1448.2261917591095
+Total time taken for all modules for the account:[['demo_emea_distributor@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'Distri']] is: 3129.0953574180603
+2023-02-21
+finished page tree for[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] and time taken is 1088.5259561538696
+finished translation and empty page for[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] and time taken is 1862.4714720249176
+Total time taken for all modules for the account:[['demo_emea_platinum@pproap.com', 'ExperiencePRP!', 'EMEA', 'Germany', 'German', 'T2']] is: 5766.07692694664
+2023-02-21
+finished page tree for[['demo_turkish_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2']] and time taken is 694.7027502059937
+finished translation and empty page for[['demo_turkish_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2']] and time taken is 1321.137971162796
+Total time taken for all modules for the account:[['demo_turkish_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Turkey', 'Turkish', 'T2']] is: 2619.3288826942444
+2023-02-21
+finished page tree for[['demo_la_distributor@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'Distri']] and time taken is 1389.2284779548645
+finished translation and empty page for[['demo_la_distributor@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'Distri']] and time taken is 2247.9510719776154
+Total time taken for all modules for the account:[['demo_la_distributor@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'Distri']] is: 5772.4559099674225
+2023-02-21
+finished page tree for[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] and time taken is 1407.4884326457977
+finished translation and empty page for[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] and time taken is 2272.6459033489227
+Total time taken for all modules for the account:[['demo_spanisheu_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Spain', 'Spanish', 'Distri']] is: 6012.9342584609985
+2023-02-21
+finished page tree for[['demo_la_platinum@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'T2']] and time taken is 1655.7759900093079
+finished translation and empty page for[['demo_la_platinum@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'T2']] and time taken is 2757.066652774811
+Total time taken for all modules for the account:[['demo_la_platinum@pproap.com', 'ExperiencePRP!', 'LAR', 'Mexico', 'LARSpanish', 'T2']] is: 6741.976948738098
+2023-02-21
+finished page tree for[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 998.9782798290253
+finished translation and empty page for[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] and time taken is 1580.9063091278076
+Total time taken for all modules for the account:[['demo_h3c@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'Distri']] is: 2747.3682839870453
+2023-02-21
+finished page tree for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 876.9859130382538
+finished translation and empty page for[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] and time taken is 1670.8233318328857
+Total time taken for all modules for the account:[['demo_simplified_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'China', 'Chinese', 'T2']] is: 4604.7455632686615
+2023-02-21
+finished page tree for[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] and time taken is 714.8932681083679
+finished translation and empty page for[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] and time taken is 1321.4823608398438
+Total time taken for all modules for the account:[['demo_traditional_cn_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'Distri']] is: 4084.7462174892426
+2023-02-21
+finished page tree for[['demo_traditional_cn_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2A']] and time taken is 734.5402982234955
+finished translation and empty page for[['demo_traditional_cn_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2A']] and time taken is 1390.8809480667114
+Total time taken for all modules for the account:[['demo_traditional_cn_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2A']] is: 4302.247070550919
+2023-02-21
+finished page tree for[['demo_traditional_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2']] and time taken is 754.8366553783417
+finished translation and empty page for[['demo_traditional_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2']] and time taken is 1379.7274017333984
+Total time taken for all modules for the account:[['demo_traditional_cn_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Taiwan', 'Taiwan', 'T2']] is: 4307.142476320267
+2023-02-22
+finished page tree for[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] and time taken is 18.78481674194336
+finished translation and empty page for[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] and time taken is 34.133312463760376
+2023-02-22
+finished page tree for[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] and time taken is 17.41934370994568
+finished translation and empty page for[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] and time taken is 25.221303701400757
+Total time taken for all modules for the account:[['dummyt1map@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Lithuania', 'English', 'T1']] is: 46.971954107284546
+2023-02-22
+finished page tree for[['demo_ukeng_proximity@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] and time taken is 658.1614401340485
+finished translation and empty page for[['demo_ukeng_proximity@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] and time taken is 1121.9601554870605
+Total time taken for all modules for the account:[['demo_ukeng_proximity@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] is: 2568.744696378708
+2023-02-22
+finished page tree for[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] and time taken is 1067.6394686698914
+finished translation and empty page for[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] and time taken is 1842.95774435997
+Total time taken for all modules for the account:[['demo_hreng_mapt2@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'T2']] is: 5012.048690080643
+2023-02-22
+finished page tree for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 1121.0386068820953
+finished translation and empty page for[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] and time taken is 1870.3920919895172
+Total time taken for all modules for the account:[['demo_ukeng_distri@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'Distri']] is: 5077.974869012833
+2023-02-22
+finished page tree for[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] and time taken is 1228.771761417389
+finished translation and empty page for[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] and time taken is 2046.9998066425323
+Total time taken for all modules for the account:[['mapdummypartner@yopmail.com', 'ExperiencePRP!', 'EMEA', 'Croatia', 'English', 'MAP']] is: 5098.224313020706
+2023-02-22
+finished page tree for[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDB']] and time taken is 714.3214485645294
+finished translation and empty page for[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDB']] and time taken is 1323.3190276622772
+Total time taken for all modules for the account:[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDB']] is: 2691.9032599925995
+2023-02-22
+finished page tree for[['demo_unmanaged@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTD']] and time taken is 705.6568789482117
+finished translation and empty page for[['demo_unmanaged@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTD']] and time taken is 1326.897846698761
+Total time taken for all modules for the account:[['demo_unmanaged@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTD']] is: 2808.8776721954346
+2023-02-22
+finished page tree for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] and time taken is 964.9120597839355
+finished translation and empty page for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] and time taken is 1611.3838233947754
+Total time taken for all modules for the account:[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'CTDA']] is: 2901.4236195087433
+2023-02-22
+finished page tree for[['test_ntwkg_gold@pproap.com', 'ExperiencePRP!', 'NA', 'Canada', 'English', 'CTD']] and time taken is 1002.2318670749664
+finished translation and empty page for[['test_ntwkg_gold@pproap.com', 'ExperiencePRP!', 'NA', 'Canada', 'English', 'CTD']] and time taken is 1851.3806273937225
+Total time taken for all modules for the account:[['test_ntwkg_gold@pproap.com', 'ExperiencePRP!', 'NA', 'Canada', 'English', 'CTD']] is: 4735.417258262634
+2023-02-22
+finished page tree for[['demo_na_distributor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'Distri']] and time taken is 1462.7316660881042
+finished translation and empty page for[['demo_na_distributor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'Distri']] and time taken is 2459.9563179016113
+Total time taken for all modules for the account:[['demo_na_distributor@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'Distri']] is: 6057.269142627716
+2023-02-22
+finished page tree for[['demo_msa@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'MDF']] and time taken is 826.6333012580872
+finished translation and empty page for[['demo_msa@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'MDF']] and time taken is 1546.80216050148
+Total time taken for all modules for the account:[['demo_msa@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'MDF']] is: 3175.9833920001984
+2023-02-22
+finished page tree for[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] and time taken is 1237.3433866500854
+finished translation and empty page for[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] and time taken is 2291.5351457595825
+Total time taken for all modules for the account:[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] is: 5503.220511674881
+2023-02-22
+finished page tree for[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] and time taken is 1271.4038877487183
+finished translation and empty page for[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] and time taken is 2382.7299540042877
+Total time taken for all modules for the account:[['demo_aruba@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2A']] is: 5577.029952049255
+2023-02-22
+finished page tree for[['demo_apj_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'Distri']] and time taken is 1383.130465745926
+finished translation and empty page for[['demo_apj_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'Distri']] and time taken is 2338.4196531772614
+Total time taken for all modules for the account:[['demo_apj_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'Distri']] is: 5581.057258605957
+2023-02-22
+finished page tree for[['demo_na_platinum@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2']] and time taken is 1433.2682502269745
+finished translation and empty page for[['demo_na_platinum@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2']] and time taken is 2439.743052482605
+Total time taken for all modules for the account:[['demo_na_platinum@pproap.com', 'ExperiencePRP!', 'NA', 'USA', 'English', 'T2']] is: 5626.810099363327
+2023-02-22
+finished page tree for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 806.1017143726349
+finished translation and empty page for[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] and time taken is 1568.1618325710297
+Total time taken for all modules for the account:[['demo_japanese_jp_competitor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2A']] is: 4304.5388967990875
+2023-02-22
+finished page tree for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 1219.81081032753
+finished translation and empty page for[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] and time taken is 2185.058445453644
+Total time taken for all modules for the account:[['demo_japanese_jp_t2solutionprovider@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'T2']] is: 5511.312187671661
+2023-02-22
+finished page tree for[['demo_english_sg_proximity@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'CTD']] and time taken is 773.1855931282043
+finished translation and empty page for[['demo_english_sg_proximity@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'CTD']] and time taken is 1280.4489936828613
+Total time taken for all modules for the account:[['demo_english_sg_proximity@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'CTD']] is: 2618.7973296642303
+2023-02-22
+finished page tree for[['demo_english_sg_oem@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'OEM']] and time taken is 943.1857306957245
+finished translation and empty page for[['demo_english_sg_oem@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'OEM']] and time taken is 1545.2014048099518
+Total time taken for all modules for the account:[['demo_english_sg_oem@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'OEM']] is: 3117.9720888137817
+2023-02-22
+finished page tree for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 1803.664699792862
+finished translation and empty page for[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] and time taken is 2954.4605214595795
+Total time taken for all modules for the account:[['demo_japanese_distributor@pproap.com', 'ExperiencePRP!', 'APJ', 'Japan', 'Japanese', 'Distri']] is: 6406.752238035202
+2023-02-22
+finished page tree for[['demoapjplat@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'T2']] and time taken is 1258.562088251114
+finished translation and empty page for[['demoapjplat@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'T2']] and time taken is 1932.7648289203644
+Total time taken for all modules for the account:[['demoapjplat@pproap.com', 'ExperiencePRP!', 'APJ', 'Singapore', 'English', 'T2']] is: 5266.00594496727
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+DEMO ACCOUNT [['demo_ukeng_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] FAILED TO LOGIN 
+2023-02-27
+DEMO ACCOUNT [['demo_unmanaged@pproap.com', 'ExperiencePRP123!', 'NAR', 'Canada', 'English', 'CTD']] FAILED TO LOGIN 
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+DEMO ACCOUNT [['demo_unmanaged@pproap.com', 'ExperiencePRP123!', 'NAR', 'Canada', 'English', 'CTD']] FAILED TO LOGIN 
+2023-02-27
+DEMO ACCOUNT [['demo_ukeng_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] FAILED TO LOGIN 
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+DEMO ACCOUNT [['demo_ukeng_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] FAILED TO LOGIN 
+2023-02-27
+DEMO ACCOUNT [['demo_unmanaged@pproap.com', 'ExperiencePRP123!', 'NAR', 'Canada', 'English', 'CTD']] FAILED TO LOGIN 
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+DEMO ACCOUNT [['demo_ukeng_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] FAILED TO LOGIN 
+2023-02-27
+DEMO ACCOUNT [['demo_unmanaged@pproap.com', 'ExperiencePRP123!', 'NAR', 'Canada', 'English', 'CTD']] FAILED TO LOGIN 
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+DEMO ACCOUNT [['demo_unmanaged@pproap.com', 'ExperiencePRP123!', 'NAR', 'Canada', 'English', 'CTD']] FAILED TO LOGIN 
+2023-02-27
+DEMO ACCOUNT [['demo_ukeng_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] FAILED TO LOGIN 
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+2023-02-27
+DEMO ACCOUNT [['demo_ukeng_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] FAILED TO LOGIN 
+2023-02-27
+DEMO ACCOUNT [['demo_unmanaged@pproap.com', 'ExperiencePRP123!', 'NAR', 'Canada', 'English', 'CTD']] FAILED TO LOGIN 
+2023-02-27
+2023-02-27
+DEMO ACCOUNT [['demo_ukeng_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] FAILED TO LOGIN 
+2023-02-27
+DEMO ACCOUNT [['demo_unmanaged@pproap.com', 'ExperiencePRP123!', 'NAR', 'Canada', 'English', 'CTD']] FAILED TO LOGIN 
+2023-02-27
+finished page tree for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NAR', 'USA', 'English', 'CTD']] and time taken is 945.7008793354034
+finished translation and empty page for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NAR', 'USA', 'English', 'CTD']] and time taken is 1664.910656929016
+Total time taken for all modules for the account:[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NAR', 'USA', 'English', 'CTD']] is: 3038.7196571826935
+2023-02-27
+finished page tree for[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NAR', 'USA', 'English', 'T2']] and time taken is 746.2940130233765
+finished translation and empty page for[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NAR', 'USA', 'English', 'T2']] and time taken is 1374.7641723155975
+Total time taken for all modules for the account:[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NAR', 'USA', 'English', 'T2']] is: 4133.2858073711395
+2023-02-27
+finished page tree for[['demo_na_platinum@pproap.com', 'ExperiencePRP!', 'NAR', 'USA', 'English', 'T2']] and time taken is 1304.5117506980896
+finished translation and empty page for[['demo_na_platinum@pproap.com', 'ExperiencePRP!', 'NAR', 'USA', 'English', 'T2']] and time taken is 2253.504872560501
+Total time taken for all modules for the account:[['demo_na_platinum@pproap.com', 'ExperiencePRP!', 'NAR', 'USA', 'English', 'T2']] is: 6132.025672912598
+2023-02-27
+DEMO ACCOUNT [['demo_ukeng_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] FAILED TO LOGIN 
+2023-02-27
+DEMO ACCOUNT [['demo_unmanaged@pproap.com', 'ExperiencePRP123!', 'NAR', 'Canada', 'English', 'CTD']] FAILED TO LOGIN 
+2023-02-27
+2023-02-27
+2023-02-27
+finished page tree for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NAR', 'USA', 'English', 'CTD']] and time taken is 510.5885899066925
+2023-02-27
+finished page tree for[['demo_na_platinum@pproap.com', 'ExperiencePRP!', 'NAR', 'USA', 'English', 'T2']] and time taken is 602.6126012802124
+2023-02-27
+2023-02-27
+DEMO ACCOUNT [['demo_ukeng_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] FAILED TO LOGIN 
+2023-02-27
+DEMO ACCOUNT [['demo_unmanaged@pproap.com', 'ExperiencePRP123!', 'NAR', 'Canada', 'English', 'CTD']] FAILED TO LOGIN 
+2023-02-27
+DEMO ACCOUNT [['demo_ukeng_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'UK', 'English', 'T2']] FAILED TO LOGIN 
+2023-02-27
+finished page tree for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NAR', 'USA', 'English', 'CTD']] and time taken is 1077.0889995098114
+finished translation and empty page for[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NAR', 'USA', 'English', 'CTD']] and time taken is 1680.821387052536
+Total time taken for all modules for the account:[['demo_competitor@pproap.com', 'ExperiencePRP!', 'NAR', 'USA', 'English', 'CTD']] is: 2897.015465259552
+2023-02-27
+finished page tree for[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NAR', 'USA', 'English', 'T2']] and time taken is 724.5589151382446
+finished translation and empty page for[['demo_na_proximity@pproap.com', 'ExperiencePRP!', 'NAR', 'USA', 'English', 'T2']] and time taken is 1368.2010004520416
+2023-02-27
+finished page tree for[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] and time taken is 70.59672093391418
+finished translation and empty page for[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] and time taken is 76.90862393379211
+Total time taken for all modules for the account:[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] is: 82.64179015159607
+2023-02-27
+finished page tree for[['demo_french_solp@yopmail.com', 'ExperiencePRP!', 'EMEA', 'France', 'French', 'T2']] and time taken is 818.5207076072693

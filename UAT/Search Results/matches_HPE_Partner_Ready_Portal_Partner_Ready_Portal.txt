@@ -1,0 +1,33 @@
+https://partner.hpe.com/group/prp/article-display-page?id=12662594 | matched: hpe partner ready portal, partner ready portal
+https://partner.hpe.com/configuration-jp | matched: partner ready portal
+https://partner.hpe.com/group/prp/article-display-page?id=42204319 | matched: partner ready portal
+https://partner.hpe.com/group/prp/service-provider | matched: hpe partner ready portal, partner ready portal
+https://partner.hpe.com/group/prp/article-display-page?id=534295805 | matched: hpe partner ready portal, partner ready portal
+https://partner.hpe.com/group/prp/article-display-page?id=469689251 | matched: hpe partner ready portal, partner ready portal
+https://partner.hpe.com/group/prp/article-display-page?id=1309566420 | matched: hpe partner ready portal, partner ready portal
+https://partner.hpe.com/index | matched: hpe partner ready portal, partner ready portal
+https://partner.hpe.com/group/prp/partner-quick-start | matched: hpe partner ready portal, partner ready portal
+https://partner.hpe.com/group/prp/article-display-page?id=569657842 | matched: partner ready portal
+https://partner.hpe.com/article-display-page?id=483848 | matched: partner ready portal
+https://partner.hpe.com/article-display-page?id=42204319 | matched: partner ready portal
+https://partner.hpe.com/group/prp/article-display-page?id=483848 | matched: partner ready portal
+https://partner.hpe.com/group/prp/ppa-community | matched: hpe partner ready portal, partner ready portal
+https://partner.hpe.com/group/prp/configuration-jp | matched: partner ready portal
+https://partner.hpe.com/group/prp/solution-provider | matched: hpe partner ready portal, partner ready portal
+https://partner.hpe.com/group/prp/article-display-page?id=534257406 | matched: hpe partner ready portal, partner ready portal
+https://partner.hpe.com/service-provider | matched: hpe partner ready portal, partner ready portal
+https://partner.hpe.com/group/prp/article-display-page?id=602889932 | matched: partner ready portal
+https://partner.hpe.com/group/prp/article-display-page?id=1318718334 | matched: partner ready portal
+https://partner.hpe.com/multi-hat-multi-geo | matched: hpe partner ready portal, partner ready portal
+https://partner.hpe.com/group/prp/article-display-page?id=1305460712 | matched: hpe partner ready portal, partner ready portal
+https://partner.hpe.com/group/prp/article-display-page?id=871812621 | matched: hpe partner ready portal, partner ready portal
+https://partner.hpe.com/group/prp/article-display-page?id=885034852 | matched: hpe partner ready portal, partner ready portal
+https://partner.hpe.com/group/prp/article-display-page?id=603417820 | matched: partner ready portal
+https://partner.hpe.com/solution-provider | matched: hpe partner ready portal, partner ready portal
+https://partner.hpe.com/group/prp/article-display-page?id=469727374 | matched: hpe partner ready portal, partner ready portal
+https://partner.hpe.com/partner-quick-start | matched: hpe partner ready portal, partner ready portal
+https://partner.hpe.com/group/prp/article-display-page?id=602896634 | matched: partner ready portal
+https://partner.hpe.com/group/prp/article-display-page?id=1331742996 | matched: hpe partner ready portal, partner ready portal
+https://partner.hpe.com/group/prp/article-display-page?id=15404104 | matched: hpe partner ready portal, partner ready portal
+https://partner.hpe.com/group/prp/index | matched: hpe partner ready portal, partner ready portal
+https://partner.hpe.com/home
