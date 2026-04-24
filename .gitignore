@@ -4,6 +4,7 @@ env/
 venv/
 .venv/
 UAT/venv311/
+UAT/jobs/
 # Large tools / binaries
 UAT/LanguageTool/
 *.bin

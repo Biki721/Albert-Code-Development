@@ -194,6 +194,11 @@ export default function DashboardPage() {
     return `${typeLabel} – ${account.country} (${account.language})`;
   };
 
+  const formatDomainLabel = (domain) => {
+    if (domain === 'PRP') return 'Partner Portal';
+    return domain;
+  };
+
   const filteredAccounts =
     selectedLanguages && selectedLanguages.length > 0
       ? accounts.filter((account) => selectedLanguages.includes(account.language))
@@ -349,7 +354,7 @@ export default function DashboardPage() {
                     label="Domains"
                     options={(modules?.domains || []).map((domain) => ({
                       value: domain,
-                      label: domain,
+                      label: formatDomainLabel(domain),
                     }))}
                     value={selectedDomains}
                     onChange={setSelectedDomains}

@@ -323,7 +323,6 @@ async def get_system_status(email: str = Depends(require_session_lock)):
 # ============================================================================
 
 FIXERS_SOURCE_PATH = settings.MODULES_DIR / "Fixers_list.xlsx"
-FIXERS_TARGET_PATH = settings.MODULES_DIR / "fixers__.xlsx"
 ADHOC_WORDS_PATH = settings.MODULES_DIR / "Ad hoc Requests" / "Aruba Series names - Adhoc request.xlsx"
 ADHOC_LINKS_PATH = settings.MODULES_DIR / "Ad hoc Requests" / "AD_HOC_Links_To_Search.xlsx"
 
@@ -367,11 +366,11 @@ async def save_fixers(
     payload: FixersWorkbook,
     email: str = Depends(require_session_lock),
 ):
-    """Save Fixers workbook edits to fixers__.xlsx"""
+    """Save Fixers workbook edits to Fixers_list.xlsx"""
     try:
-        FIXERS_TARGET_PATH.parent.mkdir(parents=True, exist_ok=True)
+        FIXERS_SOURCE_PATH.parent.mkdir(parents=True, exist_ok=True)
 
-        with pd.ExcelWriter(FIXERS_TARGET_PATH) as writer:
+        with pd.ExcelWriter(FIXERS_SOURCE_PATH) as writer:
             for sheet in payload.sheets:
                 df = pd.DataFrame(sheet.rows, columns=sheet.columns)
                 df.to_excel(writer, sheet_name=sheet.name, index=False)

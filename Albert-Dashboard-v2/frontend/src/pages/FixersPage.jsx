@@ -192,6 +192,7 @@ export default function FixersPage() {
                         const isEmailColumn =
                           typeof col === 'string' && col.toLowerCase().includes('email');
                         const emailText = String(value || '');
+                        const lineCount = emailText ? emailText.split(/\r\n|\r|\n/).length : 1;
                         const emails =
                           isEmailColumn && emailText
                             ? (emailText.match(/[^\s,;]+@[^\s,;]+/g) || [])
@@ -203,10 +204,10 @@ export default function FixersPage() {
                           <td key={col} className="px-3 py-2 align-middle">
                             {editable && isEmailColumn ? (
                               <textarea
-                                value={emails && emails.length > 0 ? emails.join('\n') : emailText}
+                                value={emailText}
                                 onChange={(e) => updateCell(rowIndex, col, e.target.value)}
-                                rows={Math.min(4, Math.max(1, emails ? emails.length : 1))}
-                                className="w-full px-2 py-1 rounded border border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-gray-900 dark:text-slate-100 text-xs resize-none"
+                                rows={Math.min(8, Math.max(2, lineCount))}
+                                className="w-full px-2 py-1 rounded border border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-gray-900 dark:text-slate-100 text-xs resize-y whitespace-pre-wrap"
                               />
                             ) : editable ? (
                               <input

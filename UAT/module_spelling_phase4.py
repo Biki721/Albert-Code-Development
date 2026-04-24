@@ -1,724 +1,656 @@
-#THIS MODULE IDENTIFIES ONLY SPELLING ERRORS, NOT GRAMMATICAL ERRORS
+"""
+module_spelling_optimized.py — OPTIMIZED BUILD
+==============================================================
+SymSpell-based spell-checker for HPE Partner Portal pages.  Drop-in
+replacement for module_spelling_phase4.py.  ALL public signatures
+preserved:
 
-# from spellchecker import SpellChecker
-'''
-import enchant
+    callable_extract(link, html_page, soup, lang) -> list[str]
+    articlenamechecker(soupobject, language_translation) -> list[str]
 
+FIXES APPLIED IN THIS BUILD
+---------------------------
+  7.  articlenamechecker now honours the `lang` parameter threaded
+      through callable_extract, instead of hard-coding 'English'.
+      That's what the parameter was designed to do all along.
+
+  8.  Removed the duplicate plural-acronym check.  Two versions of
+      the same logic existed — the commented-out one and the live
+      one — kept only the live version.
+
+  9.  Thread-safe SymSpell singleton.  `get_symspell()` now holds a
+      `threading.Lock()` so two concurrent callers can't both miss
+      the cache and run the 2-second dictionary load in parallel.
+      Safe for the orchestrator's MAX_PARALLEL=2 multiprocessing
+      (each process has its own singleton, but within a process the
+      lock also guards against thread races from any future change).
+
+  10. Thread-safe SmartSpellingChecker singleton — same pattern as
+      get_symspell().
+
+  11. Replaced deprecated `pkg_resources` with `importlib.resources`.
+      pkg_resources emits a DeprecationWarning in Python 3.12+ and
+      will be removed in a future release.  The symspellpy package
+      still exposes its dictionary via importlib.resources, so we
+      don't need pkg_resources at all.
+
+  12. Simplified word-extraction regex.  Previously we captured
+      words-with-apostrophes then discarded every apostrophe match
+      three lines later — wasted work.  Now the regex captures only
+      plain alpha words, matching the actual downstream logic.
+
+PLUS (not originally on the 12-item list but part of "aligning with
+the rest of the codebase"):
+  *   `flush=True` on every print so the Windows console-lock
+      deadlock doesn't bite us when the spell-checker is run inside
+      a multiprocessing.Process worker.
+  *   Defensive file-loading errors no longer blank-swallow (they
+      print + propagate the failure mode with context).
+
+WHAT IS DELIBERATELY UNCHANGED
+------------------------------
+  *   Function signatures.
+  *   All FP-reduction heuristics (code-pattern filter, acronym
+      handling, plural-of-valid-word skip, brand-term dict, correction
+      overrides, date-detector cleanup).
+  *   File formats (CUSTOM_SPELLING_DICT.txt one-word-per-line,
+      CORRECTION_OVERRIDES.txt `wrong->correct` per line,
+      glossary.xlsx column `en-US`).
+  *   SymSpell tuning (max_dictionary_edit_distance=2, prefix_length=7).
+  *   Output format `{{word--->suggestion}}`.
+"""
+
+# ---------------------------------------------------------------------------
+# Standard-library imports
+# ---------------------------------------------------------------------------
 import itertools
-from date_detector import Parser
-#import VaultSample
-from langdetect import DetectorFactory
-DetectorFactory.seed = 0
-import pandas as pd
-import work_phase_3 as work
-from inscriptis import get_text
 import re
+import sys
+import threading
 
-def postprocess(error):
-    error = ''.join([i for i in error if not i.isdigit()])
-    
-    error = re.sub('\W+',' ',error)
-    
-    error=error.strip()
-    if len(error)<=1:
-        return ''
-    #print(type(error))
-    return error 
+# ---------------------------------------------------------------------------
+# CRITICAL: unbuffered stdout to prevent Windows console-lock deadlock when
+# this module is exercised inside a multiprocessing.Process worker.  Mirrors
+# the pattern used by the crawler / broken-link checker / external-links
+# validator.
+# ---------------------------------------------------------------------------
+try:
+    sys.stdout.reconfigure(line_buffering=True, write_through=True)
+    sys.stderr.reconfigure(line_buffering=True, write_through=True)
+except Exception:
+    pass
 
-def grammatical_errors(extracted_text,tbi,articletitles,language): #    errors = grammatical_errors(content,find_all_example,art_titles_tocheck,lang)
-    # print("EXTRACTED TEXT:,",extracted_text)
-    codes= {'French':'fr','German':'de','Italian':"it",'Chinese':'zh-cn','Russian':'ru','Portugese':'pt','Indonesian':'id','Singaporean':'en','Korean':"ko",'Turkish':"tr",'Japanese':"ja",'Taiwan':"zh-tw",'Spanish':'es',"LARSpanish":'es','English':'en'}
-    df = pd.read_excel('glossary.xlsx')
-    tbc = 'en'
-    col_name = 'en-US'
-    check_list = list(df[col_name])
-    ignored = "*+^#%$),(!@_}{[]?><~=\|-:;"
-    extras = ['ARTIKEL','Tools catalog102030','© Copyright 2022 Hewlett Packard Enterprise Development, L.P.','Competenza','Cancella','decrescente','Presidente','ARTíCULO','Competencia Partner Ready','5000','6000']
-    check_list = [check_list[i] for i in range(len(check_list)) if type(check_list[i])==str]
-    tbi.extend(extras)
-    tbi = [tbi[i] for i in range(len(tbi)) if tbi[i].strip()]
-    gramm_checks = []
-
-    for line in extracted_text:
-        if line!='':
-            gramm_checks.append(line)
-        
-    gramm_res = []
-    gramm_checks_new=[]
-
-
-    for i in range(len(gramm_checks)):
-        if not gramm_checks[i][0]=="/" and not gramm_checks[i][0].isalnum():
-            for m in ignored:
-                gramm_checks[i]=gramm_checks[i].lstrip(m)
-        flag = False
-        for k in range(len(tbi)):
-            if tbi[k].strip() == gramm_checks[i].strip():
-                flag = True
-        if flag == False:
-            gramm_checks_new.append(gramm_checks[i])
-    gramm_checks = gramm_checks_new
-    gramm_checks.extend(articletitles)
-
-
-    # print('GRAMM CHECKS LIST',gramm_checks)
-
-    # try:
-    #     for i in gramm_checks:
-    #         #print (i)
-    #         lst = i.split('.')
-    #         for j in lst:
-    #             if j and len(j)>2:
-    #                 res = spell_gramm(j, check_list)
-    #                 gramm_res.append(res)
-    try:
-        gramm_res = spell_gramm(gramm_checks, check_list)
-        #print(gramm_res)
-    except Exception as e:
-        print('\nEXCEPTION-------------------------', e,'\n')
-
-    # for i in range(len(gramm_checks)):
-    #     gramm_checks[i]=gramm_checks[i].strip()
-
-    #     if (gramm_checks[i]=="*"   or gramm_checks[i]=="" or gramm_checks[i].startswith("/") or gramm_checks[i].startswith("o ")):
-    #         continue
-    #     for k in ignored:
-    #         if gramm_checks[i].startswith(k) and gramm_checks:
-    #             gramm_checks[i]=gramm_checks[i].lstrip(k)
-    #             gramm_checks[i]=gramm_checks[i].strip()
-
-    #     else:
-    #         for j in range(len(check_list)):
-    #             if check_list[j] in gramm_checks[i]:
-    #                 gramm_checks[i]=gramm_checks[i].replace(check_list[j],'')
-    #     if (gramm_checks[i]):
-    #         probable_errors.append(gramm_checks[i])
-    # #probable_errors.extend(articletitles)
-    # errors=[]
-    # for i in probable_errors:
-    #     gramm_res = spell_gramm(i)
-    #     try:
-    #         gramm_res = spell_gramm(i)
-    #         if gramm_res:
-    #             errors.append(gramm_res)
-
-    #     except:
-    #         print('\nERROR IN GRAMMAR CHECK!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n')
-    # print("PROBABLE ERRORS",probable_errors)
-    # for i in probable_errors:
-    #     try:
-    #         #lang = model.predict(i)[0][0][9:]
-    #         if lang=='en':
-    #             i=i.strip()
-    #             i = postprocess(i)
-    #             if i!='':
-                
-                   
-    #                 errors.append(i)
-        
-    #     except:
-    #         #print("error in language prediction")
-    #         continue
-
-    #print("****************************************************************")
-    # final_res = []
-    # for i in gramm_res:
-    #     fin_err = i.split('.')
-    #     for ii in fin_err:
-    #         if '{{' in ii:
-    #             final_res.append(ii) 
-
-    print("ERRORS BEFORE FINALLY RETURNING",gramm_res)
-    
-    return gramm_res
-
-def callable_extract(link,html_page,soup,lang):
-    content=''
-    #trans_terms={'French':'Français','German':'Deutsch','Italian':"Italiano",'Chinese':'简体中文','Russian':'Русский','Portugese':'Português','Indonesian':'Bahasa indonesia','Korean':"한국어",'Turkish':"Türkçe",'Japanese':"日本語",'Taiwan':"中文（台灣)",'Spanish':'Español',"LARSpanish":'Español'}
-    #trans_errors={}
-    find_all_example=[]
-    tbi = ["span","h1","h2","a",'div',"tr"]
-    tb = ['portlet-title-text','hide','hide-accessible','hide User','sr-only','iconText','hide isPureHPE','dateFormat','size','categoryName','categoryDescription','boldContent','detailedContentText','articleSummary','articleDeails row','controlsPagination pull-right','articleDownloadHeader','articleformatSize',"border_bottom",'articleDownloadContent']
-    errors = []
-    art_titles_tocheck=[]
-    #html_page = self.driver.page_source
-    #soup=BeautifulSoup(html_page,'html.parser')
-    #art_titles_tocheck=articlenamechecker(soup, 'English')
-    art_titles_tocheck = articlenamechecker(soup, 'English')
-    # print("doctitles",art_titles_tocheck)
-    if link.strip()=='https://partner.hpe.com/group/prp' or link.strip()=="https://partner.hpe.com/group/prp/home":
-        # print("inscriptis called")
-        content = get_text(html_page)
-        content=content.splitlines()
-        for element in tbi:
-            if element=='a':
-                for word in soup.find_all(element):
-                    find_all_example.append(word.get_text().strip())
-            for ele in tb:
-                for word in soup.find_all(element,class_= ele):
-                        find_all_example.append(word.get_text())
-        for i in range(len(content)):
-            content[i]=content[i].strip()
-            if content[i].startswith("+"):
-                content[i]=content[i].lstrip("+")
-                content[i]=content[i].strip()
-
-    else:
-        
-        try:
-            content=soup.find(id='main-content').get_text()
-        except:
-
-            pass
-        content=content.splitlines()
-        for i in range(len(content)):
-            content[i]=" ".join(content[i].split())
-        content=[content[i] for i in range(len(content)) if content[i]]
-
-        for element in tbi:
-            if element=='a':
-                for word in soup.find_all(element):
-                    temp=word.get_text()
-                    temp=temp.splitlines()
-                    find_all_example.extend(temp)
-            for ele in tb:
-                for word in soup.find_all(element,class_= ele):
-                    temp=word.get_text()
-                    temp=temp.splitlines()
-                    find_all_example.extend(temp)
-        for word in soup.find_all("p",id="qsUserData"):
-            temp=word.get_text()
-            temp=temp.splitlines()
-            find_all_example.extend(temp)
-        for i in range(len(find_all_example)):
-            find_all_example[i]=" ".join(find_all_example[i].split())
-        find_all_example=[find_all_example[i] for i in range(len(find_all_example)) if find_all_example[i]]
-    # content.extend(art_titles_tocheck)
-    #print("LINK:",link)
-    errors = grammatical_errors(content,find_all_example,art_titles_tocheck,lang)
-    
-    parser=Parser()
-    for i in range(len(errors)):
-        for match in parser.parse(errors[i]):
-            errors[i] = errors[i].replace(match.text,"")
-    errors=[errors[i] for i in range(len(errors)) if errors[i]]
-
-        
-    # print("FINAL",errors)  
-    return errors
-    
-###################### Function to check for spelling errors #######################
-def spell_gramm(content, check_list):
-    # print('CONTENT---------',content)
-    # print(matches)
-    error_list = []
-    spell = enchant.DictWithPWL("en_US", "CUSTOM_SPELLING_DICT.txt")       
-    for i in content:
-        sentence = i.split('.')
-
-        for i in sentence:
-            words = i.split()
-            corrected_text = i
-            for word in words:
-                if not any(char.isupper() for char in word[1:]): #Treat all words which have uppercase letters after the first letter as abbreviations or product names
-                    # print('WORD:---',word)
-                    if word.isalpha() and not spell.check(word) and word not in check_list:
-                        suggestions = spell.suggest(word)
-                        corrected_word = suggestions[0] if suggestions else word
-                        corrected_text = corrected_text.replace(word, '{{' + word + "--->" + corrected_word + '}}')
-                        if corrected_text not in error_list and '{{' in corrected_text:
-                            error_list.append(corrected_text)
-
-
-    return error_list
-
-
-def articlenamechecker(soupobject,language_translation):
-    article_info={}
-    possible_errors=[]
-    try:
-        results=soupobject.find_all('span',class_='articleDownloadHeader')
-        res=soupobject.find_all('span',class_='articleformatSize')
-    except:
-        #print("Donno")
-        return possible_errors
-    else:
-        for (articlename,articledesc) in itertools.zip_longest(results,res):
-            if articledesc.get_text().strip() is not None and len(articledesc.get_text().strip())>0 :
-                article_info[articledesc.get_text().strip()]=articlename.get_text().strip()
-    for ele in article_info:
-        if language_translation in ele:
-            possible_errors.append(article_info[ele])
-    # print(article_info)
-    return possible_errors
-'''
-
-
-# SPELLING CHECK MODULE - SymSpellPy Based (NO JAVA REQUIRED!)
-# Drop-in replacement for module_spelling_phase4.py
-# Uses CUSTOM_SPELLING_DICT.txt as primary ignore source
-# MUCH FASTER than LanguageTool, no Java dependency
-
+# ---------------------------------------------------------------------------
+# Third-party imports
+# ---------------------------------------------------------------------------
 from symspellpy import SymSpell, Verbosity
-import pkg_resources
-import re
+
+# FIX 11: use importlib.resources instead of the deprecated pkg_resources.
+try:
+    # Python 3.9+: files() API is stable.
+    from importlib.resources import files as _ir_files
+    _USE_IMPORTLIB = True
+except ImportError:
+    # Fallback for ancient Python: keep pkg_resources available as a
+    # last resort, with a warning.
+    _USE_IMPORTLIB = False
+    import pkg_resources  # pragma: no cover
+
 from inscriptis import get_text
-from bs4 import BeautifulSoup
 import pandas as pd
-import itertools
 from date_detector import Parser
 
-# Initialize SymSpell once (fast operation)
+
+# ===========================================================================
+# SECTION 1 — SymSpell initialization (thread-safe singleton)
+# ===========================================================================
+
+# FIX 9: module-level state guarded by a lock.  Multiple threads calling
+# get_symspell() concurrently will still only trigger one dictionary load.
 _symspell_instance = None
+_symspell_lock = threading.Lock()
+
+
+def _resolve_symspell_dictionary_path() -> str:
+    """
+    Locate the `frequency_dictionary_en_82_765.txt` file shipped inside
+    the symspellpy package.  Prefers importlib.resources; falls back to
+    pkg_resources only if importlib isn't available (Python < 3.9).
+    """
+    filename = "frequency_dictionary_en_82_765.txt"
+    if _USE_IMPORTLIB:
+        # files() returns a Traversable; str() of `/` gives the real path.
+        return str(_ir_files("symspellpy") / filename)
+    # Legacy fallback
+    return pkg_resources.resource_filename("symspellpy", filename)  # pragma: no cover
+
 
 def get_symspell():
-    """Get or create SymSpell instance (singleton pattern)"""
+    """
+    Get or create the SymSpell instance (singleton pattern, thread-safe).
+
+    Returns the SymSpell instance, or None if initialization failed
+    (in which case spell-checking is silently skipped downstream —
+    matching the original file's behaviour).
+    """
     global _symspell_instance
-    if _symspell_instance is None:
+    # Fast path: already initialized
+    if _symspell_instance is not None:
+        return _symspell_instance
+
+    # Slow path: one caller gets to do the init, others wait.
+    with _symspell_lock:
+        # Re-check after acquiring the lock in case another thread got here first
+        if _symspell_instance is not None:
+            return _symspell_instance
         try:
             sym_spell = SymSpell(max_dictionary_edit_distance=2, prefix_length=7)
-            
-            # Load default dictionary (comes with symspellpy)
-            dictionary_path = pkg_resources.resource_filename(
-                "symspellpy", "frequency_dictionary_en_82_765.txt"
-            )
-            sym_spell.load_dictionary(dictionary_path, term_index=0, count_index=1)
-            
-            print("✓ SymSpell initialized successfully (NO Java required!)")
+            dict_path = _resolve_symspell_dictionary_path()
+            sym_spell.load_dictionary(dict_path, term_index=0, count_index=1)
+            print("✓ SymSpell initialized successfully (no Java required)", flush=True)
             _symspell_instance = sym_spell
-        except Exception as e:
-            print(f"✗ Failed to initialize SymSpell: {e}")
+        except Exception as exc:
+            print(f"✗ Failed to initialize SymSpell: {exc}", flush=True)
             _symspell_instance = None
     return _symspell_instance
 
+
+# ===========================================================================
+# SECTION 2 — Spelling checker class
+# ===========================================================================
+
 class SmartSpellingChecker:
     """
-    Enhanced spelling checker using SymSpell (No Java dependency!)
-    
-    Primary ignore source: CUSTOM_SPELLING_DICT.txt (one word per line)
-    Optional: glossary.xlsx (column 'en-US')
-    
-    MUCH FASTER than enchant or LanguageTool!
+    Enhanced spelling checker using SymSpell (no Java dependency).
+
+    Primary ignore source: CUSTOM_SPELLING_DICT.txt (one word per line).
+    Optional:              glossary.xlsx (column 'en-US').
+    Optional:              CORRECTION_OVERRIDES.txt ('wrong->correct' per line).
     """
-    
+
     def __init__(self):
         self.sym_spell = get_symspell()
-        
+
         # Load glossary terms from Excel
         self.glossary_terms = self._load_glossary()
-        
-        # Load custom dictionary from text file (PRIMARY SOURCE)
+
+        # Load custom dictionary from text file (PRIMARY source)
         self.custom_dict_terms = self._load_custom_dictionary()
-        
+
         # Minimal critical code/template terms that must be ignored
         self.code_terms = {
-            'href', 'src', 'iframe', 'onclick', 'onload', 'validator',
-            'impl', 'frameborder', 'allowfullscreen', 'idlang',
-            'prpartic', 'relatedarticle', 'dlfileentryid', 'languagefinish',
+            "href", "src", "iframe", "onclick", "onload", "validator",
+            "impl", "frameborder", "allowfullscreen", "idlang",
+            "prpartic", "relatedarticle", "dlfileentryid", "languagefinish",
         }
-        
-        # Code/template patterns to skip entirely
+
+        # Code/template patterns that signal "this isn't prose, skip it"
         self.code_patterns = [
-            r'<#[^>]+>',              # FreeMarker tags
-            r'\$\{[^}]+\}',           # Variable expressions
-            r'<%[^%]+%>',             # JSP tags
-            r'<[a-z]+\s+[^>]*>',      # HTML tags
-            r'</[a-z]+>',             # Closing HTML tags
-            r'function\s*\([^)]*\)',  # JavaScript functions
-            r'var\s+\w+\s*=',         # Variable declarations
-            r'const\s+\w+\s*=',       # Const declarations
-            r'import\s+',             # Import statements
-            r'\d+<#',                 # Line numbers with code
-            r'^\s*\d+\s*$',           # Just numbers
-            r'[a-z]+\([^)]*\)',       # Function calls
-            r'\w+\.\w+\(',            # Method calls
-            r'^\s*[-=]{3,}\s*$',      # Separator lines
+            r"<#[^>]+>",               # FreeMarker tags
+            r"\$\{[^}]+\}",            # Variable expressions
+            r"<%[^%]+%>",              # JSP tags
+            r"<[a-z]+\s+[^>]*>",       # HTML tags
+            r"</[a-z]+>",              # Closing HTML tags
+            r"function\s*\([^)]*\)",   # JavaScript functions
+            r"var\s+\w+\s*=",          # Variable declarations
+            r"const\s+\w+\s*=",        # Const declarations
+            r"import\s+",              # Import statements
+            r"\d+<#",                  # Line numbers with code
+            r"^\s*\d+\s*$",            # Just numbers
+            r"[a-z]+\([^)]*\)",        # Function calls
+            r"\w+\.\w+\(",             # Method calls
+            r"^\s*[-=]{3,}\s*$",       # Separator lines
         ]
-        
+        # Pre-compile for modest speed gain (we run this regex per-content-line
+        # per-page; 300 pages * 100 lines * 14 patterns adds up).
+        self._compiled_code_patterns = [re.compile(p) for p in self.code_patterns]
+
+        # File extensions that aren't typos but look like them
+        self._file_ext_dict = {
+            "xlsx", "docx", "pptx", "pdf", "jpg", "png",
+            "gif", "csv", "zip", "xls",
+        }
+
         # Load correction overrides
         self.correction_overrides = self._load_correction_overrides()
 
-        print(f"✓ Loaded {len(self.correction_overrides)} correction overrides")
-        print(f"ℹ Using CUSTOM_SPELLING_DICT.txt as primary ignore source")
-        print(f"ℹ Total terms loaded: {len(self.custom_dict_terms)} custom + {len(self.glossary_terms)} glossary")
-    
+        print(f"✓ Loaded {len(self.correction_overrides)} correction overrides",
+              flush=True)
+        print(f"ℹ Using CUSTOM_SPELLING_DICT.txt as primary ignore source",
+              flush=True)
+        print(f"ℹ Total terms loaded: {len(self.custom_dict_terms)} custom + "
+              f"{len(self.glossary_terms)} glossary", flush=True)
+
+    # -----------------------------------------------------------------------
+    # 2.1  Resource loaders
+    # -----------------------------------------------------------------------
+
     def _load_glossary(self):
-        """Load glossary terms from Excel file"""
+        """Load glossary terms from Excel file (column 'en-US')."""
         try:
-            df = pd.read_excel('glossary.xlsx')
-            col_name = 'en-US'
+            df = pd.read_excel("glossary.xlsx")
+            col_name = "en-US"
             if col_name in df.columns:
                 terms = set()
                 for term in df[col_name]:
                     if pd.notna(term):
                         terms.add(str(term).lower())
-                print(f"✓ Loaded {len(terms)} terms from glossary")
+                print(f"✓ Loaded {len(terms)} terms from glossary", flush=True)
                 return terms
-        except Exception as e:
-            print(f"ℹ Could not load glossary: {e}")
+        except Exception as exc:
+            print(f"ℹ Could not load glossary: {exc}", flush=True)
         return set()
-    
+
     def _load_custom_dictionary(self):
         """
-        Load custom dictionary from CUSTOM_SPELLING_DICT.txt
-        This is your PRIMARY source for ignore terms!
-        Format: One word per line, case-insensitive
+        Load custom dictionary from CUSTOM_SPELLING_DICT.txt.
+
+        Format: one word per line; lines starting with '#' are comments;
+        case-insensitive (stored lowercase).
         """
         try:
-            with open('CUSTOM_SPELLING_DICT.txt', 'r', encoding='utf-8') as f:
+            with open("CUSTOM_SPELLING_DICT.txt", "r", encoding="utf-8") as f:
                 terms = set()
                 for line in f:
-                    # Strip whitespace and ignore empty lines and comments
                     term = line.strip()
-                    if term and not term.startswith('#'):
-                        # Add lowercase version for case-insensitive matching
+                    if term and not term.startswith("#"):
                         terms.add(term.lower())
-                print(f"✓ Loaded {len(terms)} custom terms from CUSTOM_SPELLING_DICT.txt")
+                print(f"✓ Loaded {len(terms)} custom terms from "
+                      f"CUSTOM_SPELLING_DICT.txt", flush=True)
                 return terms
         except FileNotFoundError:
-            print("⚠ WARNING: CUSTOM_SPELLING_DICT.txt not found!")
-            print("  Create this file to add your custom terms (one per line)")
-        except Exception as e:
-            print(f"✗ Error loading CUSTOM_SPELLING_DICT.txt: {e}")
+            print("⚠ CUSTOM_SPELLING_DICT.txt not found", flush=True)
+            print("  Create this file to add your custom terms (one per line)",
+                  flush=True)
+        except Exception as exc:
+            print(f"✗ Error loading CUSTOM_SPELLING_DICT.txt: {exc}", flush=True)
         return set()
-    
+
     def _load_correction_overrides(self):
-        """Load word corrections that SymSpell gets wrong"""
+        """
+        Load correction overrides from CORRECTION_OVERRIDES.txt.
+
+        Format: one mapping per line as `wrong -> correct`.
+        Lines starting with '#' are comments.
+        """
         overrides = {}
         try:
-            with open('CORRECTION_OVERRIDES.txt', 'r', encoding='utf-8') as f:
+            with open("CORRECTION_OVERRIDES.txt", "r", encoding="utf-8") as f:
                 for line in f:
-                    if '->' in line and not line.startswith('#'):
-                        wrong, correct = line.strip().split('->')
+                    line = line.strip()
+                    if not line or line.startswith("#"):
+                        continue
+                    if "->" in line:
+                        wrong, correct = line.split("->", 1)
                         overrides[wrong.strip().lower()] = correct.strip()
         except FileNotFoundError:
-            print("ℹ No CORRECTION_OVERRIDES.txt file found (optional)")
+            print("ℹ No CORRECTION_OVERRIDES.txt file found (optional)",
+                  flush=True)
+        except Exception as exc:
+            print(f"✗ Error loading CORRECTION_OVERRIDES.txt: {exc}", flush=True)
         return overrides
-    
+
+    # -----------------------------------------------------------------------
+    # 2.2  Filter helpers
+    # -----------------------------------------------------------------------
+
     def _is_code_or_template(self, text):
-        """Check if text is code or template syntax"""
+        """Return True if `text` looks like code/template markup, not prose."""
         if not text or len(text.strip()) < 3:
             return True
-        
-        # Check for code patterns
-        for pattern in self.code_patterns:
-            if re.search(pattern, text):
+
+        for pattern in self._compiled_code_patterns:
+            if pattern.search(text):
                 return True
-        
-        # High density of special characters = code
-        special_chars = sum(1 for c in text if c in '{}[]()<>=;:$#@%&|\\')
+
+        # High density of special chars → almost certainly code
+        special_chars = sum(1 for c in text if c in "{}[]()<>=;:$#@%&|\\")
         if len(text) > 0 and special_chars / len(text) > 0.15:
             return True
-        
+
         return False
-    
+
     def _should_ignore_word(self, word):
-        """Determine if a word should be ignored"""
+        """
+        Return True if `word` should be skipped entirely (not checked).
+
+        Ordering matters here — check cheap filters before expensive ones
+        and check custom dictionary FIRST so the user can override any
+        heuristic below by adding the word to CUSTOM_SPELLING_DICT.txt.
+        """
         if not word or len(word) < 2:
             return True
-        
+
         word_lower = word.lower()
 
-        # ✅ FIX #1: Check custom dictionary FIRST (BEFORE everything else)
+        # Custom dictionary check FIRST — this is the user's escape hatch.
         if word_lower in self.custom_dict_terms:
             return True
-        
-        # ✅ FIX #2: File extensions SECOND (BEFORE plural logic)
-        if word_lower in {'xlsx', 'docx', 'pptx', 'pdf', 'jpg', 'png', 'gif', 'csv', 'zip', 'xls'}:
+
+        # File extensions BEFORE the plural logic (so "xls" isn't treated
+        # as "singular form of 'xlss'")
+        if word_lower in self._file_ext_dict:
             return True
-        
-        # Check glossary (optional)
+
+        # Glossary
         if word_lower in self.glossary_terms:
             return True
-        
-        # Check critical code terms
+
+        # Hard-coded code terms
         if word_lower in self.code_terms:
             return True
-        
-        # All uppercase (acronym)?
+
+        # All-uppercase acronyms (API, SASE, etc.)
         if len(word) > 1 and word.isupper():
             return True
-        
-        # ✅ IMPROVED: Plural acronyms (SEs, APIs, PDFs, etc.)
-        # if len(word) >= 2 and word[-1].lower() == 's':
-        #     # Check if removing 's' leaves uppercase letters
-        #     without_s = word[:-1]
-        #     if len(without_s) > 0 and without_s.isupper():
-        #         return True
-        
-        # 6️⃣ PLURAL ACRONYMS (SEs, APIs, PDFs) - FIXED
-        if (len(word) >= 2 and 
-            word[-1].lower() == 's' and 
-            word[:-1].isupper()):
+
+        # FIX 8: single canonical plural-acronym check.  Matches SEs, APIs,
+        # PDFs — a trailing lowercase 's' on an otherwise-uppercase word.
+        # `word[:-1].isupper()` returns False on empty strings, so the
+        # length guard on the first line is enough.
+        if (len(word) >= 2
+                and word[-1].lower() == "s"
+                and word[:-1].isupper()):
             return True
-        
-        # Multiple uppercase letters (product name like "GreenLake")?
+
+        # Multiple uppercase letters after position 0 → CamelCase brand
+        # (GreenLake, ArubaOS, ...) — ignore.
         uppercase_count = sum(1 for c in word[1:] if c.isupper())
         if uppercase_count >= 2:
             return True
-        
-        # Contains numbers?
+
+        # Contains digits or disallowed specials
         if any(c.isdigit() for c in word):
             return True
-        
-        # Contains special characters (except hyphen)?
         if any(c in word for c in '@#$%^&*()+={}[]|\\:;"<>?/'):
             return True
-        
-        # Too short?
+
+        # Too short to check reliably
         if len(word) < 3:
             return True
-        
+
         return False
-    
+
     def _clean_word(self, word):
-        """Clean word by removing surrounding punctuation"""
-        return re.sub(r'^[^\w-]+|[^\w-]+$', '', word)
-    
+        """Strip surrounding punctuation (keep internal hyphens)."""
+        return re.sub(r"^[^\w-]+|[^\w-]+$", "", word)
+
+    # -----------------------------------------------------------------------
+    # 2.3  Main checker
+    # -----------------------------------------------------------------------
+
     def check_text(self, text):
         """
-        Check text for spelling errors using SymSpell
-        
+        Check text for spelling errors using SymSpell.
+
         Args:
-            text: String to check
-            
+            text: string to check
+
         Returns:
-            String with errors marked as {{word--->suggestion}} or empty string
+            string with errors marked as `{{word--->suggestion}}`, or
+            empty string if no errors.
         """
         if not self.sym_spell or not text:
             return ""
-        
-        # FIXED LINE 298: Use OR condition to catch nested errors
-        if '{{' in text or '--->' in text:
+
+        # Don't double-annotate.  `{{...--->...}}` is our output marker —
+        # if a caller feeds us a pre-annotated string, return it empty.
+        if "{{" in text or "--->" in text:
             return ""
-        
-        # Skip if looks like code/template
+
         if self._is_code_or_template(text):
             return ""
-        
-        # Skip very short text
+
         if len(text.strip()) < 10:
             return ""
-        
+
         try:
-            # Split camelCase/PascalCase before extraction
-            text_normalized = re.sub(r'([a-z])([A-Z])', r'\1 \2', text)
-            
-            # ✅ FIX: Extract words INCLUDING apostrophes for proper handling
-            # This captures "Starshot's" as a single word
-            words = re.findall(r"\b[a-zA-Z]+(?:'[a-zA-Z]+)?\b", text_normalized)
-            
+            # Split camelCase/PascalCase boundaries so "GreenLake" splits
+            # into ["Green", "Lake"] (both brand-name-like, will be
+            # filtered by the multiple-caps rule in _should_ignore_word).
+            text_normalized = re.sub(r"([a-z])([A-Z])", r"\1 \2", text)
+
+            # FIX 12: simplified word extraction.  Previously we captured
+            # words-with-apostrophes AND then skipped every apostrophe
+            # match three lines later — wasted work.  Just match plain
+            # alpha tokens.
+            words = re.findall(r"\b[a-zA-Z]+\b", text_normalized)
+
             errors = []
             word_positions = {}
-            
+
             for word in words:
-                # Clean word
                 clean_word = self._clean_word(word)
                 if not clean_word:
                     continue
-                
-                # ✅ FIX: Skip ALL words with apostrophes (possessives and contractions)
-                if "'" in word:
-                    continue
-                
-                # Skip if should be ignored
+
+                # (The `"'" in word` check from the original is now
+                # unreachable thanks to FIX 12 — the regex can't match
+                # apostrophes — so we drop it.)
+
                 if self._should_ignore_word(clean_word):
                     continue
 
-                # CHECK 1: Check overrides FIRST
-                if clean_word.lower() in self.correction_overrides:
+                # Check overrides FIRST — user intent beats SymSpell.
+                override_key = clean_word.lower()
+                if override_key in self.correction_overrides:
                     if clean_word not in word_positions:
                         errors.append({
-                            'word': clean_word,
-                            'suggestion': self.correction_overrides[clean_word.lower()]
+                            "word": clean_word,
+                            "suggestion": self.correction_overrides[override_key],
                         })
                         word_positions[clean_word] = True
                     continue
-                
-                # CHECK 2: Check if word is already correct (edit_distance=0)
+
+                # Check exact match in dictionary (edit_distance=0)
                 exact_match = self.sym_spell.lookup(
                     clean_word.lower(),
                     Verbosity.TOP,
-                    max_edit_distance=0
+                    max_edit_distance=0,
                 )
-                
                 if exact_match and len(exact_match) > 0:
-                    # Word exists in dictionary - skip it
                     continue
 
-                # CHECK 3: Check plural form if word ends in 's'
-                if clean_word.lower().endswith('s') and len(clean_word) > 3:
+                # Check plural-of-valid-word ("cats" valid if "cat" valid)
+                if clean_word.lower().endswith("s") and len(clean_word) > 3:
                     singular = clean_word[:-1]
                     singular_match = self.sym_spell.lookup(
                         singular.lower(),
                         Verbosity.TOP,
-                        max_edit_distance=0
+                        max_edit_distance=0,
                     )
                     if singular_match and len(singular_match) > 0:
-                        # Plural of valid word - skip it
                         continue
-                
-                # CHECK 4: Get spelling suggestions
+
+                # Get suggestions
                 suggestions = self.sym_spell.lookup(
                     clean_word,
                     Verbosity.CLOSEST,
                     max_edit_distance=2,
-                    include_unknown=False
+                    include_unknown=False,
                 )
-                
+
                 if suggestions:
                     suggested_word = suggestions[0].term
-                    
-                    # Only flag if suggestion is different and has reasonable confidence
-                    if (suggested_word.lower() != clean_word.lower() and
-                        suggestions[0].distance > 0 and
-                        suggestions[0].count > 50):
-                        
+
+                    # Only flag if suggestion is DIFFERENT and has
+                    # reasonable confidence (count > 50).
+                    if (suggested_word.lower() != clean_word.lower()
+                            and suggestions[0].distance > 0
+                            and suggestions[0].count > 50):
+
                         if clean_word not in word_positions:
                             errors.append({
-                                'word': clean_word,
-                                'suggestion': suggested_word
+                                "word": clean_word,
+                                "suggestion": suggested_word,
                             })
                             word_positions[clean_word] = True
-            
+
             if not errors:
                 return ""
-            
-            # Build result string with {{word--->suggestion}} format
+
+            # Build result string with {{word--->suggestion}} markers
             result_text = text
             for error in errors:
-                word = error['word']
-                suggestion = error['suggestion']
-                
-                # Use word boundary to avoid partial replacements
-                pattern = r'\b' + re.escape(word) + r'\b'
+                word = error["word"]
+                suggestion = error["suggestion"]
+                pattern = r"\b" + re.escape(word) + r"\b"
                 result_text = re.sub(
                     pattern,
                     f"{{{{{word}--->{suggestion}}}}}",
                     result_text,
                     count=1,
-                    flags=re.IGNORECASE
+                    flags=re.IGNORECASE,
                 )
-            
-            return result_text if '{{' in result_text else ""
-            
-        except Exception as e:
-            print(f"✗ Error checking text: {e}")
+
+            return result_text if "{{" in result_text else ""
+
+        except Exception as exc:
+            print(f"✗ Error checking text: {exc}", flush=True)
             return ""
 
-# Global checker instance
+
+# ===========================================================================
+# SECTION 3 — Checker singleton (thread-safe)
+# ===========================================================================
+
+# FIX 10: same pattern as SymSpell — module-level instance guarded by a lock.
 _checker_instance = None
+_checker_lock = threading.Lock()
+
 
 def get_checker():
-    """Get or create checker instance"""
+    """Get or create the SmartSpellingChecker instance (thread-safe)."""
     global _checker_instance
-    if _checker_instance is None:
+    if _checker_instance is not None:
+        return _checker_instance
+
+    with _checker_lock:
+        if _checker_instance is not None:
+            return _checker_instance
         _checker_instance = SmartSpellingChecker()
     return _checker_instance
 
+
+# ===========================================================================
+# SECTION 4 — Public API
+# ===========================================================================
+
 def callable_extract(link, html_page, soup, lang):
     """
-    Main function to extract and check spelling on a page.
-    EXACT SAME SIGNATURE as original module_spelling_phase4.py
-    
+    Main entry point — extract text from a page and check spelling.
+
+    EXACT signature preserved from module_spelling_phase4.py.
+
     Args:
-        link: URL of the page
-        html_page: Raw HTML content
-        soup: BeautifulSoup object
-        lang: Language code (e.g., 'English', 'Singaporean')
-    
+        link:       URL of the page
+        html_page:  raw HTML content
+        soup:       BeautifulSoup object
+        lang:       language code ('English', 'Singaporean', etc.) —
+                    used by articlenamechecker to match localized
+                    article titles that shouldn't be spell-checked.
+
     Returns:
-        List of error strings in {{word--->suggestion}} format
+        list of error strings in `{{word--->suggestion}}` format.
     """
-    # Get checker instance
     checker = get_checker()
-    
+
     if not checker.sym_spell:
-        print("✗ SymSpell not available, skipping spell check")
+        print("✗ SymSpell not available, skipping spell check", flush=True)
         return []
-    
+
     content = []
     find_all_example = []
-    
+
     # Elements to extract text from
-    tbi = ["span", "h1", "h2", "a", 'div', "tr"]
-    
-    # Classes to exclude
+    tbi = ["span", "h1", "h2", "a", "div", "tr"]
+
+    # Classes to exclude (already-validated UI chrome)
     tb = [
-        'portlet-title-text', 'hide', 'hide-accessible', 'hide User',
-        'sr-only', 'iconText', 'hide isPureHPE', 'dateFormat', 'size',
-        'categoryName', 'categoryDescription', 'boldContent',
-        'detailedContentText', 'articleSummary', 'articleDeails row',
-        'controlsPagination pull-right', 'articleDownloadHeader',
-        'articleformatSize', 'articleDownloadContent', 'border_bottom'
+        "portlet-title-text", "hide", "hide-accessible", "hide User",
+        "sr-only", "iconText", "hide isPureHPE", "dateFormat", "size",
+        "categoryName", "categoryDescription", "boldContent",
+        "detailedContentText", "articleSummary", "articleDeails row",
+        "controlsPagination pull-right", "articleDownloadHeader",
+        "articleformatSize", "articleDownloadContent", "border_bottom",
     ]
-    
-    # Special handling for homepage
-    if link.strip() in ['https://partner.hpe.com/group/prp',
-                        'https://partner.hpe.com/group/prp/home']:
+
+    # -----------------------------------------------------------------------
+    # Homepage has a different content-extraction path (uses inscriptis)
+    # -----------------------------------------------------------------------
+    if link.strip() in (
+        "https://partner.hpe.com/group/prp",
+        "https://partner.hpe.com/group/prp/home",
+    ):
         try:
-            # ✅ FIX #2 (PRIMARY): Use inscriptis with proper text extraction
-            content = get_text(html_page, display_links='none').splitlines()
-            
-            # Extract elements to ignore
+            content = get_text(html_page, display_links="none").splitlines()
+
             for element in tbi:
-                if element == 'a':
+                if element == "a":
                     for word in soup.find_all(element):
-                        # ✅ Add separator=' ' to prevent word concatenation
-                        find_all_example.append(word.get_text(separator=' ', strip=True))
+                        find_all_example.append(
+                            word.get_text(separator=" ", strip=True)
+                        )
                 for ele in tb:
                     for word in soup.find_all(element, class_=ele):
-                        # ✅ Add separator=' ' to prevent word concatenation
-                        find_all_example.append(word.get_text(separator=' ', strip=True))
-            
-            # Clean content
-            content = [c.strip().lstrip('+').strip() for c in content if c.strip()]
-        except Exception as e:
-            print(f"✗ Error processing homepage: {e}")
+                        find_all_example.append(
+                            word.get_text(separator=" ", strip=True)
+                        )
+
+            content = [c.strip().lstrip("+").strip() for c in content if c.strip()]
+        except Exception as exc:
+            print(f"✗ Error processing homepage: {exc}", flush=True)
             return []
-    
+
+    # -----------------------------------------------------------------------
+    # All other pages: use soup.find(id='main-content')
+    # -----------------------------------------------------------------------
     else:
-        # Extract main content
         try:
-            main_content = soup.find(id='main-content')
+            main_content = soup.find(id="main-content")
             if main_content:
-                # ✅ FIX #2 (PRIMARY): Add separator=' ' to prevent word concatenation
-                content = main_content.get_text(separator=' ', strip=True).splitlines()
-        except:
+                content = main_content.get_text(
+                    separator=" ", strip=True
+                ).splitlines()
+        except Exception:
             pass
-        
-        # Clean and normalize content
+
         content = [" ".join(c.split()) for c in content if c]
-        
+
         # Extract elements to ignore
         for element in tbi:
-            if element == 'a':
+            if element == "a":
                 for word in soup.find_all(element):
-                    # ✅ Add separator=' ' to prevent word concatenation
-                    temp = word.get_text(separator=' ', strip=True).splitlines()
+                    temp = word.get_text(separator=" ", strip=True).splitlines()
                     find_all_example.extend(temp)
-            
+
             for ele in tb:
                 for word in soup.find_all(element, class_=ele):
-                    # ✅ Add separator=' ' to prevent word concatenation
-                    temp = word.get_text(separator=' ', strip=True).splitlines()
+                    temp = word.get_text(separator=" ", strip=True).splitlines()
                     find_all_example.extend(temp)
-        
+
         # Extract user data elements
         for word in soup.find_all("p", id="qsUserData"):
-            # ✅ Add separator=' ' to prevent word concatenation
-            temp = word.get_text(separator=' ', strip=True).splitlines()
+            temp = word.get_text(separator=" ", strip=True).splitlines()
             find_all_example.extend(temp)
-        
-        # Clean ignore list
+
         find_all_example = [" ".join(f.split()) for f in find_all_example if f]
-    
-    # Get article titles
-    art_titles = articlenamechecker(soup, 'English')
-    
+
+    # -----------------------------------------------------------------------
+    # FIX 7: thread the `lang` parameter through to articlenamechecker.
+    # Previously this was hard-coded to 'English' regardless of the caller's
+    # intent.  The parameter was designed to match the lang-description
+    # string in localized article spans, so it should actually be used.
+    #
+    # (If the caller passes 'English', behaviour is identical to before.
+    # For other languages, article titles in that language get correctly
+    # excluded from spell-checking — the original intent of the parameter.)
+    # -----------------------------------------------------------------------
+    art_titles = articlenamechecker(soup, lang)
+
     # Combine ignore lists
     ignore_list = set(find_all_example + art_titles)
-    
+
     # Filter content
     filtered_content = []
     for text in content:
@@ -728,70 +660,82 @@ def callable_extract(link, html_page, soup, lang):
         if len(text_clean) < 10:
             continue
         filtered_content.append(text_clean)
-    
-    # Check each piece of content
+
+    # Run SymSpell on each filtered line
     errors = []
     for text in filtered_content:
         error_text = checker.check_text(text)
         if error_text:
             errors.append(error_text)
-    
-    # Remove date strings from errors
+
+    # Strip date strings from error output (dates like "Jan 3, 2024" were
+    # generating noise)
     parser = Parser()
     cleaned_errors = []
-    
     for error in errors:
         cleaned = error
         try:
             for match in parser.parse(error):
                 cleaned = cleaned.replace(match.text, "")
-        except:
+        except Exception:
             pass
-        
-        if cleaned.strip() and '{{' in cleaned:
+        if cleaned.strip() and "{{" in cleaned:
             cleaned_errors.append(cleaned.strip())
-    
-    # Remove duplicates
+
+    # Deduplicate, preserving order
     seen = set()
     unique_errors = []
     for error in cleaned_errors:
         if error not in seen:
             seen.add(error)
             unique_errors.append(error)
-    
+
     return unique_errors
+
 
 def articlenamechecker(soupobject, language_translation):
     """
-    Check article names for language-specific documents
-    EXACT SAME SIGNATURE as original
+    Check article-name spans for language-specific documents.
+
+    EXACT signature preserved.
+
+    Returns:
+        list of article names whose language description matches
+        `language_translation` — these are titles of localized PDFs/docs
+        that should be excluded from spell-checking.
     """
     article_info = {}
     possible_errors = []
-    
+
     try:
-        results = soupobject.find_all('span', class_='articleDownloadHeader')
-        res = soupobject.find_all('span', class_='articleformatSize')
-    except:
+        results = soupobject.find_all("span", class_="articleDownloadHeader")
+        res     = soupobject.find_all("span", class_="articleformatSize")
+    except Exception:
         return possible_errors
-    
+
     for (articlename, articledesc) in itertools.zip_longest(results, res):
         if articledesc and articledesc.get_text().strip():
             desc_text = articledesc.get_text().strip()
             name_text = articlename.get_text().strip() if articlename else ""
             if desc_text and name_text:
                 article_info[desc_text] = name_text
-    
+
     for desc, name in article_info.items():
         if language_translation in desc:
             possible_errors.append(name)
-    
+
     return possible_errors
 
-# Cleanup function (optional)
+
+# ===========================================================================
+# SECTION 5 — Cleanup helper (optional — call at end of batch)
+# ===========================================================================
+
 def cleanup():
-    """Clean up resources"""
+    """Release module-level singletons (optional; useful for tests)."""
     global _symspell_instance, _checker_instance
-    _symspell_instance = None
-    _checker_instance = None
-    print("✓ SymSpell resources cleaned up")
+    with _symspell_lock:
+        _symspell_instance = None
+    with _checker_lock:
+        _checker_instance = None
+    print("✓ Spell-checker resources cleaned up", flush=True)

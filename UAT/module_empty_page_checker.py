@@ -1,30 +1,36 @@
 """
-HPE Partner Portal (PRP) Spelling Checker — STANDALONE OPTIMIZED BUILD
+HPE Partner Portal (PRP) Empty-Page Checker — STANDALONE OPTIMIZED BUILD
 ============================================================================
 Reads the PageTree*.txt artefact from the crawler, visits every internal
 PRP page, and runs a single content-quality check:
 
-  SPELLING CHECK — SymSpell-based scan for misspelled English words.
-  Runs ONLY for English / Singaporean accounts — other languages would
-  produce noise since the spell-checker only knows English.  Logic lives
-  in `module_spelling_phase4` (msc) and is NOT modified here — treated
-  as a black box.
+  EMPTY-PAGE CHECK — flags pages whose main content consists only of
+  the "Related content" placeholder, meaning the translation team
+  hasn't populated content for this region/language.  Logic lives in
+  `moduleemptypage` (mep) and is NOT modified here — treated as a
+  black box.  Uses the v2 mep which is deployment-proof and skips
+  dynamic-content URLs (custom-search, article-display-page) to
+  avoid the FP class reported on Apr 19.
 
-This module is a SIBLING of `translation_checker_optimized.py`:
+This module is a SIBLING of `translation_checker_optimized.py` and
+`spelling_checker_optimized.py`:
 
   - translation_checker_optimized.py:
-        Runs translation (non-English) + empty-page (all) + spelling
+        Translation (non-English) + empty-page (all) + spelling
         (English/Singaporean).  The one-stop runner.
 
-  - spelling_checker_optimized.py   ← THIS FILE:
-        Runs ONLY the spelling check, for ONLY English/Singaporean
-        accounts.  Use when you want a spelling-only pass without the
-        translation/empty-page overhead, or when re-running after
-        fixes to msc.
+  - spelling_checker_optimized.py:
+        Spelling ONLY, English/Singaporean ONLY.
+
+  - emptypage_checker_optimized.py    ← THIS FILE:
+        Empty-page ONLY, ALL languages.  Use when you want an
+        empty-page-only pass without the translation/spelling overhead,
+        or when re-running after fixes to mep / the translated
+        "Related content" phrases.
 
 Business logic, naming conventions, output format, concurrency model,
 and Playwright lifecycle all match `translation_checker_optimized.py`
-byte-for-byte so the two modules read as a matched pair.
+byte-for-byte so the three modules read as a matched set.
 
 INPUT ARTEFACTS (produced by crawler, unchanged)
 ------------------------------------------------
@@ -33,15 +39,20 @@ INPUT ARTEFACTS (produced by crawler, unchanged)
 
 OUTPUT ARTEFACTS
 ----------------
-  Reports/Spelling_<tag>.xlsx          (English / Singaporean only)
+  Reports/EmptyPage_<tag>.xlsx         (all languages)
+  Aruba Urls/Aruba<tag>.txt            (consumed by work_alloc_execute)
 
 Deliberately NOT produced by this runner:
   Reports/Translation_<tag>.xlsx       (use translation_checker instead)
-  Reports/EmptyPage_<tag>.xlsx         (use translation_checker instead)
-  Aruba Urls/Aruba<tag>.txt            (Aruba detection isn't needed for
-                                        the spelling check; that pathway
-                                        belongs to the empty-page/translation
-                                        workflow in translation_checker)
+  Reports/Spelling_<tag>.xlsx          (use spelling_checker instead)
+
+LANGUAGE SCOPE
+--------------
+The empty-page check runs for EVERY account in the credentials list,
+regardless of language.  The mep module uses the account's translated
+"Related content" phrase from the TRANSLATED_PHRASES dict — so an
+Indonesian account looks for "Konten terkait", a German account
+looks for "Verwandter inhalt", etc.  No language gate here.
 
 OPTIMIZATIONS APPLIED (same set as translation_checker_optimized.py)
 --------------------------------------------------------------------
@@ -57,11 +68,13 @@ OPTIMIZATIONS APPLIED (same set as translation_checker_optimized.py)
 
 WHAT IS DELIBERATELY UNCHANGED
 ------------------------------
-  - msc (spelling logic): SymSpell configuration, glossary handling,
-    custom dictionary / overrides files.  Tuned to this portal; do
-    not touch here — change it in the module itself.
+  - mep (empty-page heuristic): v2 dynamic-URL bypass, 3-line
+    heuristic for static pages.  Tuned to this portal; do not touch
+    here — change it in the module itself.
   - 45-second sleep for delayed-loading pages.
   - filter_links() exclusion patterns.
+  - TRANSLATED_PHRASES dict — identical to translation_checker's
+    so behaviour is consistent between runners.
 """
 
 # ---------------------------------------------------------------------------
@@ -99,7 +112,7 @@ from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeo
 # Local / project imports
 # ---------------------------------------------------------------------------
 import work_phase_3 as work
-import module_spelling_phase4 as msc                       # spelling check (black box)
+import moduleemptypage as mep                              # empty-page check (black box, v2)
 import module_login_lang                                   # login helper
 from url_utils import load_home_prefixes, is_home_redirect_playwright
 from metric_report import log_module_metric
@@ -125,8 +138,7 @@ PAGE_SETTLE_MS: int = 400
 
 # Delayed-loading-page sleep duration.  Kept at 45 s to exactly preserve
 # the original behaviour for pages known to render very slowly.  Do NOT
-# lower this without verifying on production — content scans may miss
-# copy on slow pages if reduced.
+# lower this without verifying on production.
 SLOW_PAGE_SLEEP_SECONDS: int = 45
 
 # Country-check cadence (every 2 min OR every 15 pages, whichever first)
@@ -138,8 +150,8 @@ POST_PROCESS_TIMEOUT_S: int = 120   # kill stuck post-processing after 2 min
 FIXERS_LOCK_TIMEOUT_S:  int = 300   # wait up to 5 min for the shared lock
 
 # Shared broken-page marker list (matches broken-link checker + translation
-# checker for cross-module consistency).  All lowercase so matching against
-# a lowercased page body works.
+# + spelling checkers for cross-module consistency).  All lowercase so
+# matching against a lowercased page body works.
 STRONG_BROKEN_MARKERS: tuple = (
     "we can't find the page you're looking for",
     "404 - page not found",
@@ -159,8 +171,8 @@ STRONG_BROKEN_MARKERS: tuple = (
 # work.work_alloc_execute() reads and writes Fixers_list.xlsx, a SHARED file
 # across all account workers.  Under MAX_PARALLEL >= 2 two processes racing
 # on that file can hang indefinitely (Windows openpyxl lock issue).  We
-# solve it the same way as the translation/broken-link checkers: cross-
-# process file lock + run the call in a child process with a hard timeout.
+# solve it the same way as the sibling checkers: cross-process file lock
+# + run the call in a child process with a hard timeout.
 
 def _acquire_fixers_lock(lock_path: Path, timeout_s: int) -> bool:
     """Acquire an exclusive cross-process lock by atomically creating lock_path."""
@@ -196,11 +208,6 @@ def _run_work_alloc_execute(report_path: str, fixers_path: str, aruba_path: str)
     """
     Top-level wrapper for work.work_alloc_execute — MUST be at module
     level so multiprocessing.Process can pickle it on Windows.
-
-    `aruba_path` is unused by the spelling runner (no Aruba output), but
-    we keep the 3-argument signature so the shared
-    `_run_post_processing_safely` plumbing matches translation_checker's
-    exactly.  Pass an empty string.
     """
     try:
         work.work_alloc_execute(report_path, fixers_path, aruba_path)
@@ -210,7 +217,7 @@ def _run_work_alloc_execute(report_path: str, fixers_path: str, aruba_path: str)
 
 
 # ===========================================================================
-# SECTION 2 – EMPTY/BROKEN PAGE DETECTION
+# SECTION 2 – EMPTY/BROKEN PAGE DETECTION (orchestrator-level)
 # ===========================================================================
 
 def no_content_pg(page) -> bool:
@@ -218,7 +225,10 @@ def no_content_pg(page) -> bool:
     Return True if `page` is displaying a known broken-page template.
 
     Used to skip deeper checks on pages that are already known-bad —
-    there's no value in spell-checking a 404 template.
+    there's no value in running the empty-page check on a 404 template.
+    (Note: mep.emptypagecheck handles its own dynamic-URL bypass for
+    search and article pages; this is the separate broken-template
+    guard.)
 
     Uses document.body.innerText (visible text only) scanned against
     the shared STRONG_BROKEN_MARKERS list.  Fallback to page.content()
@@ -248,27 +258,47 @@ def no_content_pg(page) -> bool:
 
 class PRP:
     """
-    Spelling-only checker for the HPE Partner Portal.
+    Empty-page-only checker for the HPE Partner Portal.
 
     Naming conventions mirror the crawler's PRPCrawler class + the
-    translation_checker_optimized.PRP class so the project's modules
+    translation_checker_optimized.PRP class + the
+    spelling_checker_optimized.PRP class so the project's modules
     read as a matched set.
 
     parent() is the ONLY method whose original name is preserved —
-    @log_module_metric("Spelling") identifies it by name.
+    @log_module_metric("EmptyPage") identifies it by name.
     """
 
     BASE_URL = "https://partner.hpe.com"
 
-    # Spelling check only runs for these two language labels.  Other
-    # languages are SKIPPED at the run_account level — we don't
-    # spell-check German, Italian, etc., because the spell-checker's
-    # dictionary only covers English.
-    SPELLING_LANGUAGES: frozenset = frozenset({"English", "Singaporean"})
-
     # ------------------------------------------------------------------
     # 3.1  Construction
     # ------------------------------------------------------------------
+
+    # Translated "Related content" phrases used by mep.emptypagecheck.
+    # Preserved verbatim from translation_checker_optimized.py so the
+    # two modules interpret the same account identically.
+    TRANSLATED_PHRASES = {
+        "French":              "Contenu associé",
+        "German":              "Verwandter inhalt",
+        "Italian":             "Contenuti correlati",
+        "Chinese":             "相关内容",
+        "Chinese-Simplified":  "相关内容",
+        "Russian":             "Сопутствующая информация",
+        "Portugese":           "Conteúdo relacionado",
+        "Portuguese-Brazil":   "Conteúdo relacionado",
+        "Indonesian":          "Konten terkait",
+        "Singaporean":         "Related content",
+        "Korean":              "관련 콘텐츠",
+        "Turkish":             "İlgili içerik",
+        "Japanese":            "関連コンテンツ",
+        "Taiwan":              "相關內容",
+        "Spanish":             "Contenido relacionado",
+        "LARSpanish":          "Contenido relacionado",
+        "English":             "Related content",
+    }
+
+    DEFAULT_PHRASE = "Related content"
 
     def __init__(
         self,
@@ -292,25 +322,26 @@ class PRP:
 
         # ── Reference lists loaded from .docx files ───────────────────
         #
-        # We use the SAME lte_translation.docx as translation_checker
-        # because it defines "pages NOT worth checking per-word" — which
-        # is exactly the same set of pages that shouldn't be
-        # spell-checked either (gated content, settings pages, etc.).
+        # lte_emptypage.docx — empty-page-specific exclusion list.
+        # delayed_loading.docx — still needed by _integrate() for
+        # known-slow pages.
         #
-        # delayed_loading.docx is still needed — _integrate() uses it
-        # to decide whether to sleep 45s on known-slow pages.
-        #
-        # lte_emptypage.docx and absurd_links.docx are NOT loaded
-        # because no empty-page check runs here.
-        self._lte_spelling:    list = self._load_docx("lte_translation.docx")
+        # lte_translation.docx and absurd_links.docx are NOT loaded
+        # because no translation check runs here.
+        self._lte_emptypage:   list = self._load_docx("lte_emptypage.docx")
         self._delayed_loading: set  = set(self._load_docx("delayed_loading.docx"))
 
         # ── Output file paths ────────────────────────────────────────
         tag = f"{self.region}_{self.country}_{self.language}_{self.account_type}"
 
-        self.path_page_tree      = BASE_DIR / "Page Trees"    / f"PageTree{tag}.txt"
-        self.path_reverse_dict   = BASE_DIR / "Reverse Dicts" / f"RevDict{tag}.txt"
-        self.path_spelling_report = BASE_DIR / "Reports" / f"Spelling_{tag}.xlsx"
+        self.path_page_tree        = BASE_DIR / "Page Trees"    / f"PageTree{tag}.txt"
+        self.path_reverse_dict     = BASE_DIR / "Reverse Dicts" / f"RevDict{tag}.txt"
+        self.path_aruba            = BASE_DIR / "Aruba Urls"    / f"Aruba{tag}.txt"
+        self.path_emptypage_report = BASE_DIR / "Reports"       / f"EmptyPage_{tag}.xlsx"
+
+        # ── Phrases for empty-page check ─────────────────────────────
+        self.phrase         = self.TRANSLATED_PHRASES.get(language, self.DEFAULT_PHRASE)
+        self.default_phrase = self.DEFAULT_PHRASE
 
         # ── Playwright handles ────────────────────────────────────────
         # Accept pre-built handles from the login module so we don't
@@ -343,7 +374,8 @@ class PRP:
 
     def _ensure_output_dirs(self) -> None:
         """Create output directories if they do not already exist."""
-        self.path_spelling_report.parent.mkdir(parents=True, exist_ok=True)
+        for path in (self.path_emptypage_report, self.path_aruba):
+            path.parent.mkdir(parents=True, exist_ok=True)
 
     # ------------------------------------------------------------------
     # 3.3  Browser / session lifecycle
@@ -367,7 +399,7 @@ class PRP:
     def teardown(self) -> None:
         """
         Close Playwright resources, then run shared-file post-processing
-        for the spelling report.  Browser is closed FIRST so hangs in
+        for the empty-page report.  Browser is closed FIRST so hangs in
         post-processing can't strand Chromium.
         """
         # ── STEP 1: release the browser unconditionally ──────────────
@@ -389,8 +421,8 @@ class PRP:
 
         print(f"🧹 Browser closed for {self.username}", flush=True)
 
-        # ── STEP 2: post-processing for the spelling report ──────────
-        self._run_post_processing_safely(self.path_spelling_report, "spelling")
+        # ── STEP 2: post-processing for the empty-page report ────────
+        self._run_post_processing_safely(self.path_emptypage_report, "empty-page")
 
     def _run_post_processing_safely(self, report_path: Path, label: str) -> None:
         """
@@ -428,7 +460,7 @@ class PRP:
                 args=(
                     str(report_path),
                     str(BASE_DIR / "Fixers_list.xlsx"),
-                    "",                                    # aruba path unused for spelling
+                    str(self.path_aruba),
                 ),
                 name=f"post_{label}_{self.username}",
             )
@@ -790,6 +822,11 @@ class PRP:
         soup = BeautifulSoup(src, "html.parser")
         return src, soup
 
+    @staticmethod
+    def _page_has_aruba_tag(soup) -> bool:
+        """Return True if the page has an Aruba-category tag."""
+        return bool(soup.find_all("span", class_="arubaTag"))
+
     def _filter_links(self, list_of_links: list, links_not_to_be_checked: list) -> list:
         """Preserve the original exclusion logic exactly."""
         list_of_links = [link.strip() for link in list_of_links]
@@ -812,36 +849,26 @@ class PRP:
     # 3.7  Main test loop
     # ------------------------------------------------------------------
 
-    @log_module_metric("Spelling")
+    @log_module_metric("EmptyPage")
     def parent(self):
         """
-        Main function that runs the Spelling check only.
+        Main function that runs the Empty-Page check only.
 
-        Early-exits if the account language isn't English/Singaporean —
-        the spell-checker's dictionary only knows English, so running it
-        on other languages produces only noise.  The run_account()
-        gatekeeper should filter these out before they ever reach here,
-        but we also guard at this level for defense in depth.
+        Runs for all languages — the mep module uses the account's
+        translated "Related content" phrase, so every language is
+        meaningfully checkable.
 
         Method name "parent" is preserved because @log_module_metric
         identifies it by name.
         """
-        # ----------------------------------------------------------------
-        # Language gatekeeper
-        # ----------------------------------------------------------------
-        if self.language not in self.SPELLING_LANGUAGES:
-            print(f"⏭  Language '{self.language}' not in SPELLING_LANGUAGES "
-                  f"— skipping spelling check for {self.username}", flush=True)
-            return
-
         # ----------------------------------------------------------------
         # INNER: write_excel — identical column set to translation_checker
         # so both reports can be consumed by the same downstream tooling.
         # ----------------------------------------------------------------
         def write_excel(errors, category):
             """
-            Write spelling errors to Excel.  `category` is always
-            "Spelling Error" for this module, but we keep the parameter
+            Write empty-page errors to Excel.  `category` is always
+            "Empty Page" for this module, but we keep the parameter
             so the signature matches translation_checker's write_excel.
             """
             self._ensure_output_dirs()
@@ -849,13 +876,9 @@ class PRP:
             with open(self.path_reverse_dict, "r", encoding="utf-8") as f:
                 dictionary = ast.literal_eval(f.read())
 
-            published_report_path = self.path_spelling_report
-            iterator = errors.keys() if isinstance(errors, dict) else errors
-            des = (
-                [errors[err] for err in errors.keys()]
-                if isinstance(errors, dict)
-                else ["Spelling error"] * len(errors)
-            )
+            published_report_path = self.path_emptypage_report
+            iterator = errors
+            des = ["Empty page"] * len(errors)
 
             issue_id = 1
             account  = self.username
@@ -917,9 +940,10 @@ class PRP:
         with open(self.path_page_tree, "r", encoding="utf-8") as f:
             list_of_links = f.read().splitlines()
 
-        all_links_spelling = self._filter_links(list_of_links, self._lte_spelling)
+        all_links_empty = self._filter_links(list_of_links, self._lte_emptypage)
 
-        spelling_errors: dict = {}
+        empty_page_errors: list = []
+        aruba_links:       set  = set()
 
         # ----------------------------------------------------------------
         # Per-page loop
@@ -936,22 +960,39 @@ class PRP:
                 # Redirected to home or load failed — skip
                 continue
 
-            # Skip known-broken pages — no value in spell-checking a 404
+            # Aruba-tag detection for downstream work allocation
+            if self._page_has_aruba_tag(soup):
+                if link not in (
+                    "https://partner.hpe.com",
+                    "https://partner.hpe.com/group/prp",
+                    "https://partner.hpe.com/group/prp/home",
+                ):
+                    aruba_links.add(link)
+
+            # Broken-template detection — skip deeper checks if broken
             if no_content_pg(self._session_page):
-                print("  (skipping — broken-template page)", flush=True)
+                empty_page_errors.append(link)
                 continue
 
-            # Only check pages that passed the spelling-exclusion filter
-            if link not in all_links_spelling:
+            # Only check pages that passed the empty-page exclusion filter
+            if link not in all_links_empty:
                 continue
 
-            print("  → Running spelling check...", flush=True)
-            gramm = msc.callable_extract(link, src, soup, self.language)
-            if gramm:
-                spelling_errors[link] = gramm
-                print(f"  ✗ Found {len(gramm)} spelling errors", flush=True)
+            # Run the empty-page check.  mep v2 is dynamic-URL-aware:
+            # /custom-search and /article-display-page URLs are
+            # auto-skipped with a diagnostic log line, so no FPs from
+            # those patterns.
+            empty_result = mep.emptypagecheck(
+                link, self.phrase, self.default_phrase, soup, self._session_page
+            )
+            if empty_result:
+                empty_page_errors.append(empty_result)
+                print(f"  ✗ Flagged as empty", flush=True)
 
             print("─" * 70, flush=True)
+
+        # Cleanup empty-page collection (strip any empty strings)
+        empty_page_errors = [e for e in empty_page_errors if e != ""]
 
         # ----------------------------------------------------------------
         # Write report
@@ -962,11 +1003,16 @@ class PRP:
 
         self._ensure_output_dirs()
 
-        if spelling_errors:
-            print(f"Writing Spelling report: {len(spelling_errors)} errors", flush=True)
-            write_excel(spelling_errors, "Spelling Error")
+        if empty_page_errors:
+            print(f"Writing Empty Page report: {len(empty_page_errors)} errors", flush=True)
+            write_excel(empty_page_errors, "Empty Page")
         else:
-            print("No spelling errors found — no report generated", flush=True)
+            print("No empty pages found — no report generated", flush=True)
+
+        # Save Aruba links (consumed by work_alloc_execute post-processing)
+        with open(self.path_aruba, "w", encoding="utf-8") as filehandle:
+            for listitem in aruba_links:
+                filehandle.write(f"{listitem}\n")
 
         print("\nAll reports generated successfully!", flush=True)
 
@@ -977,13 +1023,11 @@ class PRP:
 
 def run_account(account):
     """
-    Entry point for a single account.  Filters out non-English /
-    non-Singaporean accounts with a hard skip at the top — we never
-    launch a browser for them, saving ~30s of login time per skip.
+    Entry point for a single account.  Always wraps teardown in
+    try/finally so browsers are never stranded.  Flushes all prints to
+    avoid the Windows console-lock deadlock under MAX_PARALLEL >= 2.
 
-    Always wraps teardown in try/finally so browsers are never
-    stranded.  Flushes all prints to avoid the Windows console-lock
-    deadlock under MAX_PARALLEL >= 2.
+    No language gate here — empty-page check runs for every language.
     """
     # Re-apply unbuffered stdout inside each worker process
     try:
@@ -991,15 +1035,6 @@ def run_account(account):
         sys.stderr.reconfigure(line_buffering=True, write_through=True)
     except Exception:
         pass
-
-    username = account[0]
-    language = account[4]
-
-    # ── Pre-browser gatekeeper: skip non-English/non-Singaporean ──────
-    if language not in PRP.SPELLING_LANGUAGES:
-        print(f"⏭  Skipping {username} — language '{language}' is not "
-              f"English/Singaporean", flush=True)
-        return
 
     prp_login = None
     prp_main  = None
@@ -1014,7 +1049,7 @@ def run_account(account):
             print(f"DEMO ACCOUNT {account} FAILED TO LOGIN", flush=True)
             return
 
-        # Step 2: run the spelling check, reusing the login module's
+        # Step 2: run the empty-page check, reusing the login module's
         # browser so we don't re-authenticate.
         prp_main = PRP(
             *account,
@@ -1025,10 +1060,10 @@ def run_account(account):
         prp_main.setup()
         prp_main.parent()
 
-        print(f"Finished: {username}", flush=True)
+        print(f"Finished: {account[0]}", flush=True)
 
     except Exception as exc:
-        print(f"Error with {username}: {exc}", flush=True)
+        print(f"Error with {account[0]}: {exc}", flush=True)
 
     finally:
         # Tear down main first (it owns the post-processing), then login
@@ -1036,7 +1071,7 @@ def run_account(account):
             try:
                 prp_main.teardown()
             except Exception as td_exc:
-                print(f"⚠️  teardown error for {username}: {td_exc}", flush=True)
+                print(f"⚠️  teardown error for {account[0]}: {td_exc}", flush=True)
         if prp_login is not None:
             try:
                 prp_login.teardown()
@@ -1054,36 +1089,26 @@ if __name__ == "__main__":
     # ACCOUNTS
     # Format: [username, password, region, country, language, account_type]
     #
-    # Only English + Singaporean accounts make sense here — the
-    # SymSpell dictionary only covers English.  run_account() will
-    # hard-skip any other language with a one-line message before even
-    # launching a browser.
-    #
-    # Other languages stay listed here (commented if you like) so the
-    # account matrix reads identically to translation_checker's — makes
-    # it easy to spot-check coverage across the two runners.
+    # Empty-page check runs for ALL languages — no pre-filtering needed.
+    # The credentials list below mirrors translation_checker's so the
+    # two runners process the same account matrix.
     # ------------------------------------------------------------------
     credentials = [
-        # ── English / Singaporean — WILL RUN ───────────────────────────
-        ['mhmg_albert_solp1@yopmail.com', 'Login2Bot!', 'AMS',  'United States', 'English',    'T2'],
-        ['mhmg_albert_dist1@yopmail.com', 'Login2Bot!', 'AMS',  'United States', 'English',    'distri'],
-        ['mhmg_albert_solp1@yopmail.com', 'Login2Bot!', 'EMEA', 'United Kingdom','English',    'T2'],
-        ['mhmg_albert_solp2@yopmail.com', 'Login2Bot!', 'APJ',  'Singapore',     'Singaporean','T2'],
-        ['mhmg_albert_dist2@yopmail.com', 'Login2Bot!', 'APJ',  'Singapore',     'Singaporean','distri'],
-
-        # ── Other languages — WILL BE SKIPPED at run_account() ─────────
-        # Left here for reference / parity with translation_checker's list.
-        # Uncomment if you add spelling support for additional languages.
-        # ['mhmg_albert_dist1@yopmail.com', 'Login2Bot!', 'APJ',  'South Korea', 'Korean',             'distri'],
-        # ['mhmg_albert_solp1@yopmail.com', 'Login2Bot!', 'APJ',  'China',       'Simplified Chinese', 'T2'],
-        # ['mhmg_albert_solp2@yopmail.com', 'Login2Bot!', 'APJ',  'Japan',       'Japanese',           'T2'],
-        # ['mhmg_albert_solp1@yopmail.com', 'Login2Bot!', 'EMEA', 'Italy',       'Italian',            'T2'],
-        # ['mhmg_albert_solp1@yopmail.com', 'Login2Bot!', 'AMS',  'Brazil',      'Portuguese',         'T2'],
-        # ['mhmg_albert_dist2@yopmail.com', 'Login2Bot!', 'APJ',  'Taiwan',      'Taiwan',             'distri'],
-        # ['mhmg_albert_solp2@yopmail.com', 'Login2Bot!', 'APJ',  'Indonesia',   'Indonesian',         'T2'],
-        # ['mhmg_albert_solp1@yopmail.com', 'Login2Bot!', 'EMEA', 'France',      'French',             'T2'],
-        # ['mhmg_albert_solp1@yopmail.com', 'Login2Bot!', 'EMEA', 'Germany',     'German',             'T2'],
-        # ['mhmg_albert_solp2@yopmail.com', 'Login2Bot!', 'EMEA', 'Turkey',      'Turkish',            'T2'],
+        ['mhmg_albert_dist1@yopmail.com', 'Login2Bot!', 'APJ',  'South Korea', 'Korean',             'distri'],
+        ['mhmg_albert_solp1@yopmail.com', 'Login2Bot!', 'APJ',  'China',       'Simplified Chinese', 'T2'],
+        ['mhmg_albert_dist1@yopmail.com', 'Login2Bot!', 'APJ',  'China',       'Simplified Chinese', 'distri'],
+        ['mhmg_albert_solp2@yopmail.com', 'Login2Bot!', 'APJ',  'Japan',       'Japanese',           'T2'],
+        ['mhmg_albert_dist1@yopmail.com', 'Login2Bot!', 'APJ',  'Japan',       'Japanese',           'distri'],
+        ['mhmg_albert_solp1@yopmail.com', 'Login2Bot!', 'EMEA', 'Italy',       'Italian',            'T2'],
+        ['mhmg_albert_dist1@yopmail.com', 'Login2Bot!', 'EMEA', 'Italy',       'Italian',            'distri'],
+        ['mhmg_albert_solp1@yopmail.com', 'Login2Bot!', 'AMS',  'Brazil',      'Portuguese',         'T2'],
+        ['mhmg_albert_dist1@yopmail.com', 'Login2Bot!', 'AMS',  'Brazil',      'Portuguese',         'distri'],
+        ['mhmg_albert_dist2@yopmail.com', 'Login2Bot!', 'APJ',  'Taiwan',      'Taiwan',             'distri'],
+        ['mhmg_albert_dist2@yopmail.com', 'Login2Bot!', 'APJ',  'Indonesia',   'Indonesian',         'distri'],
+        ['mhmg_albert_solp2@yopmail.com', 'Login2Bot!', 'APJ',  'Indonesia',   'Indonesian',         'T2'],
+        ['mhmg_albert_solp1@yopmail.com', 'Login2Bot!', 'EMEA', 'France',      'French',             'T2'],
+        ['mhmg_albert_solp1@yopmail.com', 'Login2Bot!', 'EMEA', 'Germany',     'German',             'T2'],
+        ['mhmg_albert_solp2@yopmail.com', 'Login2Bot!', 'EMEA', 'Turkey',      'Turkish',            'T2'],
     ]
 
     # ------------------------------------------------------------------

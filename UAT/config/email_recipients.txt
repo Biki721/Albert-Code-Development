@@ -1,0 +1,40 @@
+# ============================================================================
+# Email Recipients for Albert Automation
+# ============================================================================
+#
+# This file controls who receives notification emails from the PRP
+# automation pipeline (login failures, language changes, execution
+# summaries, etc.).
+#
+# FORMAT
+# ------
+#   • One email address per line.
+#   • Lines starting with '#' are comments and ignored.
+#   • Blank lines are ignored.
+#   • Prefix an address with 'cc:' to send as carbon copy (CC).
+#   • Everything else is treated as a primary (TO) recipient.
+#
+# EXAMPLES
+# --------
+#   biki.dey1@hpe.com
+#   jane.doe@hpe.com
+#   cc: team-lead@hpe.com
+#   cc: manager@hpe.com
+#
+# At least ONE primary (non-cc) address is required — the utility
+# raises an error otherwise.
+#
+# ============================================================================
+
+# -------- Primary recipients (TO) --------
+# Replace the placeholder below with your real recipients.
+# Add as many lines as you need.
+
+biki.dey1@hpe.com
+
+
+# -------- Carbon copy recipients (CC) --------
+# Uncomment and edit any lines below to add CC recipients.
+
+# cc: team-lead@hpe.com
+# cc: automation-reports@hpe.com

@@ -11,7 +11,8 @@ import traceback
 import json
 import os
 import subprocess
-import tempfile
+import re
+import signal
 
 from .config import settings
 from .models import (
@@ -78,6 +79,12 @@ class ModuleRunner:
     def _runner_script(self) -> Path:
         return settings.MODULES_DIR / "run_automation.py"
 
+    def _jobs_dir(self) -> Path:
+        return settings.MODULES_DIR / "jobs"
+
+    def _safe_path_part(self, value: str) -> str:
+        return re.sub(r"[^A-Za-z0-9_.-]+", "_", value).strip("_") or "unit"
+
     def _run_uat_unit(
         self,
         kind: str,
@@ -89,48 +96,59 @@ class ModuleRunner:
         if not runner_script.exists():
             raise FileNotFoundError(f"UAT runner not found: {runner_script}")
 
-        with tempfile.NamedTemporaryFile(
-            mode="w",
-            suffix=".json",
-            prefix="albert_result_",
-            delete=False,
-        ) as result_file:
-            result_path = result_file.name
+        job_root = self._jobs_dir() / (self._current_job_id or "manual")
+        unit_name = self._safe_path_part(f"{kind}_{name}_{account_details[0] if account_details else 'adhoc'}")
+        unit_dir = job_root / unit_name
+        unit_dir.mkdir(parents=True, exist_ok=True)
+
+        input_path = unit_dir / "input.json"
+        result_path = unit_dir / "result.json"
+        stdout_path = unit_dir / "stdout.log"
+        stderr_path = unit_dir / "stderr.log"
+
+        payload = {
+            "job_id": self._current_job_id,
+            "kind": kind,
+            "name": name,
+            "account": account_details,
+        }
+        input_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
         cmd = [
             sys.executable,
             str(runner_script),
-            "--kind",
-            kind,
-            "--name",
-            name,
+            "--input",
+            str(input_path),
+            "--job-dir",
+            str(unit_dir),
             "--result-json",
-            result_path,
+            str(result_path),
         ]
-        if account_details is not None:
-            cmd.extend(["--account-json", json.dumps(account_details)])
 
         self._update_progress(f"Running {kind} {name}")
         env = os.environ.copy()
         env["PYTHONUNBUFFERED"] = "1"
 
-        process = subprocess.Popen(
-            cmd,
-            cwd=str(settings.MODULES_DIR),
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            text=True,
-            encoding="utf-8",
-            errors="replace",
-            env=env,
-        )
-        with self._process_lock:
-            self._current_process = process
+        with open(stdout_path, "w", encoding="utf-8") as stdout_file, open(stderr_path, "w", encoding="utf-8") as stderr_file:
+            process = subprocess.Popen(
+                cmd,
+                cwd=str(settings.MODULES_DIR),
+                stdout=stdout_file,
+                stderr=stderr_file,
+                text=True,
+                encoding="utf-8",
+                errors="replace",
+                env=env,
+                start_new_session=(os.name != "nt"),
+                creationflags=(subprocess.CREATE_NEW_PROCESS_GROUP if os.name == "nt" else 0),
+            )
+            with self._process_lock:
+                self._current_process = process
 
-        stdout, stderr = process.communicate()
-        with self._process_lock:
-            if self._current_process is process:
-                self._current_process = None
+            process.wait()
+            with self._process_lock:
+                if self._current_process is process:
+                    self._current_process = None
 
         result: Dict[str, Any]
         try:
@@ -143,19 +161,15 @@ class ModuleRunner:
                 "status": "error",
                 "error": "UAT runner did not produce a readable result file",
             }
-        finally:
-            try:
-                os.unlink(result_path)
-            except OSError:
-                pass
 
         result["return_code"] = process.returncode
+        result["job_dir"] = str(unit_dir)
+        result["input_path"] = str(input_path)
+        result["result_path"] = str(result_path)
+        result["stdout_path"] = str(stdout_path)
+        result["stderr_path"] = str(stderr_path)
         if account_details:
             result.setdefault("account", account_details[0])
-        if stdout:
-            result["stdout"] = stdout[-12000:]
-        if stderr:
-            result["stderr"] = stderr[-12000:]
 
         if self.stop_flag and process.returncode != 0:
             result["status"] = "cancelled"
@@ -363,11 +377,21 @@ class ModuleRunner:
         with self._process_lock:
             process = self._current_process
         if process and process.poll() is None:
-            process.terminate()
-            try:
-                process.wait(timeout=10)
-            except subprocess.TimeoutExpired:
-                process.kill()
+            if os.name == "nt":
+                subprocess.run(
+                    ["taskkill", "/F", "/T", "/PID", str(process.pid)],
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL,
+                    check=False,
+                )
+            else:
+                try:
+                    os.killpg(process.pid, signal.SIGTERM)
+                    process.wait(timeout=3)
+                except subprocess.TimeoutExpired:
+                    os.killpg(process.pid, signal.SIGKILL)
+                except ProcessLookupError:
+                    pass
 
 
 # Global runner instance
