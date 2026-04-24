@@ -8,6 +8,7 @@ from fastapi.responses import JSONResponse
 from contextlib import asynccontextmanager
 from typing import List, Optional
 import json
+import ast
 from pathlib import Path
 
 import pandas as pd
@@ -25,6 +26,21 @@ from .auth import (
     require_session_lock, session_lock
 )
 from .scheduler import job_scheduler
+
+
+def load_demo_accounts():
+    """Load demo_accounts from UAT/demo_accounts.py without executing code."""
+    accounts_file = settings.MODULES_DIR / "demo_accounts.py"
+    source = accounts_file.read_text(encoding="utf-8")
+    tree = ast.parse(source, filename=str(accounts_file))
+
+    for node in tree.body:
+        if isinstance(node, ast.Assign):
+            for target in node.targets:
+                if isinstance(target, ast.Name) and target.id == "demo_accounts":
+                    return ast.literal_eval(node.value)
+
+    raise ValueError("demo_accounts assignment not found")
 
 
 @asynccontextmanager
@@ -128,17 +144,7 @@ async def get_accounts(
     Optionally filter by language
     """
     try:
-        # Load from demo_accounts.py
-        accounts_file = settings.MODULES_DIR / "demo_accounts.py"
-        
-        # Execute the file to get demo_accounts dict
-        with open(accounts_file, 'r') as f:
-            content = f.read()
-        
-        # Create namespace and execute
-        namespace = {}
-        exec(content, namespace)
-        demo_accounts = namespace.get('demo_accounts', {})
+        demo_accounts = load_demo_accounts()
         
         # Flatten accounts
         all_accounts = []
@@ -169,13 +175,7 @@ async def get_accounts(
 async def get_languages(email: str = Depends(require_session_lock)):
     """Get available languages"""
     try:
-        accounts_file = settings.MODULES_DIR / "demo_accounts.py"
-        with open(accounts_file, 'r') as f:
-            content = f.read()
-        
-        namespace = {}
-        exec(content, namespace)
-        demo_accounts = namespace.get('demo_accounts', {})
+        demo_accounts = load_demo_accounts()
         
         return {"languages": list(demo_accounts.keys())}
     except Exception as e:

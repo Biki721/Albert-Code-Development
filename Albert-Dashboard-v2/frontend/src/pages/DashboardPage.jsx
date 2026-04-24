@@ -91,6 +91,11 @@ export default function DashboardPage() {
     navigate('/login');
   };
 
+  const parseSelectedAccount = (accountStr) => {
+    const [email, password, region, country, language, account_type] = accountStr.split('|');
+    return { email, password, region, country, language, account_type };
+  };
+
   const handleRunAutomation = async () => {
     setIsSubmitting(true);
     
@@ -131,7 +136,7 @@ export default function DashboardPage() {
           return;
         }
 
-        request.accounts = selectedAccounts;
+        request.accounts = selectedAccounts.map(parseSelectedAccount);
         request.languages = selectedLanguages;
         request.domains = selectedDomains;
         request.modules = selectedModules;

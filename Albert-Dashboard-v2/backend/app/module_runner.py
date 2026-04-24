@@ -8,13 +8,15 @@ from pathlib import Path
 from typing import Dict, List, Optional, Any, Callable
 from datetime import datetime
 import traceback
-import importlib.util
-from urllib import request
+import json
+import os
+import subprocess
+import tempfile
 
 from .config import settings
 from .models import (
-    AutomationRequest, AutomationMode, DomainType, 
-    ModuleType, AdhocType, JobStatus
+    AutomationRequest, AutomationMode, DomainType,
+    ModuleType, AdhocType
 )
 
 
@@ -61,6 +63,8 @@ class ModuleRunner:
         self.stop_flag = False
         self._current_job_id: Optional[str] = None
         self._progress_callback: Optional[Callable] = None
+        self._process_lock = threading.Lock()
+        self._current_process: Optional[subprocess.Popen] = None
     
     def set_progress_callback(self, callback: Callable):
         """Set callback for progress updates"""
@@ -71,27 +75,114 @@ class ModuleRunner:
         if self._progress_callback:
             self._progress_callback(message)
     
-    def _import_module(self, module_name: str, class_name: Optional[str] = None):
-        """Dynamically import module class"""
+    def _runner_script(self) -> Path:
+        return settings.MODULES_DIR / "run_automation.py"
+
+    def _run_uat_unit(
+        self,
+        kind: str,
+        name: str,
+        account_details: Optional[List[str]] = None,
+    ) -> Dict[str, Any]:
+        """Run one UAT automation unit in a separate process."""
+        runner_script = self._runner_script()
+        if not runner_script.exists():
+            raise FileNotFoundError(f"UAT runner not found: {runner_script}")
+
+        with tempfile.NamedTemporaryFile(
+            mode="w",
+            suffix=".json",
+            prefix="albert_result_",
+            delete=False,
+        ) as result_file:
+            result_path = result_file.name
+
+        cmd = [
+            sys.executable,
+            str(runner_script),
+            "--kind",
+            kind,
+            "--name",
+            name,
+            "--result-json",
+            result_path,
+        ]
+        if account_details is not None:
+            cmd.extend(["--account-json", json.dumps(account_details)])
+
+        self._update_progress(f"Running {kind} {name}")
+        env = os.environ.copy()
+        env["PYTHONUNBUFFERED"] = "1"
+
+        process = subprocess.Popen(
+            cmd,
+            cwd=str(settings.MODULES_DIR),
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            env=env,
+        )
+        with self._process_lock:
+            self._current_process = process
+
+        stdout, stderr = process.communicate()
+        with self._process_lock:
+            if self._current_process is process:
+                self._current_process = None
+
+        result: Dict[str, Any]
         try:
-            module_path = settings.MODULES_DIR / f"{module_name}.py"
-            print(f"Trying to import from: {module_path}")
-            
-            spec = importlib.util.spec_from_file_location(module_name, module_path)
-            module = importlib.util.module_from_spec(spec)
-            spec.loader.exec_module(module)
-            
-            if class_name:
-                return getattr(module, class_name)
-            
-            return module
-        except Exception as e:
-            raise ImportError(f"Failed to import {class_name} from {module_name}: {e}")
+            with open(result_path, "r", encoding="utf-8") as f:
+                result = json.load(f)
+        except Exception:
+            result = {
+                "type": kind,
+                "name": name,
+                "status": "error",
+                "error": "UAT runner did not produce a readable result file",
+            }
+        finally:
+            try:
+                os.unlink(result_path)
+            except OSError:
+                pass
+
+        result["return_code"] = process.returncode
+        if account_details:
+            result.setdefault("account", account_details[0])
+        if stdout:
+            result["stdout"] = stdout[-12000:]
+        if stderr:
+            result["stderr"] = stderr[-12000:]
+
+        if self.stop_flag and process.returncode != 0:
+            result["status"] = "cancelled"
+            result.setdefault("error", "Stopped by user")
+        elif process.returncode != 0 and result.get("status") != "cancelled":
+            result["status"] = "error"
+
+        return result
     
-    def _parse_account(self, account_str: str) -> List[str]:
-        """Parse account string into components"""
-        # Format: email|password|region|country|language|type
-        return account_str.split('|')
+    def _parse_account(self, account: Any) -> List[str]:
+        """Normalize a legacy pipe string or structured account into UAT args."""
+        if isinstance(account, str):
+            parts = account.split('|')
+        else:
+            data = account.dict() if hasattr(account, "dict") else dict(account)
+            parts = [
+                data.get("email"),
+                data.get("password"),
+                data.get("region"),
+                data.get("country"),
+                data.get("language"),
+                data.get("account_type"),
+            ]
+
+        if len(parts) != 6 or any(part in (None, "") for part in parts):
+            raise ValueError("Account must include email, password, region, country, language, and account_type")
+        return [str(part) for part in parts]
     
     def _run_domain_module(self, domain: DomainType, account_details: List[str]) -> Dict[str, Any]:
         """Run a domain (page tree) module"""
@@ -103,18 +194,9 @@ class ModuleRunner:
         self._update_progress(f"Running domain {domain.value} for account {account_details[0]}")
         
         try:
-            ModuleClass = self._import_module(module_name, class_name)
-            instance = ModuleClass(*account_details)
-            
-            instance.setUp()
-            instance.scrapecall_writetrees()
-            instance.tearDown()
-            
-            return {
-                "status": "success",
-                "domain": domain.value,
-                "account": account_details[0]
-            }
+            result = self._run_uat_unit("domain", domain.value, account_details)
+            result["domain"] = domain.value
+            return result
         except Exception as e:
             print("🔥 DOMAIN MODULE ERROR:", e)
             print(traceback.format_exc())
@@ -134,55 +216,7 @@ class ModuleRunner:
         
     def _run_login_dependent_module(self, module: ModuleType, account_details: List[str]):
 
-        module_name, class_name = self.VALIDATION_MODULES[module]
-
-        try:
-            ModuleClass = self._import_module(module_name, class_name)
-
-            # Import login module dynamically
-            login_module = self._import_module("module_login_lang", "PRP")
-
-            # 1️⃣ Login
-            login_instance = login_module(*account_details)
-            login_instance.setUp()
-
-            login_success = login_instance.login()
-
-            if not login_success:
-                login_instance.tearDown()
-                raise Exception("Login failed")
-
-            # 2️⃣ Main module reusing browser
-            instance = ModuleClass(
-                *account_details,
-                playwright=login_instance.playwright,
-                browser=login_instance.browser,
-                page=login_instance.page
-            )
-
-            instance.setUp()
-
-            if module == ModuleType.TRANSLATION_SPELLING_EMPTY:
-                instance.parent()
-            elif module == ModuleType.SPELLING_CHECK:
-                instance.parent()  # or correct method if different
-
-            instance.tearDown()
-
-            return {
-                "status": "success",
-                "module": module.value,
-                "account": account_details[0]
-            }
-
-        except Exception as e:
-            return {
-                "status": "error",
-                "module": module.value,
-                "account": account_details[0],
-                "error": str(e),
-                "traceback": traceback.format_exc()
-            }
+        return self._run_standard_module(module, account_details)
 
     def _run_standard_module(self, module: ModuleType, account_details: List[str]) -> Dict[str, Any]:
         """Run a validation module"""
@@ -191,43 +225,9 @@ class ModuleRunner:
         self._update_progress(f"Running module {module.value} for account {account_details[0]}")
         
         try:
-            ModuleClass = self._import_module(module_name, class_name)
-            instance = ModuleClass(*account_details)
-            
-            # instance.setUp()
-            
-            # Call appropriate test method based on module
-            if module == ModuleType.BROKEN_LINKS:
-                instance.setUp()
-                instance.test_load_home_page()
-                instance.test_multiple_broken()
-                instance.tearDown()
-            elif module == ModuleType.TRANSLATION_EMPTY:
-                instance.test_load_home_page()
-                instance.parent()
-                instance.tearDown()
-            elif module == ModuleType.NEW_TAB:
-                instance.test_new_tab()
-                instance.tearDown()
-            elif module == ModuleType.T_VARIABLE:
-                instance.test_tvar_check()
-                instance.tearDown()
-            elif module == ModuleType.EXTERNAL_LINKS:
-                instance.external_url_validation()
-                instance.tearDown()
-            elif module == ModuleType.TRANSLATION_SPELLING_EMPTY:
-                pass
-            elif module == ModuleType.SPELLING_CHECK:
-                pass
-            
-            
-            # instance.tearDown()
-            
-            return {
-                "status": "success",
-                "module": module.value,
-                "account": account_details[0]
-            }
+            result = self._run_uat_unit("module", module.value, account_details)
+            result["module"] = module.value
+            return result
         except Exception as e:
             return {
                 "status": "error",
@@ -237,99 +237,17 @@ class ModuleRunner:
                 "traceback": traceback.format_exc()
             }
     
-    # def _run_validation_module(self, module: ModuleType, account_details: List[str]) -> Dict[str, Any]:
-    #     """Run a validation module"""
-    #     module_name, class_name = self.VALIDATION_MODULES[module]
-        
-    #     self._update_progress(f"Running module {module.value} for account {account_details[0]}")
-        
-    #     try:
-    #         ModuleClass = self._import_module(module_name, class_name)
-    #         instance = ModuleClass(*account_details)
-            
-    #         # instance.setUp()
-            
-    #         # Call appropriate test method based on module
-    #         if module == ModuleType.BROKEN_LINKS:
-    #             instance.setUp()
-    #             instance.test_load_home_page()
-    #             instance.test_multiple_broken()
-    #             instance.tearDown()
-    #         elif module == ModuleType.TRANSLATION_EMPTY:
-    #             instance.test_load_home_page()
-    #             instance.parent()
-    #             instance.tearDown()
-    #         elif module == ModuleType.NEW_TAB:
-    #             instance.test_new_tab()
-    #             instance.tearDown()
-    #         elif module == ModuleType.T_VARIABLE:
-    #             instance.test_tvar_check()
-    #             instance.tearDown()
-    #         elif module == ModuleType.EXTERNAL_LINKS:
-    #             instance.external_url_validation()
-    #             instance.tearDown()
-    #         elif module == ModuleType.TRANSLATION_SPELLING_EMPTY:
-    #             pass
-    #         elif module == ModuleType.SPELLING_CHECK:
-    #             pass
-            
-            
-    #         # instance.tearDown()
-            
-    #         return {
-    #             "status": "success",
-    #             "module": module.value,
-    #             "account": account_details[0]
-    #         }
-    #     except Exception as e:
-    #         return {
-    #             "status": "error",
-    #             "module": module.value,
-    #             "account": account_details[0],
-    #             "error": str(e),
-    #             "traceback": traceback.format_exc()
-    #         }
-    
     def _run_adhoc_module(self, adhoc_type: AdhocType) -> Dict[str, Any]:
         """Run an adhoc module"""
 
         print(">>> ENTERED _run_adhoc_module")
         print(">>> ADHOC TYPE:", adhoc_type)
-        module_name, class_name = self.ADHOC_MODULES[adhoc_type]
-        
-        # Hardcoded account for adhoc
-        account_details = [
-            'bot.dec-d001a@hpe.com', 
-            'Login2PRP!', 
-            'NA', 
-            'USA', 
-            'English', 
-            'T2'
-        ]
-        
         self._update_progress(f"Running adhoc task {adhoc_type.value}")
         
         try:
-            print(">>> Importing module")
-            ModuleClass = self._import_module(module_name, class_name)
-
-            print(">>> Creating instance")
-            instance = ModuleClass(*account_details)
-
-            print(">>> Calling setUp()")
-            instance.regen_tree = True 
-            instance.setUp()
-
-            print(">>> Calling parent()")
-            instance.parent()
-
-            print(">>> Calling tearDown()")
-            instance.tearDown()
-            
-            return {
-                "status": "success",
-                "adhoc_type": adhoc_type.value
-            }
+            result = self._run_uat_unit("adhoc", adhoc_type.value)
+            result["adhoc_type"] = adhoc_type.value
+            return result
         except Exception as e:
             print("🔥🔥🔥 ADHOC CRASH 🔥🔥🔥")
             print(traceback.format_exc())
@@ -381,12 +299,12 @@ class ModuleRunner:
         print("ACCOUNTS:", request.accounts)
         print("DOMAINS:", request.domains)
         
-        for account_str in request.accounts:
+        for account in request.accounts:
             if self.stop_flag:
                 self._update_progress("Stopped by user")
                 break
             
-            account_details = self._parse_account(account_str)
+            account_details = self._parse_account(account)
             
             # Run domains
             for domain in request.domains:
@@ -413,7 +331,8 @@ class ModuleRunner:
             try:
                 self._update_progress("Aggregating reports...")
 
-                merge_module = self._import_module("merge_upload", None)
+                sys.path.insert(0, str(settings.MODULES_DIR))
+                import merge_upload as merge_module
 
                 aggregate = getattr(merge_module, "aggregate")
                 to_be_merged_folderpath = getattr(merge_module, "to_be_merged_folderpath")
@@ -441,6 +360,14 @@ class ModuleRunner:
         """Stop current execution"""
         self.stop_flag = True
         self._update_progress("Stop requested...")
+        with self._process_lock:
+            process = self._current_process
+        if process and process.poll() is None:
+            process.terminate()
+            try:
+                process.wait(timeout=10)
+            except subprocess.TimeoutExpired:
+                process.kill()
 
 
 # Global runner instance

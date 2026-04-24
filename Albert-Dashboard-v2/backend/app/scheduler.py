@@ -137,9 +137,13 @@ class JobScheduler:
             # Update with results
             with self._lock:
                 if job_id in self._jobs:
-                    self._jobs[job_id].status = JobStatus.COMPLETED
+                    self._jobs[job_id].status = self._status_from_results(results)
                     self._jobs[job_id].completed_at = datetime.now()
                     self._jobs[job_id].results = results
+                    if self._jobs[job_id].status == JobStatus.FAILED:
+                        self._jobs[job_id].error = results.get("error") or "One or more automation units failed"
+                    elif self._jobs[job_id].status == JobStatus.CANCELLED:
+                        self._jobs[job_id].error = "Stopped by user"
                     self._current_running_job = None
         
         except Exception as e:
@@ -149,6 +153,26 @@ class JobScheduler:
                     self._jobs[job_id].completed_at = datetime.now()
                     self._jobs[job_id].error = str(e)
                     self._current_running_job = None
+
+    def _status_from_results(self, results: dict) -> JobStatus:
+        """Derive the API job status from nested UAT runner results."""
+        if results.get("status") == "failed":
+            return JobStatus.FAILED
+
+        unit_results = []
+        for key in ("domain_results", "module_results", "adhoc_results"):
+            values = results.get(key) or []
+            if isinstance(values, list):
+                unit_results.extend(values)
+
+        statuses = {item.get("status") for item in unit_results if isinstance(item, dict)}
+        if "cancelled" in statuses:
+            return JobStatus.CANCELLED
+        if "error" in statuses:
+            return JobStatus.FAILED
+        if results.get("sharepoint_upload_error"):
+            return JobStatus.FAILED
+        return JobStatus.COMPLETED
     
     def get_job(self, job_id: str) -> Optional[AutomationJob]:
         """Get job by ID"""

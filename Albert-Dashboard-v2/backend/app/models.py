@@ -1,8 +1,8 @@
 """
 Pydantic models for API requests and responses
 """
-from pydantic import BaseModel, EmailStr, Field, validator
-from typing import Optional, List, Dict, Any
+from pydantic import BaseModel, EmailStr, Field, model_validator
+from typing import Optional, List, Dict, Any, Union
 from datetime import datetime
 from enum import Enum
 
@@ -77,32 +77,27 @@ class AccountInfo(BaseModel):
 class AutomationRequest(BaseModel):
     """Request to run automation"""
     mode: AutomationMode
-    accounts: Optional[List[str]] = None  # Account emails for regular mode
+    accounts: Optional[List[Union[str, AccountInfo]]] = None
     languages: Optional[List[str]] = None  # Languages to filter accounts
     domains: Optional[List[DomainType]] = None
     modules: Optional[List[ModuleType]] = None
     adhoc_type: Optional[AdhocType] = None
     sharepoint_upload: bool = False
     schedule_time: Optional[datetime] = None  # If None, run immediately
-    
-    @validator('accounts', 'domains', 'modules')
-    def validate_regular_mode(cls, v, values):
-        """Validate required fields for regular mode"""
-        if values.get('mode') == AutomationMode.REGULAR:
-            if 'accounts' in values and not values.get('accounts'):
+
+    @model_validator(mode="after")
+    def validate_mode_requirements(self):
+        """Validate required fields for the selected automation mode."""
+        if self.mode == AutomationMode.REGULAR:
+            if not self.accounts:
                 raise ValueError("accounts required for regular mode")
-            if 'domains' in values and not values.get('domains'):
+            if not self.domains:
                 raise ValueError("domains required for regular mode")
-            if 'modules' in values and not values.get('modules'):
+            if not self.modules:
                 raise ValueError("modules required for regular mode")
-        return v
-    
-    @validator('adhoc_type')
-    def validate_adhoc_mode(cls, v, values):
-        """Validate required fields for adhoc mode"""
-        if values.get('mode') == AutomationMode.ADHOC and not v:
+        elif self.mode == AutomationMode.ADHOC and not self.adhoc_type:
             raise ValueError("adhoc_type required for adhoc mode")
-        return v
+        return self
 
 
 class JobStatus(str, Enum):
